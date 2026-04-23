@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mouse PI For Hire Schematics Locations Guide</title>
+  <meta name="description" content="Verified Mouse PI For Hire schematics locations guide covering B.A.N.G. upgrades, mission-safe routing, side-job rewards, and patch-sensitive notes." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://mousepiforhire.org/upgrades/schematics-locations/" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Mouse PI For Hire Schematics Locations Guide" />
+  <meta property="og:description" content="Cross-checked schematic routes, upgrade rules, and mission-by-mission risk notes for MOUSE: P.I. For Hire." />
+  <meta property="og:url" content="https://mousepiforhire.org/upgrades/schematics-locations/" />
+  <meta property="og:site_name" content="MousePIForHire.org" />
+  <meta property="og:image" content="https://mousepiforhire.org/og-cover.jpg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Mouse PI For Hire Schematics Locations Guide" />
+  <meta name="twitter:description" content="Launch-window schematic routes, B.A.N.G. upgrade notes, and mission-safe pickup advice for MOUSE: P.I. For Hire." />
+  <meta name="twitter:image" content="https://mousepiforhire.org/og-cover.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Special+Elite&family=Lato:wght@400;700&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            noir: '#0b0b0b',
+            ink: '#141410',
+            parchment: '#f0e8d5',
+            aged: '#c8b89a',
+            muted: '#7a7060',
+            gold: '#d4a843',
+            'gold-light': '#e8c870',
+            danger: '#b03030',
+            'card-bg': '#1a1a16',
+            'card-border': '#2e2e26'
+          },
+          fontFamily: {
+            display: ['"Playfair Display"', 'Georgia', 'serif'],
+            typewriter: ['"Special Elite"', 'monospace'],
+            body: ['Lato', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      background-color: #0b0b0b;
+      color: #f0e8d5;
+      font-family: 'Lato', sans-serif;
+      overflow-x: hidden;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 9999;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+      background-repeat: repeat;
+      opacity: 0.35;
+      mix-blend-mode: overlay;
+    }
+    .section-label {
+      font-family: 'Special Elite', monospace;
+      font-size: 0.7rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: #d4a843;
+    }
+    .guide-card {
+      background: #1a1a16;
+      border: 1px solid #2e2e26;
+      border-radius: 4px;
+      transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+    }
+    .guide-card:hover {
+      border-color: #d4a843;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 32px rgba(212, 168, 67, 0.12);
+    }
+    .btn-primary {
+      background: #d4a843;
+      color: #0b0b0b;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      padding: 12px 28px;
+      border-radius: 2px;
+      display: inline-block;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.15s;
+    }
+    .btn-primary:hover { background: #e8c870; transform: translateY(-1px); }
+    .btn-ghost {
+      border: 1px solid #d4a843;
+      color: #d4a843;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      padding: 12px 28px;
+      border-radius: 2px;
+      display: inline-block;
+      text-decoration: none;
+      transition: background 0.2s, color 0.2s;
+    }
+    .btn-ghost:hover { background: rgba(212,168,67,0.1); }
+    .badge {
+      font-family: 'Special Elite', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      background: rgba(212,168,67,0.15);
+      border: 1px solid rgba(212,168,67,0.4);
+      color: #d4a843;
+      padding: 4px 12px;
+      border-radius: 2px;
+      display: inline-block;
+      text-transform: uppercase;
+    }
+    .signal-pill {
+      font-family: 'Special Elite', monospace;
+      font-size: 0.6rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 4px 8px;
+      border-radius: 999px;
+      border: 1px solid #2e2e26;
+      color: #c8b89a;
+      background: rgba(200,184,154,0.08);
+    }
+    .signal-pill.gold {
+      color: #d4a843;
+      border-color: rgba(212,168,67,0.4);
+      background: rgba(212,168,67,0.12);
+    }
+    .signal-pill.red {
+      color: #ffb3b3;
+      border-color: rgba(176,48,48,0.45);
+      background: rgba(176,48,48,0.12);
+    }
+    #mobile-menu { display: none; }
+    #mobile-menu.open { display: block; }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .fade-up { animation: fadeUp 0.7s ease both; }
+    .delay-1 { animation-delay: 0.1s; }
+    .delay-2 { animation-delay: 0.2s; }
+    .delay-3 { animation-delay: 0.35s; }
+    .prose-copy p { color: #c8b89a; line-height: 1.8; }
+    .prose-copy a { color: #e8c870; text-decoration: underline; text-underline-offset: 3px; }
+    .prose-copy strong { color: #f0e8d5; }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://mousepiforhire.org/#website",
+        "url": "https://mousepiforhire.org/",
+        "name": "MousePIForHire.org"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://mousepiforhire.org/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Upgrades",
+            "item": "https://mousepiforhire.org/upgrades/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Schematics Locations",
+            "item": "https://mousepiforhire.org/upgrades/schematics-locations/"
+          }
+        ]
+      },
+      {
+        "@type": "Article",
+        "@id": "https://mousepiforhire.org/upgrades/schematics-locations/#article",
+        "headline": "Mouse PI For Hire Schematics Locations Guide",
+        "description": "Cross-checked schematic routes, upgrade rules, and mission-by-mission risk notes for MOUSE: P.I. For Hire.",
+        "author": {
+          "@type": "Organization",
+          "name": "MousePIForHire.org"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "MousePIForHire.org",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://mousepiforhire.org/logo.png"
+          }
+        },
+        "datePublished": "2026-04-23",
+        "dateModified": "2026-04-23",
+        "mainEntityOfPage": "https://mousepiforhire.org/upgrades/schematics-locations/"
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body class="bg-noir text-parchment font-body">
+  <header class="sticky top-0 z-50 bg-noir border-b border-card-border" role="banner">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 flex items-center justify-between h-14">
+      <a href="/" class="flex items-center gap-2 group" aria-label="MousePIForHire.org Home">
+        <svg width="28" height="24" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <ellipse cx="14" cy="20" rx="13" ry="3.5" fill="#d4a843" opacity="0.3"/>
+          <path d="M4 18 Q6 10 14 9 Q22 8 24 18 Z" fill="#d4a843"/>
+          <path d="M8 18 Q9 12 14 11 Q19 10 20 18" fill="#0b0b0b" opacity="0.5"/>
+          <rect x="3" y="17" width="22" height="3" rx="1.5" fill="#c8b89a"/>
+          <path d="M10 9 Q12 4 14 3 Q16 4 18 9" fill="#d4a843"/>
+          <circle cx="20" cy="14" r="1.5" fill="#b03030"/>
+        </svg>
+        <span class="font-display text-base font-bold text-gold tracking-tight group-hover:text-gold-light transition-colors">
+          MousePIForHire<span class="text-muted">.org</span>
+        </span>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-6" aria-label="Main navigation">
+        <a href="/guide/beginners-guide" class="font-typewriter text-xs text-aged hover:text-gold transition-colors tracking-wide uppercase">Guide</a>
+        <a href="/weapons/" class="font-typewriter text-xs text-aged hover:text-gold transition-colors tracking-wide uppercase">Weapons</a>
+        <a href="/trophies/" class="font-typewriter text-xs text-aged hover:text-gold transition-colors tracking-wide uppercase">Trophies</a>
+        <a href="/walkthrough/" class="font-typewriter text-xs text-aged hover:text-gold transition-colors tracking-wide uppercase">Walkthrough</a>
+        <a href="/collectibles/" class="font-typewriter text-xs text-aged hover:text-gold transition-colors tracking-wide uppercase">Collectibles</a>
+        <a href="/dlc/" class="font-typewriter text-xs text-aged hover:text-gold transition-colors tracking-wide uppercase">DLC</a>
+        <a href="/news/" class="font-typewriter text-xs text-danger hover:text-red-400 transition-colors tracking-wide uppercase">● News</a>
+      </nav>
+
+      <button
+        class="md:hidden text-aged hover:text-gold transition-colors"
+        aria-label="Toggle mobile menu"
+        onclick="document.getElementById('mobile-menu').classList.toggle('open')"
+      >
+        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <line x1="2" y1="6" x2="20" y2="6"/>
+          <line x1="2" y1="11" x2="20" y2="11"/>
+          <line x1="2" y1="16" x2="20" y2="16"/>
+        </svg>
+      </button>
+    </div>
+
+    <div id="mobile-menu" class="md:hidden bg-ink border-t border-card-border px-4 py-4 space-y-3">
+      <a href="/guide/beginners-guide" class="block font-typewriter text-xs text-aged hover:text-gold uppercase tracking-wide py-1">Guide</a>
+      <a href="/weapons/" class="block font-typewriter text-xs text-aged hover:text-gold uppercase tracking-wide py-1">Weapons</a>
+      <a href="/trophies/" class="block font-typewriter text-xs text-aged hover:text-gold uppercase tracking-wide py-1">Trophies</a>
+      <a href="/walkthrough/" class="block font-typewriter text-xs text-aged hover:text-gold uppercase tracking-wide py-1">Walkthrough</a>
+      <a href="/collectibles/" class="block font-typewriter text-xs text-aged hover:text-gold uppercase tracking-wide py-1">Collectibles</a>
+      <a href="/dlc/" class="block font-typewriter text-xs text-aged hover:text-gold uppercase tracking-wide py-1">DLC</a>
+      <a href="/news/" class="block font-typewriter text-xs text-danger uppercase tracking-wide py-1">● Latest News</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="relative overflow-hidden border-b border-card-border">
+      <div class="absolute inset-0 pointer-events-none opacity-5" aria-hidden="true">
+        <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse">
+              <circle cx="2" cy="2" r="1.5" fill="#d4a843"/>
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#dots)"/>
+        </svg>
+      </div>
+
+      <div class="absolute -top-20 right-0 w-96 h-96 rounded-full blur-3xl opacity-20 pointer-events-none" style="background: radial-gradient(circle, rgba(212,168,67,0.18), transparent 70%);" aria-hidden="true"></div>
+
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 py-16 md:py-24 relative">
+        <div class="max-w-3xl">
+          <span class="badge fade-up">Upgrade Route</span>
+          <p class="section-label mt-6 fade-up delay-1">MOUSE: P.I. For Hire Schematics</p>
+          <h1 class="font-display text-4xl sm:text-5xl md:text-6xl leading-tight text-parchment mt-3 fade-up delay-1">
+            A schematic locations guide built around safe routing, not shaky totals
+          </h1>
+          <p class="text-aged text-base sm:text-lg leading-8 mt-6 max-w-2xl fade-up delay-2">
+            This page focuses on the schematic facts that survive cross-checking: where schematics usually hide, which missions reliably reward thorough players, why black safes deserve a save slot, and which late-game jobs are dangerous to leave until the end.
+          </p>
+          <div class="flex flex-wrap gap-3 mt-8 fade-up delay-3">
+            <span class="signal-pill gold">Checked through Apr 23, 2026</span>
+            <span class="signal-pill">B.A.N.G. upgrade routing</span>
+            <span class="signal-pill red">Count totals disputed</span>
+          </div>
+          <div class="flex flex-wrap gap-4 mt-8 fade-up delay-3">
+            <a href="#route" class="btn-primary">Open Route Notes</a>
+            <a href="/weapons/" class="btn-ghost">See Weapon Upgrades</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 py-14 md:py-16">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <article class="guide-card p-6">
+          <p class="section-label mb-3">What We Can Trust</p>
+          <h2 class="font-display text-2xl text-parchment mb-3">The stable part of the system</h2>
+          <p class="text-aged text-sm leading-7">
+            Launch-week guides agree that schematics are spent at B.A.N.G. upgrade stations, are not sold in the shop, and are commonly found in safes, on tables, pinned to walls, or behind breakable route detours.
+          </p>
+        </article>
+        <article class="guide-card p-6">
+          <p class="section-label mb-3">Why This Page Is Cautious</p>
+          <h2 class="font-display text-2xl text-parchment mb-3">Public totals still conflict</h2>
+          <p class="text-aged text-sm leading-7">
+            Current public guides disagree on the exact grand total of schematics and even on the exact fully-upgraded threshold. That is why this page prioritizes route logic and mission-safe pickup advice over pretending one disputed number is final.
+          </p>
+        </article>
+        <article class="guide-card p-6">
+          <p class="section-label mb-3">Best Internal Links</p>
+          <h2 class="font-display text-2xl text-parchment mb-3">Use this with the rest of the site</h2>
+          <p class="text-aged text-sm leading-7">
+            Pair this guide with the <a href="/weapons/" class="text-gold hover:text-gold-light transition-colors">Weapons page</a> for upgrade priorities, the <a href="/trophies/platinum-guide" class="text-gold hover:text-gold-light transition-colors">Platinum Guide</a> for missable planning, and the <a href="/walkthrough/" class="text-gold hover:text-gold-light transition-colors">Walkthrough</a> for mission order.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="border-y border-card-border bg-ink/60">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 py-14 md:py-16">
+        <div class="max-w-3xl mb-10">
+          <p class="section-label mb-3">Confirmed Basics</p>
+          <h2 class="font-display text-3xl sm:text-4xl text-parchment">How schematics appear to work in the launch build</h2>
+          <p class="text-aged mt-4 leading-8">
+            Public launch guides line up on the broad system even when some totals disagree. That gives us enough stable ground for a trustworthy route page.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <article class="guide-card p-6">
+            <p class="section-label mb-2">Upgrade Flow</p>
+            <h3 class="font-display text-2xl text-parchment">B.A.N.G. stations matter</h3>
+            <p class="text-aged text-sm leading-7 mt-3">
+              Fresh guides consistently describe B.A.N.G. stations as the place where schematics become weapon upgrades. Public launch coverage also consistently reports that each fully-upgraded weapon costs <strong>9 schematics</strong>, even though broader total counts still conflict across guides.
+            </p>
+          </article>
+          <article class="guide-card p-6">
+            <p class="section-label mb-2">Shop Rules</p>
+            <h3 class="font-display text-2xl text-parchment">Schematics are not shop cleanup</h3>
+            <p class="text-aged text-sm leading-7 mt-3">
+              Unlike many newspapers, comics, or Baseball Cards, schematics are widely reported as non-purchasable. If you skip too many in-mission detours, you cannot count on the hub shop to clean up the problem later.
+            </p>
+          </article>
+          <article class="guide-card p-6">
+            <p class="section-label mb-2">Common Hiding Spots</p>
+            <h3 class="font-display text-2xl text-parchment">Where to look first</h3>
+            <p class="text-aged text-sm leading-7 mt-3">
+              The recurring patterns are surprisingly consistent: safes, wall-pinned pickups, table edges, pallets, bunk beds, under-stair spaces, and side paths opened by explosive walls or traversal abilities.
+            </p>
+          </article>
+          <article class="guide-card p-6">
+            <p class="section-label mb-2">Side Jobs</p>
+            <h3 class="font-display text-2xl text-parchment">Some are quest rewards</h3>
+            <p class="text-aged text-sm leading-7 mt-3">
+              At least some public schematic guides explicitly state that a handful of schematics come from side jobs instead of lying in the level. That is another reason not to treat side quests as optional fluff if you care about upgrade coverage.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="route" class="max-w-6xl mx-auto px-4 sm:px-6 py-14 md:py-16">
+      <div class="max-w-3xl mb-10">
+        <p class="section-label mb-3">Mission Route</p>
+        <h2 class="font-display text-3xl sm:text-4xl text-parchment">High-confidence schematic stops worth planning around</h2>
+        <p class="text-aged mt-4 leading-8">
+          The locations below were chosen because they can be supported by more than one public launch source or by one detailed guide plus a matching broader route summary. This is not a speculative dump of every community rumor.
+        </p>
+      </div>
+
+      <div class="space-y-6">
+        <article class="guide-card p-7 prose-copy">
+          <p class="section-label mb-3">Early Game</p>
+          <h3 class="font-display text-3xl text-parchment mb-4">Big Mouse, Little Hope</h3>
+          <p>
+            The prologue already teaches the core schematic language: one appears in the early safe after the spinning-floor section, and later route notes consistently place additional schematics around the locked mechanical-door area, the ladder after Soyer&apos;s elevator scene, and the return visit to the same first safe. If you skip early safes here, you are practicing the wrong habits for the rest of the game.
+          </p>
+        </article>
+
+        <article class="guide-card p-7 prose-copy">
+          <p class="section-label mb-3">Early Game</p>
+          <h3 class="font-display text-3xl text-parchment mb-4">The Vanishing Act</h3>
+          <p>
+            This is one of the cleanest missions for schematic routing. Cross-checked guides agree on four especially important stops: the apartment room opened with the <strong>Loft Key</strong>, a schematic near the subway typewriter, a safe on the train tracks after the enemy train ambush, and another pickup in the bathroom below the stairs. If your route guide only remembers one mission perfectly, this is a strong candidate.
+          </p>
+        </article>
+
+        <article class="guide-card p-7 prose-copy">
+          <p class="section-label mb-3">Mid Game</p>
+          <h3 class="font-display text-3xl text-parchment mb-4">Cheeseball Sub</h3>
+          <p>
+            Cheeseball Sub is where schematic hunting turns from “look around a bit” into real route discipline. Public guides consistently point to a bunk-bed pickup after the Ticket Booth Key path, a schematic in the tipped-over train after blowing open a wall, and a dangerous lower-area pickup after the second water glide. They also agree on a hidden-safe path after the vent section. This mission is one of the clearest reasons to save before tricky lockpicks and high-damage water sections.
+          </p>
+        </article>
+
+        <article class="guide-card p-7 prose-copy">
+          <p class="section-label mb-3">Late Mid Game</p>
+          <h3 class="font-display text-3xl text-parchment mb-4">Glugging from the Deep</h3>
+          <p>
+            Glugging from the Deep is important for two separate reasons. First, multiple sources place schematics at the opening warp pipe table, along the right-side roof-and-vent route at the port, near the underwater submarine-area safe, and by the giant dead fish after the Ze Professor encounter. Second, this mission sits close to late-game cleanup pressure, so leaving side jobs or route detours unresolved here can ripple into your final upgrade plan.
+          </p>
+        </article>
+
+        <article class="guide-card p-7 prose-copy">
+          <p class="section-label mb-3">Endgame Risk</p>
+          <h3 class="font-display text-3xl text-parchment mb-4">Jack Squat and Fair Enough</h3>
+          <p>
+            Even without trusting disputed grand totals, the late missions still deserve respect. Public schematic guides describe multiple pickups in <strong>Jack Squat</strong>, including wall-pinned and safe-based schematics, and they continue to place several more in <strong>Fair Enough</strong>. In other words, late-game missions are not “empty story corridors” from an upgrade perspective. If you arrive there already behind on schematic discipline, the endgame does not magically solve the problem for you.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="border-y border-card-border bg-ink/60">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 py-14 md:py-16">
+        <div class="grid grid-cols-1 lg:grid-cols-[1.15fr_0.85fr] gap-8 items-start">
+          <div class="guide-card p-7 prose-copy">
+            <p class="section-label mb-3">Safe Strategy</p>
+            <h2 class="font-display text-3xl text-parchment mb-4">Why black safes deserve a save slot</h2>
+            <p>
+              Fresh beginner and lockpicking guides agree on an easy rule to follow: <strong>timed or harsh lockpicks can permanently cost you the contents if you fail them</strong>. Since schematics are one of the most valuable things those safes can hold, the practical move is to save at the nearest typewriter before attempting any lock that looks punishing.
+            </p>
+            <p>
+              This is especially relevant in missions like <strong>Cheeseball Sub</strong>, where route guides already single out high-risk pickup paths. If your goal is full upgrade flexibility, “I&apos;ll probably get it on the first try” is not a route strategy.
+            </p>
+          </div>
+
+          <aside class="guide-card p-7">
+            <p class="section-label mb-3">Quick Rules</p>
+            <h2 class="font-display text-3xl text-parchment mb-4">Schematic hunting checklist</h2>
+            <ul class="space-y-4 text-aged text-sm leading-7">
+              <li>Check every safe, especially under stairs and behind optional doors.</li>
+              <li>Look for wall-pinned pickups in side rooms and elevated detours.</li>
+              <li>Use traversal upgrades aggressively on revisited spaces.</li>
+              <li>Do not assume the shop will recover missed schematics later.</li>
+              <li>Keep side jobs current if you care about upgrade coverage.</li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 py-14 md:py-16">
+      <div class="grid grid-cols-1 lg:grid-cols-[1fr_0.95fr] gap-8">
+        <article class="guide-card p-7 prose-copy">
+          <p class="section-label mb-3">Version Note</p>
+          <h2 class="font-display text-3xl text-parchment mb-4">What this page is based on</h2>
+          <p>
+            This page uses launch-window collectible and schematic guides published between <strong>April 16 and April 20, 2026</strong>, plus beginner-oriented lockpicking advice from the same release window. It is designed to stay useful even while public grand totals are still unsettled.
+          </p>
+          <p>
+            If later patches or better-documented guides settle the total schematic count cleanly, this page can be upgraded into a full count-accurate mission ledger. For now, it is intentionally a high-confidence route page instead of a fake-precision spreadsheet.
+          </p>
+        </article>
+
+        <article class="guide-card p-7">
+          <p class="section-label mb-3">Sources Checked</p>
+          <h2 class="font-display text-3xl text-parchment mb-4">Primary references</h2>
+          <ul class="space-y-3 text-aged text-sm leading-7">
+            <li><a class="text-gold hover:text-gold-light transition-colors" href="https://games.gg/mouse-pi-for-hire/guides/mouse-p-i-for-hire-all-schematic-locations/">GAMES.GG Schematic Locations</a></li>
+            <li><a class="text-gold hover:text-gold-light transition-colors" href="https://www.powerpyx.com/mouse-p-i-for-hire-all-collectible-locations-guide/">PowerPyx All Collectible Locations</a></li>
+            <li><a class="text-gold hover:text-gold-light transition-colors" href="https://www.destructoid.com/how-to-lockpick-in-mouse-p-i-for-hire-tailpicking-guide/">Destructoid Tailpicking Guide</a></li>
+            <li><a class="text-gold hover:text-gold-light transition-colors" href="https://www.gamespot.com/gallery/mouse-pi-for-hire-beginners-guide/2900-7666/">GameSpot Beginner&apos;s Guide</a></li>
+            <li><a class="text-gold hover:text-gold-light transition-colors" href="https://www.destructoid.com/all-weapons-and-tier-upgrades-in-mouse-p-i-for-hire/">Destructoid Weapons &amp; Upgrades</a></li>
+          </ul>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-card-border bg-ink mt-4" role="contentinfo">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-10">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+        <div class="md:col-span-2">
+          <div class="flex items-center gap-2 mb-3">
+            <svg width="22" height="20" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M4 18 Q6 10 14 9 Q22 8 24 18 Z" fill="#d4a843" opacity="0.7"/>
+              <rect x="3" y="17" width="22" height="3" rx="1.5" fill="#c8b89a" opacity="0.7"/>
+              <path d="M10 9 Q12 4 14 3 Q16 4 18 9" fill="#d4a843" opacity="0.7"/>
+            </svg>
+            <span class="font-display text-sm font-bold text-gold">MousePIForHire.org</span>
+          </div>
+          <p class="text-muted text-xs leading-relaxed max-w-sm">
+            An independent fan guide for MOUSE: P.I. For Hire. Not affiliated with, endorsed by, or sponsored by Fumi Games or PlaySide Studios. All trademarks and game assets belong to their respective owners.
+          </p>
+        </div>
+
+        <div>
+          <p class="font-typewriter text-xs text-gold uppercase tracking-widest mb-3">Guides</p>
+          <ul class="space-y-2">
+            <li><a href="/guide/beginners-guide" class="text-muted text-xs hover:text-parchment transition-colors">Beginner&apos;s Guide</a></li>
+            <li><a href="/weapons/" class="text-muted text-xs hover:text-parchment transition-colors">Weapons &amp; Upgrades</a></li>
+            <li><a href="/trophies/platinum-guide" class="text-muted text-xs hover:text-parchment transition-colors">Platinum Roadmap</a></li>
+            <li><a href="/walkthrough/" class="text-muted text-xs hover:text-parchment transition-colors">Full Walkthrough</a></li>
+            <li><a href="/bosses/" class="text-muted text-xs hover:text-parchment transition-colors">Boss Guide</a></li>
+            <li><a href="/dlc/" class="text-muted text-xs hover:text-parchment transition-colors">Story DLC</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="font-typewriter text-xs text-gold uppercase tracking-widest mb-3">Collectibles</p>
+          <ul class="space-y-2 mb-5">
+            <li><a href="/collectibles/newspapers/" class="text-muted text-xs hover:text-parchment transition-colors">All Newspapers</a></li>
+            <li><a href="/collectibles/baseball-cards/" class="text-muted text-xs hover:text-parchment transition-colors">Baseball Cards</a></li>
+            <li><a href="/collectibles/comic-strips/" class="text-muted text-xs hover:text-parchment transition-colors">Comic Strips</a></li>
+            <li><a href="/upgrades/schematics-locations/" class="text-muted text-xs hover:text-parchment transition-colors">Schematics Locations</a></li>
+          </ul>
+          <p class="font-typewriter text-xs text-gold uppercase tracking-widest mb-3">Site</p>
+          <ul class="space-y-2">
+            <li><a href="/news/" class="text-muted text-xs hover:text-parchment transition-colors">News &amp; Patches</a></li>
+            <li><a href="/tips/" class="text-muted text-xs hover:text-parchment transition-colors">Advanced Tips</a></li>
+            <li><a href="/about" class="text-muted text-xs hover:text-parchment transition-colors">About</a></li>
+            <li><a href="/contact" class="text-muted text-xs hover:text-parchment transition-colors">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pt-6 border-t border-card-border flex flex-col sm:flex-row items-center justify-between gap-3">
+        <p class="text-muted text-xs">
+          &copy; 2026 MousePIForHire.org &mdash; Fan site. All game content &copy; Fumi Games &amp; PlaySide Studios.
+        </p>
+        <div class="flex gap-4">
+          <a href="/privacy" class="text-muted text-xs hover:text-parchment transition-colors">Privacy Policy</a>
+          <a href="/disclosure" class="text-muted text-xs hover:text-parchment transition-colors">Ad Disclosure</a>
+          <a href="/sitemap.xml" class="text-muted text-xs hover:text-parchment transition-colors">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!--
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+  -->
+</body>
+</html>
