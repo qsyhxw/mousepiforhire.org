@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mouse PI For Hire Trophy Guide Hub</title>
+  <meta name="description" content="Verified Mouse PI For Hire trophy hub with platform trophy counts, Platinum roadmap links, missable warnings, hotfix notes, and achievement route priorities." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://mousepiforhire.org/trophies/" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Mouse PI For Hire Trophy Guide Hub" />
+  <meta property="og:description" content="Cross-checked trophy totals, missable route warnings, and hotfix-sensitive roadmap notes for MOUSE: P.I. For Hire." />
+  <meta property="og:url" content="https://mousepiforhire.org/trophies/" />
+  <meta property="og:site_name" content="MousePIForHire.org" />
+  <meta property="og:image" content="https://mousepiforhire.org/og-cover.jpg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Mouse PI For Hire Trophy Guide Hub" />
+  <meta name="twitter:description" content="Platform trophy totals, Platinum roadmap links, and missable-safe planning for MOUSE: P.I. For Hire." />
+  <meta name="twitter:image" content="https://mousepiforhire.org/og-cover.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Special+Elite&family=Lato:wght@400;700&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            noir: '#0b0b0b',
+            ink: '#141410',
+            parchment: '#f0e8d5',
+            aged: '#c8b89a',
+            muted: '#7a7060',
+            gold: '#d4a843',
+            'gold-light': '#e8c870',
+            danger: '#b03030',
+            'card-bg': '#1a1a16',
+            'card-border': '#2e2e26'
+          },
+          fontFamily: {
+            display: ['"Playfair Display"', 'Georgia', 'serif'],
+            typewriter: ['"Special Elite"', 'monospace'],
+            body: ['Lato', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      background-color: #0b0b0b;
+      color: #f0e8d5;
+      font-family: 'Lato', sans-serif;
+      overflow-x: hidden;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 9999;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+      background-repeat: repeat;
+      opacity: 0.35;
+      mix-blend-mode: overlay;
+    }
+    .section-label {
+      font-family: 'Special Elite', monospace;
+      font-size: 0.7rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: #d4a843;
+    }
+    .guide-card {
+      background: #1a1a16;
+      border: 1px solid #2e2e26;
+      border-radius: 4px;
+      transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+    }
+    .guide-card:hover {
+      border-color: #d4a843;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 32px rgba(212, 168, 67, 0.12);
+    }
+    .btn-primary {
+      background: #d4a843;
+      color: #0b0b0b;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      padding: 12px 28px;
+      border-radius: 2px;
+      display: inline-block;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.15s;
+    }
+    .btn-primary:hover { background: #e8c870; transform: translateY(-1px); }
+    .btn-ghost {
+      border: 1px solid #d4a843;
+      color: #d4a843;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      padding: 12px 28px;
+      border-radius: 2px;
+      display: inline-block;
+      text-decoration: none;
+      transition: background 0.2s, color 0.2s;
+    }
+    .btn-ghost:hover { background: rgba(212,168,67,0.1); }
+    .badge {
+      font-family: 'Special Elite', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      background: rgba(212,168,67,0.15);
+      border: 1px solid rgba(212,168,67,0.4);
+      color: #d4a843;
+      padding: 4px 12px;
+      border-radius: 2px;
+      display: inline-block;
+      text-transform: uppercase;
+    }
+    .signal-pill {
+      font-family: 'Special Elite', monospace;
+      font-size: 0.6rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 4px 8px;
+      border-radius: 999px;
+      border: 1px solid #2e2e26;
+      color: #c8b89a;
+      background: rgba(200,184,154,0.08);
+    }
+    .signal-pill.gold {
+      color: #d4a843;
+      border-color: rgba(212,168,67,0.4);
+      background: rgba(212,168,67,0.12);
+    }
+    .signal-pill.red {
+      color: #ffb3b3;
+      border-color: rgba(176,48,48,0.45);
+      background: rgba(176,48,48,0.12);
+    }
+    .prose-copy p { color: #c8b89a; line-height: 1.8; }
+    .prose-copy a { color: #e8c870; text-decoration: underline; text-underline-offset: 3px; }
+    .prose-copy strong { color: #f0e8d5; }
+    .mini-pill {
+      font-family: 'Special Elite', monospace;
+      font-size: 0.58rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 4px 8px;
+      border-radius: 999px;
+      border: 1px solid #2e2e26;
+      color: #c8b89a;
+      background: rgba(200,184,154,0.08);
+      display: inline-block;
+    }
+    .mini-pill.gold {
+      color: #d4a843;
+      border-color: rgba(212,168,67,0.4);
+      background: rgba(212,168,67,0.12);
+    }
+    #mobile-menu { display: none; }
+    #mobile-menu.open { display: block; }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .fade-up { animation: fadeUp 0.7s ease both; }
+    .delay-1 { animation-delay: 0.1s; }
+    .delay-2 { animation-delay: 0.2s; }
+    .delay-3 { animation-delay: 0.35s; }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://mousepiforhire.org/#website",
+        "url": "https://mousepiforhire.org/",
+        "name": "MousePIForHire.org"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://mousepiforhire.org/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Trophies",
+            "item": "https://mousepiforhire.org/trophies/"
+          }
+        ]
+      },
+      {
+        "@type": "Article",
+        "@id": "https://mousepiforhire.org/trophies/#article",
+        "headline": "Mouse PI For Hire Trophy Guide Hub",
+        "description": "Cross-checked trophy totals, missable route warnings, and hotfix-sensitive roadmap notes for MOUSE: P.I. For Hire.",
+        "author": {
+          "@type": "Organization",
+          "name": "MousePIForHire.org"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "MousePIForHire.org",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://mousepiforhire.org/logo.png"
+          }
+        },
+        "datePublished": "2026-04-28",
+        "dateModified": "2026-04-28",
+        "mainEntityOfPage": "https://mousepiforhire.org/trophies/"
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body class="bg-noir text-parchment font-body">
+  <header class="sticky top-0 z-50 bg-noir border-b border-card-border" role="banner">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 flex items-center justify-between h-14">
+      <a href="/" class="flex items-center gap-2 group" aria-label="MousePIForHire.org Home">
+        <svg width="28" height="24" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <ellipse cx="14" cy="20" rx="13" ry="3.5" fill="#d4a843" opacity="0.3"/>
+          <path d="M4 18 Q6 10 14 9 Q22 8 24 18 Z" fill="#d4a843"/>
+          <path d="M8 18 Q9 12 14 11 Q19 10 20 18" fill="#0b0b0b" opacity="0.5"/>
+          <rect x="3" y="17" width="22" height="3" rx="1.5" fill="#c8b89a"/>
+          <path d="M10 9 Q12 4 14 3 Q16 4 18 9" fill="#d4a843"/>
+          <circle cx="20" cy="14" r="1.5" fill="#b03030"/>
+        </svg>
+        <span class="font-display text-base font-bold text-gold tracking-tight group-hover:text-gold-light transition-colors">
+          MousePIForHire<span class="text-muted">.org</span>
+        </span>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-6" aria-label="Main navigation">
+        <a href="/guide/beginners-guide" class="font-typewriter text-xs text-aged hover:text-gold transition-colors tracking-wide uppercase">Guide</a>
+        <a href="/weapons/" class="font-typewriter text-xs text-aged hover:text-gold transition-colors tracking-wide uppercase">Weapons</a>
+        <a href="/trophies/" class="font-typewriter text-xs text-gold hover:text-gold-light transition-colors tracking-wide uppercase">Trophies</a>
+        <a href="/walkthrough/" class="font-typewriter text-xs text-aged hover:text-gold transition-colors tracking-wide uppercase">Walkthrough</a>
+        <a href="/collectibles/" class="font-typewriter text-xs text-aged hover:text-gold transition-colors tracking-wide uppercase">Collectibles</a>
+        <a href="/dlc/" class="font-typewriter text-xs text-aged hover:text-gold transition-colors tracking-wide uppercase">DLC</a>
+        <a href="/news/" class="font-typewriter text-xs text-danger hover:text-red-400 transition-colors tracking-wide uppercase">● News</a>
+      </nav>
+
+      <button
+        class="md:hidden text-aged hover:text-gold transition-colors"
+        aria-label="Toggle mobile menu"
+        onclick="document.getElementById('mobile-menu').classList.toggle('open')"
+      >
+        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <line x1="2" y1="6" x2="20" y2="6"/>
+          <line x1="2" y1="11" x2="20" y2="11"/>
+          <line x1="2" y1="16" x2="20" y2="16"/>
+        </svg>
+      </button>
+    </div>
+
+    <div id="mobile-menu" class="md:hidden bg-ink border-t border-card-border px-4 py-4 space-y-3">
+      <a href="/guide/beginners-guide" class="block font-typewriter text-xs text-aged hover:text-gold uppercase tracking-wide py-1">Guide</a>
+      <a href="/weapons/" class="block font-typewriter text-xs text-aged hover:text-gold uppercase tracking-wide py-1">Weapons</a>
+      <a href="/trophies/" class="block font-typewriter text-xs text-gold uppercase tracking-wide py-1">Trophies</a>
+      <a href="/walkthrough/" class="block font-typewriter text-xs text-aged hover:text-gold uppercase tracking-wide py-1">Walkthrough</a>
+      <a href="/collectibles/" class="block font-typewriter text-xs text-aged hover:text-gold uppercase tracking-wide py-1">Collectibles</a>
+      <a href="/dlc/" class="block font-typewriter text-xs text-aged hover:text-gold uppercase tracking-wide py-1">DLC</a>
+      <a href="/news/" class="block font-typewriter text-xs text-danger uppercase tracking-wide py-1">● Latest News</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 pt-10 pb-12 md:pt-14 md:pb-16">
+      <div class="grid grid-cols-1 lg:grid-cols-[1.05fr_0.95fr] gap-8 items-center">
+        <div class="fade-up">
+          <div class="flex flex-wrap gap-3 mb-5">
+            <span class="badge">Verified Trophy Hub</span>
+            <span class="signal-pill gold">35 PS Trophies</span>
+            <span class="signal-pill">34 Steam / Xbox</span>
+          </div>
+          <p class="section-label mb-3">Trophies / Achievements</p>
+          <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl leading-tight text-parchment">
+            Mouse PI For Hire Trophy Guide Hub
+          </h1>
+          <p class="text-aged text-base sm:text-lg leading-8 mt-6 max-w-2xl">
+            This hub is the fast, sane version of trophy planning. It keeps the <strong class="text-parchment">platform totals</strong>, the <strong class="text-parchment">Jack Squat cutoff</strong>, the <strong class="text-parchment">patch-sensitive bug notes</strong>, and the best next pages all in one place before you commit to a full Platinum run.
+          </p>
+          <div class="flex flex-wrap gap-4 mt-8">
+            <a href="/trophies/platinum-guide" class="btn-primary">Open Platinum Roadmap</a>
+            <a href="#overview" class="btn-ghost">See Trophy Overview</a>
+          </div>
+        </div>
+
+        <figure class="guide-card overflow-hidden fade-up delay-1">
+          <img
+            src="/images/mouse-pi-for-hire/trophies/mouse-pi-trophies-case-board-01.jpg"
+            alt="MOUSE: P.I. For Hire investigation board artwork used for the trophy guide hub"
+            class="w-full h-full min-h-[320px] object-cover"
+            width="1200"
+            height="675"
+          />
+        </figure>
+      </div>
+    </section>
+
+    <section id="overview" class="border-y border-card-border bg-ink/60">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 py-14 md:py-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-5">
+          <article class="guide-card p-6">
+            <p class="section-label mb-2">PlayStation</p>
+            <h2 class="font-display text-2xl text-parchment">35 Trophies</h2>
+            <p class="text-aged text-sm leading-7 mt-3">
+              Current trophy guides agree on <strong class="text-parchment">35 PlayStation trophies</strong>, including <strong class="text-parchment">1 Platinum</strong>, <strong class="text-parchment">3 Gold</strong>, <strong class="text-parchment">18 Silver</strong>, and <strong class="text-parchment">13 Bronze</strong>.
+            </p>
+          </article>
+
+          <article class="guide-card p-6">
+            <p class="section-label mb-2">PC / Xbox</p>
+            <h2 class="font-display text-2xl text-parchment">34 Achievements</h2>
+            <p class="text-aged text-sm leading-7 mt-3">
+              Steam shows <strong class="text-parchment">34 achievements</strong>, and the Xbox presentation matches the same non-Platinum structure at <strong class="text-parchment">1,000 Gamerscore</strong>.
+            </p>
+          </article>
+
+          <article class="guide-card p-6">
+            <p class="section-label mb-2">Route Shape</p>
+            <h2 class="font-display text-2xl text-parchment">1-Run Friendly</h2>
+            <p class="text-aged text-sm leading-7 mt-3">
+              Launch-window roadmaps still treat the Platinum as a <strong class="text-parchment">1-playthrough route</strong>, with no difficulty-specific trophies and no need to inflate the challenge setting.
+            </p>
+          </article>
+
+          <article class="guide-card p-6">
+            <p class="section-label mb-2">Risk Layer</p>
+            <h2 class="font-display text-2xl text-parchment">Missables Matter</h2>
+            <p class="text-aged text-sm leading-7 mt-3">
+              The real challenge is not raw combat. It is <strong class="text-parchment">hub timing</strong>, <strong class="text-parchment">side jobs</strong>, <strong class="text-parchment">collectibles</strong>, and a few <strong class="text-parchment">patch-sensitive trophies</strong>.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 py-14 md:py-16">
+      <div class="grid grid-cols-1 lg:grid-cols-[1.08fr_0.92fr] gap-8 items-start">
+        <article class="guide-card p-7 prose-copy">
+          <p class="section-label mb-3">Big Picture</p>
+          <h2 class="font-display text-3xl text-parchment mb-4">What this hub is actually for</h2>
+          <p>
+            A trophy hub should lower your stress, not just duplicate the longest roadmap on the site. So this page focuses on the high-value truths that shape every serious run: <strong>platform totals</strong>, <strong>the hub cutoff</strong>, <strong>which trophy families create risk</strong>, and <strong>which supporting pages you should pair together</strong>.
+          </p>
+          <p>
+            The short version is encouraging. MOUSE: P.I. For Hire does <strong>not</strong> demand a high difficulty route, and the strongest public roadmaps still treat it as a one-run Platinum. The less comforting part is that the route is packed with things you do not want to postpone casually: cards, comics, newspapers, side jobs, clues, and a few combat or misc triggers that are easiest when done in context.
+          </p>
+          <p>
+            If you want the full step-by-step version, the <a href="/trophies/platinum-guide" class="text-gold hover:text-gold-light transition-colors">Platinum Guide</a> is still the main road. This hub is here to help you decide what to worry about before that page gets long.
+          </p>
+        </article>
+
+        <aside class="guide-card p-7">
+          <p class="section-label mb-3">Fast Facts</p>
+          <h2 class="font-display text-3xl text-parchment mb-4">The trophy truths worth memorizing</h2>
+          <ul class="space-y-3 text-aged text-sm leading-7">
+            <li><strong class="text-parchment">No difficulty trophies</strong></li>
+            <li><strong class="text-parchment">No New Game Plus</strong></li>
+            <li><strong class="text-parchment">No safe post-story cleanup route</strong></li>
+            <li><strong class="text-parchment">Jack Squat</strong> is the practical hub cutoff</li>
+            <li><strong class="text-parchment">Steam hotfixes</strong> matter for clue and side-job reliability</li>
+          </ul>
+        </aside>
+      </div>
+
+      <figure class="guide-card overflow-hidden mt-8">
+        <div class="grid grid-cols-1 md:grid-cols-[0.74fr_1.26fr] items-stretch">
+          <img
+            src="/images/mouse-pi-for-hire/trophies/mouse-pi-trophies-city-map-01.jpg"
+            alt="MOUSE: P.I. For Hire city map artwork used to support trophy route planning"
+            class="w-full h-full min-h-[280px] object-cover"
+            width="1200"
+            height="675"
+          />
+          <figcaption class="px-6 py-6 md:px-8 md:py-8">
+            <p class="section-label mb-3">Route Mood</p>
+            <h3 class="font-display text-2xl sm:text-3xl text-parchment mb-4">This Platinum is really a planning puzzle with good aim attached</h3>
+            <p class="text-aged text-sm sm:text-base leading-8">
+              Most failed clean runs do not collapse because the player cannot fight. They collapse because a side job was left hanging, a collectible chain was mentally deferred, or a hub-sensitive trophy family was left alive too close to the cutoff.
+            </p>
+          </figcaption>
+        </div>
+      </figure>
+    </section>
+
+    <section class="border-y border-card-border bg-ink/60">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 py-14 md:py-16">
+        <div class="max-w-4xl mb-10">
+          <p class="section-label mb-3">Trophy Lanes</p>
+          <h2 class="font-display text-3xl sm:text-4xl text-parchment">The four trophy groups that shape your run</h2>
+          <p class="text-aged mt-4 leading-8">
+            Not every trophy deserves the same kind of attention. The categories below are where the route pressure actually comes from.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <article class="guide-card p-6">
+            <span class="mini-pill gold mb-3">Priority Lane</span>
+            <h3 class="font-display text-2xl text-parchment">Hub-sensitive progress</h3>
+            <p class="text-aged text-sm leading-7 mt-3">
+              This is the category that makes <strong class="text-parchment">Jack Squat</strong> so important. Baseball Cards, Raygun-related progress, side jobs, and anything that wants the hub or office flow should be treated as pre-cutoff work.
+            </p>
+          </article>
+
+          <article class="guide-card p-6">
+            <span class="mini-pill gold mb-3">Priority Lane</span>
+            <h3 class="font-display text-2xl text-parchment">Collectible-linked trophies</h3>
+            <p class="text-aged text-sm leading-7 mt-3">
+              Newspapers, Baseball Cards, Comic Strips, and upgrade-related progress all feed trophies or achievements directly. These are the easiest things to underestimate because they look slow, harmless, and very recoverable until they suddenly are not.
+            </p>
+          </article>
+
+          <article class="guide-card p-6">
+            <span class="mini-pill gold mb-3">Patch Watch</span>
+            <h3 class="font-display text-2xl text-parchment">Clue and side-job stability</h3>
+            <p class="text-aged text-sm leading-7 mt-3">
+              Steam hotfixes v1.0.4 and v1.0.5 both touched trophy-relevant quest logic. That is a strong reason to distrust older launch-day roadmap wording when it sounds more alarmed than current patch notes justify.
+            </p>
+          </article>
+
+          <article class="guide-card p-6">
+            <span class="mini-pill gold mb-3">Clean-Up Lane</span>
+            <h3 class="font-display text-2xl text-parchment">Misc combat trophies</h3>
+            <p class="text-aged text-sm leading-7 mt-3">
+              These are rarely the hardest trophies in isolation, but they become annoying if you leave all of them for the end. The cleanest road is still to do them opportunistically while the right barrel, enemy, or hazard is already in front of you.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 py-14 md:py-16">
+      <div class="grid grid-cols-1 lg:grid-cols-[1.15fr_0.85fr] gap-8 items-start">
+        <article class="guide-card p-7 prose-copy">
+          <p class="section-label mb-3">Known Trouble Spots</p>
+          <h2 class="font-display text-3xl text-parchment mb-4">What still deserves caution even after the Steam hotfixes</h2>
+          <p>
+            The cleanest honest summary is this: launch-week trophy guides reported multiple bug-prone trophies, and official Steam hotfixes later addressed some of the most important quest and clue issues. That is good news, but it is not the same thing as a permanent all-platform guarantee that every trophy is now boringly safe.
+          </p>
+          <p>
+            For a hub page, that means the safest wording stays modest. <strong>Side-job reliability improved</strong>. <strong>Clue tracking improved</strong>. But if your route depends on a trophy family that already had a shaky reputation at launch, you still want manual fallback saves and current patch awareness.
+          </p>
+          <p>
+            This especially matters for <strong class="text-parchment">Real Deal Gumshoe</strong>, because its risk surface is not just one trophy pop. It is the whole chain of side-job availability, completion logic, and hub pacing around it.
+          </p>
+        </article>
+
+        <aside class="guide-card p-7">
+          <p class="section-label mb-3">Time Estimate</p>
+          <h2 class="font-display text-3xl text-parchment mb-4">Rough Platinum pace</h2>
+          <p class="text-aged text-sm leading-7">
+            The most stable estimate is still <strong class="text-parchment">roughly 20-25 hours</strong>, depending on how much collectible cleanup, replay buffer, and side-job verification you need along the way.
+          </p>
+          <div class="guide-card p-5 mt-5 bg-noir/35 border border-card-border">
+            <p class="text-aged text-sm leading-7">
+              That number assumes you are planning. A messy route with trophy re-checks, missed hub windows, or late collectible panic can stretch beyond the tidy guide estimate very quickly.
+            </p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="border-y border-card-border bg-ink/60">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 py-14 md:py-16">
+        <div class="grid grid-cols-1 gap-8">
+          <article class="guide-card p-7">
+            <p class="section-label mb-3">Best Next Pages</p>
+            <h2 class="font-display text-3xl text-parchment mb-5">Where to go from this hub</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+              <a href="/trophies/platinum-guide" class="guide-card p-6 block">
+                <p class="section-label mb-2">Roadmap</p>
+                <h3 class="font-display text-2xl text-parchment">Platinum Guide</h3>
+                <p class="text-aged text-sm leading-7 mt-3">
+                  The full one-run route with cutoff planning, patch-sensitive warnings, and trophy-family sequencing.
+                </p>
+              </a>
+              <a href="/collectibles/" class="guide-card p-6 block">
+                <p class="section-label mb-2">Support Page</p>
+                <h3 class="font-display text-2xl text-parchment">Collectibles Hub</h3>
+                <p class="text-aged text-sm leading-7 mt-3">
+                  Best paired with trophy hunting when you need the collectible families, shop logic, and risk hierarchy in one place.
+                </p>
+              </a>
+              <a href="/collectibles/baseball-cards/" class="guide-card p-6 block">
+                <p class="section-label mb-2">High-Risk Lane</p>
+                <h3 class="font-display text-2xl text-parchment">Baseball Cards Guide</h3>
+                <p class="text-aged text-sm leading-7 mt-3">
+                  The right follow-up if `S'all in the Cards`, `Everybody Loves Rayguns`, or hub timing is your current bottleneck.
+                </p>
+              </a>
+              <a href="/guide/beginners-guide" class="guide-card p-6 block">
+                <p class="section-label mb-2">Route Support</p>
+                <h3 class="font-display text-2xl text-parchment">Beginner's Guide</h3>
+                <p class="text-aged text-sm leading-7 mt-3">
+                  Helpful when your actual problem is room scanning, traversal habits, or staying organized enough to protect a single run.
+                </p>
+              </a>
+            </div>
+          </article>
+
+          <article class="guide-card p-7">
+            <p class="section-label mb-3">FAQ</p>
+            <h2 class="font-display text-3xl text-parchment mb-5">Quick trophy answers</h2>
+            <div class="space-y-4">
+              <details class="border border-card-border rounded-sm px-5 py-4 bg-noir/40">
+                <summary class="font-display text-xl text-parchment">How many trophies are in MOUSE: P.I. For Hire?</summary>
+                <p class="text-aged text-sm leading-7 mt-4">
+                  PlayStation has <strong class="text-parchment">35 trophies</strong> including the Platinum. Steam and Xbox use the matching <strong class="text-parchment">34-achievement</strong> structure without a Platinum.
+                </p>
+              </details>
+              <details class="border border-card-border rounded-sm px-5 py-4 bg-noir/40">
+                <summary class="font-display text-xl text-parchment">Can I earn the Platinum on easy difficulty?</summary>
+                <p class="text-aged text-sm leading-7 mt-4">
+                  Yes. Current roadmaps agree there are no difficulty-specific trophies.
+                </p>
+              </details>
+              <details class="border border-card-border rounded-sm px-5 py-4 bg-noir/40">
+                <summary class="font-display text-xl text-parchment">What is the biggest trophy cutoff to remember?</summary>
+                <p class="text-aged text-sm leading-7 mt-4">
+                  Treat <strong class="text-parchment">Jack Squat</strong> as the practical hub cutoff for side jobs, card-related progress, and other hub-sensitive cleanup.
+                </p>
+              </details>
+              <details class="border border-card-border rounded-sm px-5 py-4 bg-noir/40">
+                <summary class="font-display text-xl text-parchment">Are the launch bugs fully solved everywhere?</summary>
+                <p class="text-aged text-sm leading-7 mt-4">
+                  Steam hotfixes improved clue and side-job stability, but the safest current wording is still cautious. Older bug warnings should be re-read through the lens of those hotfixes rather than repeated blindly.
+                </p>
+              </details>
+            </div>
+          </article>
+
+          <article class="guide-card p-7 prose-copy">
+            <p class="section-label mb-3">Version Note</p>
+            <h2 class="font-display text-3xl text-parchment mb-4">What this hub is based on</h2>
+            <p>
+              This page was updated on <strong>April 28, 2026</strong> using the official Steam achievements page, official Steam hotfix announcements, SteamDB patch references, and launch-window trophy guides published between <strong>April 16 and April 22, 2026</strong>.
+            </p>
+            <p>
+              The most likely future updates are still the same ones trophy hunters care about most: <strong>platform patch parity</strong>, <strong>side-job stability</strong>, and any change that softens or sharpens the practical importance of <strong>Jack Squat</strong> as a route cutoff.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-card-border bg-ink mt-4" role="contentinfo">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-10">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+        <div class="md:col-span-2">
+          <div class="flex items-center gap-2 mb-3">
+            <svg width="22" height="20" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M4 18 Q6 10 14 9 Q22 8 24 18 Z" fill="#d4a843" opacity="0.7"/>
+              <rect x="3" y="17" width="22" height="3" rx="1.5" fill="#c8b89a" opacity="0.7"/>
+              <path d="M10 9 Q12 4 14 3 Q16 4 18 9" fill="#d4a843" opacity="0.7"/>
+            </svg>
+            <span class="font-display text-sm font-bold text-gold">MousePIForHire.org</span>
+          </div>
+          <p class="text-muted text-xs leading-relaxed max-w-sm">
+            An independent fan guide for MOUSE: P.I. For Hire. Not affiliated with, endorsed by, or sponsored by Fumi Games or PlaySide Studios. All trademarks and game assets belong to their respective owners.
+          </p>
+        </div>
+
+        <div>
+          <p class="font-typewriter text-xs text-gold uppercase tracking-widest mb-3">Guides</p>
+          <ul class="space-y-2">
+            <li><a href="/guide/beginners-guide" class="text-muted text-xs hover:text-parchment transition-colors">Beginner&apos;s Guide</a></li>
+            <li><a href="/weapons/" class="text-muted text-xs hover:text-parchment transition-colors">Weapons &amp; Upgrades</a></li>
+            <li><a href="/trophies/platinum-guide" class="text-muted text-xs hover:text-parchment transition-colors">Platinum Roadmap</a></li>
+            <li><a href="/walkthrough/" class="text-muted text-xs hover:text-parchment transition-colors">Full Walkthrough</a></li>
+            <li><a href="/bosses/" class="text-muted text-xs hover:text-parchment transition-colors">Boss Guide</a></li>
+            <li><a href="/dlc/" class="text-muted text-xs hover:text-parchment transition-colors">Story DLC</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="font-typewriter text-xs text-gold uppercase tracking-widest mb-3">Collectibles</p>
+          <ul class="space-y-2 mb-5">
+            <li><a href="/collectibles/newspapers/" class="text-muted text-xs hover:text-parchment transition-colors">All Newspapers</a></li>
+            <li><a href="/collectibles/baseball-cards/" class="text-muted text-xs hover:text-parchment transition-colors">Baseball Cards</a></li>
+            <li><a href="/collectibles/comic-strips/" class="text-muted text-xs hover:text-parchment transition-colors">Comic Strips</a></li>
+            <li><a href="/upgrades/schematics-locations/" class="text-muted text-xs hover:text-parchment transition-colors">Schematics Locations</a></li>
+          </ul>
+          <p class="font-typewriter text-xs text-gold uppercase tracking-widest mb-3">Site</p>
+          <ul class="space-y-2">
+            <li><a href="/news/" class="text-muted text-xs hover:text-parchment transition-colors">News &amp; Patches</a></li>
+            <li><a href="/tips/" class="text-muted text-xs hover:text-parchment transition-colors">Advanced Tips</a></li>
+            <li><a href="/about" class="text-muted text-xs hover:text-parchment transition-colors">About</a></li>
+            <li><a href="/contact" class="text-muted text-xs hover:text-parchment transition-colors">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pt-6 border-t border-card-border flex flex-col sm:flex-row items-center justify-between gap-3">
+        <p class="text-muted text-xs">
+          &copy; 2026 MousePIForHire.org &mdash; Fan site. All game content &copy; Fumi Games &amp; PlaySide Studios.
+        </p>
+        <div class="flex gap-4">
+          <a href="/privacy" class="text-muted text-xs hover:text-parchment transition-colors">Privacy Policy</a>
+          <a href="/disclosure" class="text-muted text-xs hover:text-parchment transition-colors">Ad Disclosure</a>
+          <a href="/sitemap.xml" class="text-muted text-xs hover:text-parchment transition-colors">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!--
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+  -->
+</body>
+</html>
