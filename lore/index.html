@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mouse PI For Hire Lore & Story Guide</title>
+  <meta name="description" content="Verified Mouse PI For Hire lore guide covering Jack Pepper, Mouseburg, noir themes, clue-board storytelling, and spoiler-light worldbuilding analysis." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://mousepiforhire.org/lore/" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Mouse PI For Hire Lore & Story Guide" />
+  <meta property="og:description" content="Cross-checked Mouseburg worldbuilding, Jack Pepper's setup, noir themes, and spoiler-light story analysis for MOUSE: P.I. For Hire." />
+  <meta property="og:url" content="https://mousepiforhire.org/lore/" />
+  <meta property="og:site_name" content="MousePIForHire.org" />
+  <meta property="og:image" content="https://mousepiforhire.org/og-cover.jpg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Mouse PI For Hire Lore & Story Guide" />
+  <meta name="twitter:description" content="Mouseburg worldbuilding, Jack Pepper, noir themes, and spoiler-light story analysis for MOUSE: P.I. For Hire." />
+  <meta name="twitter:image" content="https://mousepiforhire.org/og-cover.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Special+Elite&family=Lato:wght@400;700&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            noir: '#0b0b0b',
+            ink: '#141410',
+            parchment: '#f0e8d5',
+            aged: '#c8b89a',
+            muted: '#7a7060',
+            gold: '#d4a843',
+            'gold-light': '#e8c870',
+            danger: '#b03030',
+            'card-bg': '#1a1a16',
+            'card-border': '#2e2e26'
+          },
+          fontFamily: {
+            display: ['"Playfair Display"', 'Georgia', 'serif'],
+            typewriter: ['"Special Elite"', 'monospace'],
+            body: ['Lato', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      background-color: #0b0b0b;
+      color: #f0e8d5;
+      font-family: 'Lato', sans-serif;
+      overflow-x: hidden;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 9999;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+      background-repeat: repeat;
+      opacity: 0.35;
+      mix-blend-mode: overlay;
+    }
+    .section-label {
+      font-family: 'Special Elite', monospace;
+      font-size: 0.7rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: #d4a843;
+    }
+    .guide-card {
+      background: #1a1a16;
+      border: 1px solid #2e2e26;
+      border-radius: 4px;
+      transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+    }
+    .guide-card:hover {
+      border-color: #d4a843;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 32px rgba(212, 168, 67, 0.12);
+    }
+    .btn-primary {
+      background: #d4a843;
+      color: #0b0b0b;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      padding: 12px 28px;
+      border-radius: 2px;
+      display: inline-block;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.15s;
+    }
+    .btn-primary:hover { background: #e8c870; transform: translateY(-1px); }
+    .btn-ghost {
+      border: 1px solid #d4a843;
+      color: #d4a843;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      padding: 12px 28px;
+      border-radius: 2px;
+      display: inline-block;
+      text-decoration: none;
+      transition: background 0.2s, color 0.2s;
+    }
+    .btn-ghost:hover { background: rgba(212,168,67,0.1); }
+    .badge {
+      font-family: 'Special Elite', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      background: rgba(212,168,67,0.15);
+      border: 1px solid rgba(212,168,67,0.4);
+      color: #d4a843;
+      padding: 4px 12px;
+      border-radius: 2px;
+      display: inline-block;
+      text-transform: uppercase;
+    }
+    .signal-pill {
+      font-family: 'Special Elite', monospace;
+      font-size: 0.6rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 4px 8px;
+      border-radius: 999px;
+      border: 1px solid #2e2e26;
+      color: #c8b89a;
+      background: rgba(200,184,154,0.08);
+    }
+    .signal-pill.gold {
+      color: #d4a843;
+      border-color: rgba(212,168,67,0.4);
+      background: rgba(212,168,67,0.12);
+    }
+    .signal-pill.red {
+      color: #ffb3b3;
+      border-color: rgba(176,48,48,0.45);
+      background: rgba(176,48,48,0.12);
+    }
+    .prose-copy p { color: #c8b89a; line-height: 1.8; }
+    .prose-copy a { color: #e8c870; text-decoration: underline; text-underline-offset: 3px; }
+    .prose-copy strong { color: #f0e8d5; }
+    .mini-pill {
+      font-family: 'Special Elite', monospace;
+      font-size: 0.58rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 4px 8px;
+      border-radius: 999px;
+      border: 1px solid #2e2e26;
+      color: #c8b89a;
+      background: rgba(200,184,154,0.08);
+      display: inline-block;
+    }
+    .mini-pill.gold {
+      color: #d4a843;
+      border-color: rgba(212,168,67,0.4);
+      background: rgba(212,168,67,0.12);
+    }
+    #mobile-menu { display: none; }
+    #mobile-menu.open { display: block; }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .fade-up { animation: fadeUp 0.7s ease both; }
+    .delay-1 { animation-delay: 0.1s; }
+    .delay-2 { animation-delay: 0.2s; }
+    .delay-3 { animation-delay: 0.35s; }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://mousepiforhire.org/#website",
+        "url": "https://mousepiforhire.org/",
+        "name": "MousePIForHire.org"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://mousepiforhire.org/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Lore",
+            "item": "https://mousepiforhire.org/lore/"
+          }
+        ]
+      },
+      {
+        "@type": "Article",
+        "@id": "https://mousepiforhire.org/lore/#article",
+        "headline": "Mouse PI For Hire Lore & Story Guide",
+        "description": "Cross-checked Mouseburg worldbuilding, Jack Pepper's setup, noir themes, and spoiler-light story analysis for MOUSE: P.I. For Hire.",
+        "author": {
+          "@type": "Organization",
+          "name": "MousePIForHire.org"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "MousePIForHire.org",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://mousepiforhire.org/logo.png"
+          }
+        },
+        "datePublished": "2026-04-28",
+        "dateModified": "2026-04-28",
+        "mainEntityOfPage": "https://mousepiforhire.org/lore/"
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body class="bg-noir text-parchment font-body">
+  <header class="sticky top-0 z-50 bg-noir border-b border-card-border" role="banner">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 flex items-center justify-between h-14">
+      <a href="/" class="flex items-center gap-2 group" aria-label="MousePIForHire.org Home">
+        <svg width="28" height="24" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <ellipse cx="14" cy="20" rx="13" ry="3.5" fill="#d4a843" opacity="0.3"/>
+          <path d="M4 18 Q6 10 14 9 Q22 8 24 18 Z" fill="#d4a843"/>
+          <path d="M8 18 Q9 12 14 11 Q19 10 20 18" fill="#0b0b0b" opacity="0.5"/>
+          <rect x="3" y="17" width="22" height="3" rx="1.5" fill="#c8b89a"/>
+          <path d="M10 9 Q12 4 14 3 Q16 4 18 9" fill="#d4a843"/>
+          <circle cx="20" cy="14" r="1.5" fill="#b03030"/>
+        </svg>
+        <span class="font-display text-base font-bold text-gold tracking-tight group-hover:text-gold-light transition-colors">
+          MousePIForHire<span class="text-muted">.org</span>
+        </span>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-6" aria-label="Main navigation">
+        <a href="/guide/beginners-guide" class="font-typewriter text-xs text-aged hover:text-gold transition-colors tracking-wide uppercase">Guide</a>
+        <a href="/weapons/" class="font-typewriter text-xs text-aged hover:text-gold transition-colors tracking-wide uppercase">Weapons</a>
+        <a href="/trophies/" class="font-typewriter text-xs text-aged hover:text-gold transition-colors tracking-wide uppercase">Trophies</a>
+        <a href="/walkthrough/" class="font-typewriter text-xs text-aged hover:text-gold transition-colors tracking-wide uppercase">Walkthrough</a>
+        <a href="/collectibles/" class="font-typewriter text-xs text-aged hover:text-gold transition-colors tracking-wide uppercase">Collectibles</a>
+        <a href="/dlc/" class="font-typewriter text-xs text-aged hover:text-gold transition-colors tracking-wide uppercase">DLC</a>
+        <a href="/news/" class="font-typewriter text-xs text-danger hover:text-red-400 transition-colors tracking-wide uppercase">● News</a>
+      </nav>
+
+      <button
+        class="md:hidden text-aged hover:text-gold transition-colors"
+        aria-label="Toggle mobile menu"
+        onclick="document.getElementById('mobile-menu').classList.toggle('open')"
+      >
+        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <line x1="2" y1="6" x2="20" y2="6"/>
+          <line x1="2" y1="11" x2="20" y2="11"/>
+          <line x1="2" y1="16" x2="20" y2="16"/>
+        </svg>
+      </button>
+    </div>
+
+    <div id="mobile-menu" class="md:hidden bg-ink border-t border-card-border px-4 py-4 space-y-3">
+      <a href="/guide/beginners-guide" class="block font-typewriter text-xs text-aged hover:text-gold uppercase tracking-wide py-1">Guide</a>
+      <a href="/weapons/" class="block font-typewriter text-xs text-aged hover:text-gold uppercase tracking-wide py-1">Weapons</a>
+      <a href="/trophies/" class="block font-typewriter text-xs text-aged hover:text-gold uppercase tracking-wide py-1">Trophies</a>
+      <a href="/walkthrough/" class="block font-typewriter text-xs text-aged hover:text-gold uppercase tracking-wide py-1">Walkthrough</a>
+      <a href="/collectibles/" class="block font-typewriter text-xs text-aged hover:text-gold uppercase tracking-wide py-1">Collectibles</a>
+      <a href="/dlc/" class="block font-typewriter text-xs text-aged hover:text-gold uppercase tracking-wide py-1">DLC</a>
+      <a href="/news/" class="block font-typewriter text-xs text-danger uppercase tracking-wide py-1">● Latest News</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 pt-10 pb-12 md:pt-14 md:pb-16">
+      <div class="grid grid-cols-1 lg:grid-cols-[1.05fr_0.95fr] gap-8 items-center">
+        <div class="fade-up">
+          <div class="flex flex-wrap gap-3 mb-5">
+            <span class="badge">Verified Story Guide</span>
+            <span class="signal-pill gold">Mouseburg</span>
+            <span class="signal-pill">Spoiler-Light</span>
+          </div>
+          <p class="section-label mb-3">Lore / Story Analysis</p>
+          <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl leading-tight text-parchment">
+            Mouse PI For Hire Lore &amp; Story Guide
+          </h1>
+          <p class="text-aged text-base sm:text-lg leading-8 mt-6 max-w-2xl">
+            MOUSE: P.I. For Hire works because its world is more than a visual gag. Under the rubber hose animation and slapstick violence, <strong class="text-parchment">Mouseburg</strong> is built as a crooked noir city full of conspiracies, social tension, and a detective story that starts small and keeps widening.
+          </p>
+          <div class="flex flex-wrap gap-4 mt-8">
+            <a href="#world" class="btn-primary">See Worldbuilding</a>
+            <a href="/walkthrough/" class="btn-ghost">Open Walkthrough Hub</a>
+          </div>
+        </div>
+
+        <figure class="guide-card overflow-hidden fade-up delay-1">
+          <img
+            src="/images/mouse-pi-for-hire/home/mouse-pi-home-mouseburg-map-01.jpg"
+            alt="MOUSE: P.I. For Hire city map artwork used for the lore and story guide"
+            class="w-full h-full min-h-[320px] object-cover"
+            width="1920"
+            height="1080"
+          />
+        </figure>
+      </div>
+    </section>
+
+    <section class="border-y border-card-border bg-ink/60">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 py-14 md:py-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-5">
+          <article class="guide-card p-6">
+            <p class="section-label mb-2">Lead Character</p>
+            <h2 class="font-display text-2xl text-parchment">Jack Pepper</h2>
+            <p class="text-aged text-sm leading-7 mt-3">
+              The official premise frames <strong class="text-parchment">Jack Pepper</strong> as a former war hero turned private investigator, which gives the whole story its bruised-but-still-moving center.
+            </p>
+          </article>
+
+          <article class="guide-card p-6">
+            <p class="section-label mb-2">Setting</p>
+            <h2 class="font-display text-2xl text-parchment">Mouseburg</h2>
+            <p class="text-aged text-sm leading-7 mt-3">
+              The city is not just a backdrop. Fresh official and review coverage consistently treats <strong class="text-parchment">Mouseburg</strong> as a living noir space full of dark streets, studios, sewers, swamps, docks, and corruption.
+            </p>
+          </article>
+
+          <article class="guide-card p-6">
+            <p class="section-label mb-2">Story Trigger</p>
+            <h2 class="font-display text-2xl text-parchment">Small Case, Big Conspiracy</h2>
+            <p class="text-aged text-sm leading-7 mt-3">
+              The plot begins with a missing-persons case, then escalates into a wider knot of <strong class="text-parchment">corruption, kidnapping, and murder</strong>.
+            </p>
+          </article>
+
+          <article class="guide-card p-6">
+            <p class="section-label mb-2">Story Tool</p>
+            <h2 class="font-display text-2xl text-parchment">Clue Board</h2>
+            <p class="text-aged text-sm leading-7 mt-3">
+              Clues, photos, and witness information all feed back into Jack's office board, which is one of the clearest ways the game turns worldbuilding into playable structure.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 py-14 md:py-16">
+      <div class="grid grid-cols-1 lg:grid-cols-[1.08fr_0.92fr] gap-8 items-start">
+        <article class="guide-card p-7 prose-copy">
+          <p class="section-label mb-3">Reading The World</p>
+          <h2 class="font-display text-3xl text-parchment mb-4">Why Mouseburg lands as more than a visual gimmick</h2>
+          <p>
+            The most reliable thing to say about MOUSE: P.I. For Hire's setting is that it takes its noir fantasy seriously enough to build a social world under the art style. Reviews and official material both point toward the same backbone: a city with crooked cops, gangs, cheap glamour, and a detective who starts with one case and keeps discovering that the rot goes deeper than expected.
+          </p>
+          <p>
+            That is also why the black-and-white cartoon presentation works. It is not there to replace tone. It is there to sharpen it. The game's violence becomes stylized, the humor becomes more elastic, and the corruption somehow feels even seedier because the whole thing is dressed like an old theatrical illusion that no longer hides the machinery behind it.
+          </p>
+          <p>
+            If you are coming here after the early campaign, the cleanest spoiler-light summary is simple: the story wants you to feel that <strong>every district of Mouseburg has its own layer of performance, grime, and compromise</strong>. The city is the mystery's mood engine as much as its stage.
+          </p>
+        </article>
+
+        <aside class="guide-card p-7">
+          <p class="section-label mb-3">Fast Facts</p>
+          <h2 class="font-display text-3xl text-parchment mb-4">The lore basics worth remembering</h2>
+          <ul class="space-y-3 text-aged text-sm leading-7">
+            <li><strong class="text-parchment">Jack Pepper</strong> is a war veteran turned private investigator.</li>
+            <li>The story begins with a <strong class="text-parchment">missing-persons case</strong>.</li>
+            <li>Mouseburg blends <strong class="text-parchment">rubber hose cartoons</strong> with <strong class="text-parchment">film noir</strong>.</li>
+            <li>The office clue board helps tie places, people, and evidence together.</li>
+            <li>The city is richer when you pay attention to environmental details, not just mission objectives.</li>
+          </ul>
+        </aside>
+      </div>
+
+      <figure class="guide-card overflow-hidden mt-8">
+        <div class="grid grid-cols-1 md:grid-cols-[0.74fr_1.26fr] items-stretch">
+          <img
+            src="/images/mouse-pi-for-hire/collectibles/mouse-pi-collectibles-banner-01.jpg"
+            alt="MOUSE: P.I. For Hire official artwork used as a divider for story and lore analysis"
+            class="w-full h-full min-h-[280px] object-cover"
+            width="1920"
+            height="620"
+          />
+          <figcaption class="px-6 py-6 md:px-8 md:py-8">
+            <p class="section-label mb-3">Tone Check</p>
+            <h3 class="font-display text-2xl sm:text-3xl text-parchment mb-4">This world laughs, but it rarely laughs because things are fine</h3>
+            <p class="text-aged text-sm sm:text-base leading-8">
+              The slapstick energy matters, but it often works like a mask. Beneath it, the game keeps returning to dirty institutions, exploitative power, and the feeling that every performance in Mouseburg is hiding one more bad bargain.
+            </p>
+          </figcaption>
+        </div>
+      </figure>
+    </section>
+
+    <section id="world" class="border-y border-card-border bg-ink/60">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 py-14 md:py-16">
+        <div class="max-w-4xl mb-10">
+          <p class="section-label mb-3">Worldbuilding</p>
+          <h2 class="font-display text-3xl sm:text-4xl text-parchment">The worldbuilding pillars with the strongest current support</h2>
+          <p class="text-aged mt-4 leading-8">
+            These themes are built from the parts of the setting that stay consistent across official copy and release-window criticism.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <article class="guide-card p-6">
+            <span class="mini-pill gold mb-3">Pillar 1</span>
+            <h3 class="font-display text-2xl text-parchment">Mouseburg as a corrupt performance city</h3>
+            <p class="text-aged text-sm leading-7 mt-3">
+              The place list alone tells part of the story: dark streets, film studios, opera interiors, swamps, sewers, subways, docks, and riverboat-style spaces. It reads like a city constantly staging itself while the machinery underneath keeps leaking through.
+            </p>
+          </article>
+
+          <article class="guide-card p-6">
+            <span class="mini-pill gold mb-3">Pillar 2</span>
+            <h3 class="font-display text-2xl text-parchment">A noir mystery that keeps widening</h3>
+            <p class="text-aged text-sm leading-7 mt-3">
+              Official material starts the story with one missing-persons case, but the tone of the broader coverage is clear: that case opens outward into corruption, kidnapping, and murder, which is exactly the kind of widening spiral noir loves.
+            </p>
+          </article>
+
+          <article class="guide-card p-6">
+            <span class="mini-pill gold mb-3">Pillar 3</span>
+            <h3 class="font-display text-2xl text-parchment">The clue board makes lore feel playable</h3>
+            <p class="text-aged text-sm leading-7 mt-3">
+              Clues are not just menu collectibles. Objects, photographs, and witness information all route back through Jack's office board. That turns the city's lore into a rhythm of gathering, organizing, and re-reading the case.
+            </p>
+          </article>
+
+          <article class="guide-card p-6">
+            <span class="mini-pill gold mb-3">Pillar 4</span>
+            <h3 class="font-display text-2xl text-parchment">Environmental storytelling does real work</h3>
+            <p class="text-aged text-sm leading-7 mt-3">
+              Release-window criticism gives a consistent picture of the city beyond the main cutscenes: newspapers hint at strikes, political movements, and criminal exposés, while the world itself normalizes things like dairy-based narcotics and black ink standing in for blood. Even when the story jokes, the setting keeps feeding you social texture.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 py-14 md:py-16">
+      <div class="grid grid-cols-1 lg:grid-cols-[1.15fr_0.85fr] gap-8 items-start">
+        <article class="guide-card p-7 prose-copy">
+          <p class="section-label mb-3">Themes</p>
+          <h2 class="font-display text-3xl text-parchment mb-4">The safest bigger reading of the story</h2>
+          <p>
+            Without sliding into unsupported theory, the strongest bigger reading is that MOUSE: P.I. For Hire is interested in how a city sells innocence while running on compromise. The cartoons are charming, the jokes are nimble, and the noir machinery keeps reminding you that systems of power are still systems of power, even when everyone has white gloves and pie-eyes.
+          </p>
+          <p>
+            That is where the side details start mattering. Named figures, party tensions, worker unrest, and neighborhood flavor all point in the same direction: Mouseburg is not only a place where crimes happen. It is a place built to produce them, hide them, and sometimes profit from them.
+          </p>
+          <p>
+            The most important caution is not to oversell the game as a pure deduction sim. The clue board is a real storytelling tool, but review coverage is clear that the actual linking process is more automated than free-form detective roleplay. The atmosphere carries more interpretive weight than the mechanics do.
+          </p>
+        </article>
+
+        <aside class="guide-card p-7">
+          <p class="section-label mb-3">Best Pairings</p>
+          <h2 class="font-display text-3xl text-parchment mb-4">Pages to open beside this one</h2>
+          <ul class="space-y-4 text-aged text-sm leading-7">
+            <li><a href="/walkthrough/" class="text-gold hover:text-gold-light transition-colors">Walkthrough Hub</a> if you want to connect story beats to the mission order.</li>
+            <li><a href="/collectibles/newspapers/" class="text-gold hover:text-gold-light transition-colors">Newspapers Guide</a> if the environmental storytelling details are what pulled you in.</li>
+            <li><a href="/bosses/" class="text-gold hover:text-gold-light transition-colors">Boss Guide</a> if you want the encounter side of the worldbuilding and spectacle.</li>
+            <li><a href="/trophies/platinum-guide" class="text-gold hover:text-gold-light transition-colors">Platinum Guide</a> if your main concern is protecting the route while still absorbing the story.</li>
+          </ul>
+        </aside>
+      </div>
+
+      <figure class="guide-card overflow-hidden mt-8">
+        <div class="grid grid-cols-1 md:grid-cols-[0.74fr_1.26fr] items-stretch">
+          <img
+            src="/images/mouse-pi-for-hire/steam-screenshots/mouse-pi-screenshot-07.jpg"
+            alt="MOUSE: P.I. For Hire gameplay screenshot used to support noir worldbuilding analysis"
+            class="w-full h-full min-h-[280px] object-cover"
+            width="1920"
+            height="1080"
+          />
+          <figcaption class="px-6 py-6 md:px-8 md:py-8">
+            <p class="section-label mb-3">Story Reminder</p>
+            <h3 class="font-display text-2xl sm:text-3xl text-parchment mb-4">The city is doing half the storytelling for the script</h3>
+            <p class="text-aged text-sm sm:text-base leading-8">
+              If you race through objectives, the plot still works. If you slow down enough to notice the names, neighborhoods, side textures, and case-board rhythm, Mouseburg starts feeling like the main character's most convincing enemy.
+            </p>
+          </figcaption>
+        </div>
+      </figure>
+    </section>
+
+    <section class="border-y border-card-border bg-ink/60">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 py-14 md:py-16">
+        <div class="grid grid-cols-1 gap-8">
+          <article class="guide-card p-7">
+            <p class="section-label mb-3">FAQ</p>
+            <h2 class="font-display text-3xl text-parchment mb-5">Quick lore answers</h2>
+            <div class="space-y-4">
+              <details class="border border-card-border rounded-sm px-5 py-4 bg-noir/40">
+                <summary class="font-display text-xl text-parchment">Who is the main character in MOUSE: P.I. For Hire?</summary>
+                <p class="text-aged text-sm leading-7 mt-4">
+                  The protagonist is <strong class="text-parchment">Jack Pepper</strong>, a former war hero turned private investigator.
+                </p>
+              </details>
+              <details class="border border-card-border rounded-sm px-5 py-4 bg-noir/40">
+                <summary class="font-display text-xl text-parchment">What city is the game set in?</summary>
+                <p class="text-aged text-sm leading-7 mt-4">
+                  The story takes place in <strong class="text-parchment">Mouseburg</strong>, a noir city whose districts range from opera spaces and studios to sewers, swamps, docks, and darker political undercurrents.
+                </p>
+              </details>
+              <details class="border border-card-border rounded-sm px-5 py-4 bg-noir/40">
+                <summary class="font-display text-xl text-parchment">Does the story start as a single case?</summary>
+                <p class="text-aged text-sm leading-7 mt-4">
+                  Yes, but only at first. The official premise begins with a missing-persons case, and reliable coverage agrees that it quickly grows into a larger corruption story.
+                </p>
+              </details>
+              <details class="border border-card-border rounded-sm px-5 py-4 bg-noir/40">
+                <summary class="font-display text-xl text-parchment">Is the clue board a full deduction simulator?</summary>
+                <p class="text-aged text-sm leading-7 mt-4">
+                  Not really. The clue-board system is real and important to the atmosphere, but review coverage says the actual linking process is more automated than a fully manual deduction game.
+                </p>
+              </details>
+            </div>
+          </article>
+
+          <article class="guide-card p-7 prose-copy">
+            <p class="section-label mb-3">Version Note</p>
+            <h2 class="font-display text-3xl text-parchment mb-4">What this page is based on</h2>
+            <p>
+              This page was updated on <strong>April 28, 2026</strong> using official store copy, official Xbox Wire features, and release-window review coverage that discusses Mouseburg's politics, environmental storytelling, and clue-board structure.
+            </p>
+            <p>
+              The parts most likely to need revision later are <strong>deeper named-character breakdowns</strong>, any future <strong>developer interviews clarifying the setting's politics or factions</strong>, and any attempt to go beyond spoiler-light theme analysis into a fully chapter-by-chapter plot reconstruction.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-card-border bg-ink mt-4" role="contentinfo">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-10">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+        <div class="md:col-span-2">
+          <div class="flex items-center gap-2 mb-3">
+            <svg width="22" height="20" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M4 18 Q6 10 14 9 Q22 8 24 18 Z" fill="#d4a843" opacity="0.7"/>
+              <rect x="3" y="17" width="22" height="3" rx="1.5" fill="#c8b89a" opacity="0.7"/>
+              <path d="M10 9 Q12 4 14 3 Q16 4 18 9" fill="#d4a843" opacity="0.7"/>
+            </svg>
+            <span class="font-display text-sm font-bold text-gold">MousePIForHire.org</span>
+          </div>
+          <p class="text-muted text-xs leading-relaxed max-w-sm">
+            An independent fan guide for MOUSE: P.I. For Hire. Not affiliated with, endorsed by, or sponsored by Fumi Games or PlaySide Studios. All trademarks and game assets belong to their respective owners.
+          </p>
+        </div>
+
+        <div>
+          <p class="font-typewriter text-xs text-gold uppercase tracking-widest mb-3">Guides</p>
+          <ul class="space-y-2">
+            <li><a href="/guide/beginners-guide" class="text-muted text-xs hover:text-parchment transition-colors">Beginner&apos;s Guide</a></li>
+            <li><a href="/weapons/" class="text-muted text-xs hover:text-parchment transition-colors">Weapons &amp; Upgrades</a></li>
+            <li><a href="/trophies/platinum-guide" class="text-muted text-xs hover:text-parchment transition-colors">Platinum Roadmap</a></li>
+            <li><a href="/walkthrough/" class="text-muted text-xs hover:text-parchment transition-colors">Full Walkthrough</a></li>
+            <li><a href="/bosses/" class="text-muted text-xs hover:text-parchment transition-colors">Boss Guide</a></li>
+            <li><a href="/dlc/" class="text-muted text-xs hover:text-parchment transition-colors">Story DLC</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="font-typewriter text-xs text-gold uppercase tracking-widest mb-3">Collectibles</p>
+          <ul class="space-y-2 mb-5">
+            <li><a href="/collectibles/newspapers/" class="text-muted text-xs hover:text-parchment transition-colors">All Newspapers</a></li>
+            <li><a href="/collectibles/baseball-cards/" class="text-muted text-xs hover:text-parchment transition-colors">Baseball Cards</a></li>
+            <li><a href="/collectibles/comic-strips/" class="text-muted text-xs hover:text-parchment transition-colors">Comic Strips</a></li>
+            <li><a href="/upgrades/schematics-locations/" class="text-muted text-xs hover:text-parchment transition-colors">Schematics Locations</a></li>
+          </ul>
+          <p class="font-typewriter text-xs text-gold uppercase tracking-widest mb-3">Site</p>
+          <ul class="space-y-2">
+            <li><a href="/news/" class="text-muted text-xs hover:text-parchment transition-colors">News &amp; Patches</a></li>
+            <li><a href="/tips/" class="text-muted text-xs hover:text-parchment transition-colors">Advanced Tips</a></li>
+            <li><a href="/about" class="text-muted text-xs hover:text-parchment transition-colors">About</a></li>
+            <li><a href="/contact" class="text-muted text-xs hover:text-parchment transition-colors">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pt-6 border-t border-card-border flex flex-col sm:flex-row items-center justify-between gap-3">
+        <p class="text-muted text-xs">
+          &copy; 2026 MousePIForHire.org &mdash; Fan site. All game content &copy; Fumi Games &amp; PlaySide Studios.
+        </p>
+        <div class="flex gap-4">
+          <a href="/privacy" class="text-muted text-xs hover:text-parchment transition-colors">Privacy Policy</a>
+          <a href="/disclosure" class="text-muted text-xs hover:text-parchment transition-colors">Ad Disclosure</a>
+          <a href="/sitemap.xml" class="text-muted text-xs hover:text-parchment transition-colors">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!--
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+  -->
+</body>
+</html>
