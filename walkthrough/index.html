@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mouse PI For Hire Walkthrough Hub</title>
+  <meta name="description" content="Verified Mouse PI For Hire walkthrough hub with 24-mission structure, hub cutoff warnings, mission order guidance, and collectible-safe route links." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://mousepiforhire.org/walkthrough/" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Mouse PI For Hire Walkthrough Hub" />
+  <meta property="og:description" content="Cross-checked mission order, no-replay warnings, and route-safe walkthrough guidance for MOUSE: P.I. For Hire." />
+  <meta property="og:url" content="https://mousepiforhire.org/walkthrough/" />
+  <meta property="og:site_name" content="MousePIForHire.org" />
+  <meta property="og:image" content="https://mousepiforhire.org/og-cover.jpg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Mouse PI For Hire Walkthrough Hub" />
+  <meta name="twitter:description" content="24-mission overview, no replay warnings, and route-safe walkthrough planning for MOUSE: P.I. For Hire." />
+  <meta name="twitter:image" content="https://mousepiforhire.org/og-cover.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Special+Elite&family=Lato:wght@400;700&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            noir: '#0b0b0b',
+            ink: '#141410',
+            parchment: '#f0e8d5',
+            aged: '#c8b89a',
+            muted: '#7a7060',
+            gold: '#d4a843',
+            'gold-light': '#e8c870',
+            danger: '#b03030',
+            'card-bg': '#1a1a16',
+            'card-border': '#2e2e26'
+          },
+          fontFamily: {
+            display: ['"Playfair Display"', 'Georgia', 'serif'],
+            typewriter: ['"Special Elite"', 'monospace'],
+            body: ['Lato', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      background-color: #0b0b0b;
+      color: #f0e8d5;
+      font-family: 'Lato', sans-serif;
+      overflow-x: hidden;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 9999;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+      background-repeat: repeat;
+      opacity: 0.35;
+      mix-blend-mode: overlay;
+    }
+    .section-label {
+      font-family: 'Special Elite', monospace;
+      font-size: 0.7rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: #d4a843;
+    }
+    .guide-card {
+      background: #1a1a16;
+      border: 1px solid #2e2e26;
+      border-radius: 4px;
+      transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+    }
+    .guide-card:hover {
+      border-color: #d4a843;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 32px rgba(212, 168, 67, 0.12);
+    }
+    .btn-primary {
+      background: #d4a843;
+      color: #0b0b0b;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      padding: 12px 28px;
+      border-radius: 2px;
+      display: inline-block;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.15s;
+    }
+    .btn-primary:hover { background: #e8c870; transform: translateY(-1px); }
+    .btn-ghost {
+      border: 1px solid #d4a843;
+      color: #d4a843;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      padding: 12px 28px;
+      border-radius: 2px;
+      display: inline-block;
+      text-decoration: none;
+      transition: background 0.2s, color 0.2s;
+    }
+    .btn-ghost:hover { background: rgba(212,168,67,0.1); }
+    .badge {
+      font-family: 'Special Elite', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      background: rgba(212,168,67,0.15);
+      border: 1px solid rgba(212,168,67,0.4);
+      color: #d4a843;
+      padding: 4px 12px;
+      border-radius: 2px;
+      display: inline-block;
+      text-transform: uppercase;
+    }
+    .signal-pill {
+      font-family: 'Special Elite', monospace;
+      font-size: 0.6rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 4px 8px;
+      border-radius: 999px;
+      border: 1px solid #2e2e26;
+      color: #c8b89a;
+      background: rgba(200,184,154,0.08);
+    }
+    .signal-pill.gold {
+      color: #d4a843;
+      border-color: rgba(212,168,67,0.4);
+      background: rgba(212,168,67,0.12);
+    }
+    .signal-pill.red {
+      color: #ffb3b3;
+      border-color: rgba(176,48,48,0.45);
+      background: rgba(176,48,48,0.12);
+    }
+    .prose-copy p { color: #c8b89a; line-height: 1.8; }
+    .prose-copy a { color: #e8c870; text-decoration: underline; text-underline-offset: 3px; }
+    .prose-copy strong { color: #f0e8d5; }
+    .mini-pill {
+      font-family: 'Special Elite', monospace;
+      font-size: 0.58rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 4px 8px;
+      border-radius: 999px;
+      border: 1px solid #2e2e26;
+      color: #c8b89a;
+      background: rgba(200,184,154,0.08);
+      display: inline-block;
+    }
+    .mini-pill.gold {
+      color: #d4a843;
+      border-color: rgba(212,168,67,0.4);
+      background: rgba(212,168,67,0.12);
+    }
+    #mobile-menu { display: none; }
+    #mobile-menu.open { display: block; }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .fade-up { animation: fadeUp 0.7s ease both; }
+    .delay-1 { animation-delay: 0.1s; }
+    .delay-2 { animation-delay: 0.2s; }
+    .delay-3 { animation-delay: 0.35s; }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://mousepiforhire.org/#website",
+        "url": "https://mousepiforhire.org/",
+        "name": "MousePIForHire.org"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://mousepiforhire.org/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Walkthrough",
+            "item": "https://mousepiforhire.org/walkthrough/"
+          }
+        ]
+      },
+      {
+        "@type": "Article",
+        "@id": "https://mousepiforhire.org/walkthrough/#article",
+        "headline": "Mouse PI For Hire Walkthrough Hub",
+        "description": "Cross-checked mission order, no-replay warnings, and route-safe walkthrough guidance for MOUSE: P.I. For Hire.",
+        "author": {
+          "@type": "Organization",
+          "name": "MousePIForHire.org"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "MousePIForHire.org",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://mousepiforhire.org/logo.png"
+          }
+        },
+        "datePublished": "2026-04-28",
+        "dateModified": "2026-04-28",
+        "mainEntityOfPage": "https://mousepiforhire.org/walkthrough/"
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body class="bg-noir text-parchment font-body">
+  <header class="sticky top-0 z-50 bg-noir border-b border-card-border" role="banner">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 flex items-center justify-between h-14">
+      <a href="/" class="flex items-center gap-2 group" aria-label="MousePIForHire.org Home">
+        <svg width="28" height="24" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <ellipse cx="14" cy="20" rx="13" ry="3.5" fill="#d4a843" opacity="0.3"/>
+          <path d="M4 18 Q6 10 14 9 Q22 8 24 18 Z" fill="#d4a843"/>
+          <path d="M8 18 Q9 12 14 11 Q19 10 20 18" fill="#0b0b0b" opacity="0.5"/>
+          <rect x="3" y="17" width="22" height="3" rx="1.5" fill="#c8b89a"/>
+          <path d="M10 9 Q12 4 14 3 Q16 4 18 9" fill="#d4a843"/>
+          <circle cx="20" cy="14" r="1.5" fill="#b03030"/>
+        </svg>
+        <span class="font-display text-base font-bold text-gold tracking-tight group-hover:text-gold-light transition-colors">
+          MousePIForHire<span class="text-muted">.org</span>
+        </span>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-6" aria-label="Main navigation">
+        <a href="/guide/beginners-guide" class="font-typewriter text-xs text-aged hover:text-gold transition-colors tracking-wide uppercase">Guide</a>
+        <a href="/weapons/" class="font-typewriter text-xs text-aged hover:text-gold transition-colors tracking-wide uppercase">Weapons</a>
+        <a href="/trophies/" class="font-typewriter text-xs text-aged hover:text-gold transition-colors tracking-wide uppercase">Trophies</a>
+        <a href="/walkthrough/" class="font-typewriter text-xs text-gold hover:text-gold-light transition-colors tracking-wide uppercase">Walkthrough</a>
+        <a href="/collectibles/" class="font-typewriter text-xs text-aged hover:text-gold transition-colors tracking-wide uppercase">Collectibles</a>
+        <a href="/dlc/" class="font-typewriter text-xs text-aged hover:text-gold transition-colors tracking-wide uppercase">DLC</a>
+        <a href="/news/" class="font-typewriter text-xs text-danger hover:text-red-400 transition-colors tracking-wide uppercase">● News</a>
+      </nav>
+
+      <button
+        class="md:hidden text-aged hover:text-gold transition-colors"
+        aria-label="Toggle mobile menu"
+        onclick="document.getElementById('mobile-menu').classList.toggle('open')"
+      >
+        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <line x1="2" y1="6" x2="20" y2="6"/>
+          <line x1="2" y1="11" x2="20" y2="11"/>
+          <line x1="2" y1="16" x2="20" y2="16"/>
+        </svg>
+      </button>
+    </div>
+
+    <div id="mobile-menu" class="md:hidden bg-ink border-t border-card-border px-4 py-4 space-y-3">
+      <a href="/guide/beginners-guide" class="block font-typewriter text-xs text-aged hover:text-gold uppercase tracking-wide py-1">Guide</a>
+      <a href="/weapons/" class="block font-typewriter text-xs text-aged hover:text-gold uppercase tracking-wide py-1">Weapons</a>
+      <a href="/trophies/" class="block font-typewriter text-xs text-aged hover:text-gold uppercase tracking-wide py-1">Trophies</a>
+      <a href="/walkthrough/" class="block font-typewriter text-xs text-gold uppercase tracking-wide py-1">Walkthrough</a>
+      <a href="/collectibles/" class="block font-typewriter text-xs text-aged hover:text-gold uppercase tracking-wide py-1">Collectibles</a>
+      <a href="/dlc/" class="block font-typewriter text-xs text-aged hover:text-gold uppercase tracking-wide py-1">DLC</a>
+      <a href="/news/" class="block font-typewriter text-xs text-danger uppercase tracking-wide py-1">● Latest News</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 pt-10 pb-12 md:pt-14 md:pb-16">
+      <div class="grid grid-cols-1 lg:grid-cols-[1.05fr_0.95fr] gap-8 items-center">
+        <div class="fade-up">
+          <div class="flex flex-wrap gap-3 mb-5">
+            <span class="badge">Verified Route Hub</span>
+            <span class="signal-pill gold">24 Main Missions</span>
+            <span class="signal-pill red">No Replay Cleanup</span>
+          </div>
+          <p class="section-label mb-3">Walkthrough / Mission Order</p>
+          <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl leading-tight text-parchment">
+            Mouse PI For Hire Walkthrough Hub
+          </h1>
+          <p class="text-aged text-base sm:text-lg leading-8 mt-6 max-w-2xl">
+            This is the mission-order hub for players who want the campaign shape before they drown in checklists. It keeps the <strong class="text-parchment">24-mission backbone</strong>, the <strong class="text-parchment">no replay warning</strong>, the <strong class="text-parchment">Jack Squat cutoff</strong>, and the best supporting pages close enough to plan a safe run.
+          </p>
+          <div class="flex flex-wrap gap-4 mt-8">
+            <a href="#missions" class="btn-primary">See Mission Structure</a>
+            <a href="/trophies/platinum-guide" class="btn-ghost">Open Platinum Roadmap</a>
+          </div>
+        </div>
+
+        <figure class="guide-card overflow-hidden fade-up delay-1">
+          <img
+            src="/images/mouse-pi-for-hire/steam-screenshots/mouse-pi-screenshot-09.jpg"
+            alt="MOUSE: P.I. For Hire gameplay scene used for the walkthrough hub hero"
+            class="w-full h-full min-h-[320px] object-cover"
+            width="1920"
+            height="1080"
+          />
+        </figure>
+      </div>
+    </section>
+
+    <section class="border-y border-card-border bg-ink/60">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 py-14 md:py-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-5">
+          <article class="guide-card p-6">
+            <p class="section-label mb-2">Campaign Shape</p>
+            <h2 class="font-display text-2xl text-parchment">24 Missions</h2>
+            <p class="text-aged text-sm leading-7 mt-3">
+              Fresh public mission guides agree on a <strong class="text-parchment">24-mission campaign spine</strong>, which is the right scale for hub planning before you drop into chapter-level notes.
+            </p>
+          </article>
+
+          <article class="guide-card p-6">
+            <p class="section-label mb-2">Difficulty</p>
+            <h2 class="font-display text-2xl text-parchment">3 Modes</h2>
+            <p class="text-aged text-sm leading-7 mt-3">
+              The campaign currently presents <strong class="text-parchment">Rookie</strong>, <strong class="text-parchment">Detective</strong>, and <strong class="text-parchment">Supersleuth</strong>. With no difficulty trophies, your walkthrough pace matters more than bravado.
+            </p>
+          </article>
+
+          <article class="guide-card p-6">
+            <p class="section-label mb-2">Replay Rules</p>
+            <h2 class="font-display text-2xl text-parchment">No NG+</h2>
+            <p class="text-aged text-sm leading-7 mt-3">
+              There is <strong class="text-parchment">no New Game Plus</strong> and no comfortable post-story mission cleanup path, which is why walkthrough planning and manual saves matter so much.
+            </p>
+          </article>
+
+          <article class="guide-card p-6">
+            <p class="section-label mb-2">Route Pressure</p>
+            <h2 class="font-display text-2xl text-parchment">Jack Squat</h2>
+            <p class="text-aged text-sm leading-7 mt-3">
+              Current roadmap consensus still treats <strong class="text-parchment">Jack Squat</strong> as the practical hub cutoff for side jobs, card systems, and other cleanup-sensitive progress.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 py-14 md:py-16">
+      <div class="grid grid-cols-1 lg:grid-cols-[1.08fr_0.92fr] gap-8 items-start">
+        <article class="guide-card p-7 prose-copy">
+          <p class="section-label mb-3">How To Use This Hub</p>
+          <h2 class="font-display text-3xl text-parchment mb-4">Think of the campaign as a route with pressure spikes, not a flat mission list</h2>
+          <p>
+            For a pure story player, the campaign is fairly lean. Public sources put a straightforward run in the <strong>roughly 7-9 hour</strong> range. The moment you start caring about clues, collectibles, side jobs, or trophy safety, the shape changes. That same campaign starts acting more like a <strong>14-16 hour completion route</strong> before trophy cleanup overhead ever enters the chat.
+          </p>
+          <p>
+            That is why this page stays at hub level. It is here to tell you <strong>where the campaign changes personality</strong>: the early investigation rhythm, the collectible-heavy middle, the side-job-sensitive stretch, and the late missions where "I will get it later" stops being a serious plan.
+          </p>
+          <p>
+            If you already know you are trophy-hunting, pair this page with the <a href="/trophies/platinum-guide" class="text-gold hover:text-gold-light transition-colors">Platinum Guide</a>. If your main fear is collectible drift, the <a href="/collectibles/" class="text-gold hover:text-gold-light transition-colors">Collectibles Hub</a> is the better sidekick.
+          </p>
+        </article>
+
+        <aside class="guide-card p-7">
+          <p class="section-label mb-3">Fast Rules</p>
+          <h2 class="font-display text-3xl text-parchment mb-4">The walkthrough habits that save runs</h2>
+          <ul class="space-y-3 text-aged text-sm leading-7">
+            <li>Keep manual fallback saves through the whole campaign.</li>
+            <li>Do not assume a future mission replay screen exists.</li>
+            <li>Check hub and side-job state before major pushes.</li>
+            <li>Treat `Jack Squat` as a serious route checkpoint.</li>
+            <li>Use mission landmarks, not just mission names, to remember what still needs cleanup.</li>
+          </ul>
+        </aside>
+      </div>
+
+      <figure class="guide-card overflow-hidden mt-8">
+        <div class="grid grid-cols-1 md:grid-cols-[0.74fr_1.26fr] items-stretch">
+          <img
+            src="/images/mouse-pi-for-hire/home/mouse-pi-home-mouseburg-map-01.jpg"
+            alt="MOUSE: P.I. For Hire city map artwork used to support campaign route planning"
+            class="w-full h-full min-h-[280px] object-cover"
+            width="1920"
+            height="1080"
+          />
+          <figcaption class="px-6 py-6 md:px-8 md:py-8">
+            <p class="section-label mb-3">Route Mood</p>
+            <h3 class="font-display text-2xl sm:text-3xl text-parchment mb-4">The campaign looks linear until the cleanup costs start stacking</h3>
+            <p class="text-aged text-sm sm:text-base leading-8">
+              The core mission order is not hard to follow. The real friction comes from realizing too late which chapter also held your side job handoff, your clue sweep, your card detour, or your last comfortable chance to use the hub.
+            </p>
+          </figcaption>
+        </div>
+      </figure>
+    </section>
+
+    <section id="missions" class="border-y border-card-border bg-ink/60">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 py-14 md:py-16">
+        <div class="max-w-4xl mb-10">
+          <p class="section-label mb-3">Mission Structure</p>
+          <h2 class="font-display text-3xl sm:text-4xl text-parchment">The campaign arcs that matter for planning</h2>
+          <p class="text-aged mt-4 leading-8">
+            This is not a full mission-by-mission script. It is the campaign map you use before you decide which pages need to sit next to your run.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <article class="guide-card p-6">
+            <span class="mini-pill gold mb-3">Opening Arc</span>
+            <h3 class="font-display text-2xl text-parchment">Big Mouse, Little Hope to Bandel's Laboratory</h3>
+            <p class="text-aged text-sm leading-7 mt-3">
+              The campaign opens with <strong class="text-parchment">Big Mouse, Little Hope</strong>, then settles into the early backbone of <strong class="text-parchment">The Vanishing Act</strong>, <strong class="text-parchment">Gumshoe in the Opera</strong>, and <strong class="text-parchment">Bandel's Laboratory</strong>. This stretch teaches the game's investigation rhythm while quietly teaching you whether you are actually scanning rooms or just moving forward.
+            </p>
+          </article>
+
+          <article class="guide-card p-6">
+            <span class="mini-pill gold mb-3">Middle Arc</span>
+            <h3 class="font-display text-2xl text-parchment">Cheeseball Sub to It All Points Here, Right?</h3>
+            <p class="text-aged text-sm leading-7 mt-3">
+              By the time you are in <strong class="text-parchment">Cheeseball Sub</strong>, <strong class="text-parchment">Saltwater Cambozo</strong>, <strong class="text-parchment">Damp Evidence</strong>, <strong class="text-parchment">Shrewd Shrews</strong>, and <strong class="text-parchment">It All Points Here, Right?</strong>, the walkthrough pressure is no longer just survival. This is where collectibles, optional turns, and side-job awareness start costing real time if ignored.
+            </p>
+          </article>
+
+          <article class="guide-card p-6">
+            <span class="mini-pill gold mb-3">Late Arc</span>
+            <h3 class="font-display text-2xl text-parchment">Bookkeeper to Glugging From the Deep</h3>
+            <p class="text-aged text-sm leading-7 mt-3">
+              Fresh public mission lists line up on a late-game chain that includes <strong class="text-parchment">The Bookkeeper</strong>, <strong class="text-parchment">Fatal Repulsion</strong>, <strong class="text-parchment">Swamp Oddity</strong>, <strong class="text-parchment">One Flew</strong>, and <strong class="text-parchment">Glugging From the Deep</strong>. This is where route memory starts to matter more than blind confidence.
+            </p>
+          </article>
+
+          <article class="guide-card p-6">
+            <span class="mini-pill gold mb-3">Final Push</span>
+            <h3 class="font-display text-2xl text-parchment">The House of the Empty Mouse, Fair Enough, and the endgame return</h3>
+            <p class="text-aged text-sm leading-7 mt-3">
+              Public walkthrough sources also agree on a final chain through <strong class="text-parchment">The House of the Empty Mouse</strong> and <strong class="text-parchment">Fair Enough</strong>, followed by an endgame return to <strong class="text-parchment">Big Mouse, Little Hope</strong>. That repeated name is worth remembering, because it can confuse players who think they are mentally done with the tutorial chapter logic.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 py-14 md:py-16">
+      <div class="grid grid-cols-1 lg:grid-cols-[1.15fr_0.85fr] gap-8 items-start">
+        <article class="guide-card p-7 prose-copy">
+          <p class="section-label mb-3">Side Jobs And Cutoffs</p>
+          <h2 class="font-display text-3xl text-parchment mb-4">Why main missions and side jobs should not live in separate mental boxes</h2>
+          <p>
+            The public mission list material makes one thing very clear: side jobs are woven into the main mission flow, not bolted on as a cozy postgame lane. That is the whole reason the walkthrough hub has to talk to the trophy hub and the collectibles hub instead of pretending the story can stand alone.
+          </p>
+          <p>
+            In practice, the safe approach is to treat every return to the office or hub area as a walkthrough event, not downtime. Check side jobs. Check collectible pressure. Check whether the next mission sounds like a soft cutoff. If a mission name already has a reputation in route guides, believe the reputation before you test it the hard way.
+          </p>
+          <p>
+            That same logic is why <strong class="text-parchment">Jack Squat</strong> matters so much even on a walkthrough page. It is not just a trophy note. It is a mission-order fact that changes how you should approach everything around it.
+          </p>
+        </article>
+
+        <aside class="guide-card p-7">
+          <p class="section-label mb-3">Best Pairings</p>
+          <h2 class="font-display text-3xl text-parchment mb-4">Pages to open beside this one</h2>
+          <ul class="space-y-4 text-aged text-sm leading-7">
+            <li><a href="/trophies/platinum-guide" class="text-gold hover:text-gold-light transition-colors">Platinum Guide</a> for cutoff-sensitive route sequencing.</li>
+            <li><a href="/collectibles/" class="text-gold hover:text-gold-light transition-colors">Collectibles Hub</a> for category-wide cleanup pressure.</li>
+            <li><a href="/collectibles/baseball-cards/" class="text-gold hover:text-gold-light transition-colors">Baseball Cards Guide</a> when hub timing is your real bottleneck.</li>
+            <li><a href="/guide/beginners-guide" class="text-gold hover:text-gold-light transition-colors">Beginner's Guide</a> if traversal and room scanning are still slowing the route down.</li>
+          </ul>
+        </aside>
+      </div>
+
+      <figure class="guide-card overflow-hidden mt-8">
+        <div class="grid grid-cols-1 md:grid-cols-[0.74fr_1.26fr] items-stretch">
+          <img
+            src="/images/mouse-pi-for-hire/steam-screenshots/mouse-pi-screenshot-04.jpg"
+            alt="MOUSE: P.I. For Hire gameplay screenshot used to support walkthrough route and cutoff planning"
+            class="w-full h-full min-h-[280px] object-cover"
+            width="1920"
+            height="1080"
+          />
+          <figcaption class="px-6 py-6 md:px-8 md:py-8">
+            <p class="section-label mb-3">Late-Run Reminder</p>
+            <h3 class="font-display text-2xl sm:text-3xl text-parchment mb-4">The safest walkthrough is the one that respects its own momentum</h3>
+            <p class="text-aged text-sm sm:text-base leading-8">
+              Most bad cleanup stories begin with the same little lie: "I will remember this room later." If the campaign has no replay cushion, then the best walkthrough habit is to finish the business of the room while you are still standing in it.
+            </p>
+          </figcaption>
+        </div>
+      </figure>
+    </section>
+
+    <section class="border-y border-card-border bg-ink/60">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 py-14 md:py-16">
+        <div class="grid grid-cols-1 gap-8">
+          <article class="guide-card p-7">
+            <p class="section-label mb-3">FAQ</p>
+            <h2 class="font-display text-3xl text-parchment mb-5">Quick walkthrough answers</h2>
+            <div class="space-y-4">
+              <details class="border border-card-border rounded-sm px-5 py-4 bg-noir/40">
+                <summary class="font-display text-xl text-parchment">How many main missions are in MOUSE: P.I. For Hire?</summary>
+                <p class="text-aged text-sm leading-7 mt-4">
+                  Fresh public mission-list coverage puts the campaign at <strong class="text-parchment">24 main missions</strong>.
+                </p>
+              </details>
+              <details class="border border-card-border rounded-sm px-5 py-4 bg-noir/40">
+                <summary class="font-display text-xl text-parchment">Can I replay missions after finishing the story?</summary>
+                <p class="text-aged text-sm leading-7 mt-4">
+                  Current route guides say no. There is no comfortable post-story replay or free-roam cleanup structure to lean on.
+                </p>
+              </details>
+              <details class="border border-card-border rounded-sm px-5 py-4 bg-noir/40">
+                <summary class="font-display text-xl text-parchment">What mission name should I remember most for route safety?</summary>
+                <p class="text-aged text-sm leading-7 mt-4">
+                  <strong class="text-parchment">Jack Squat</strong>. It is widely treated as the practical hub cutoff in serious completion routes.
+                </p>
+              </details>
+              <details class="border border-card-border rounded-sm px-5 py-4 bg-noir/40">
+                <summary class="font-display text-xl text-parchment">How long is a normal campaign run?</summary>
+                <p class="text-aged text-sm leading-7 mt-4">
+                  A straight story run is commonly described around <strong class="text-parchment">7-9 hours</strong>, while a more careful completion-oriented campaign path often stretches into the <strong class="text-parchment">14-16 hour</strong> range before bigger trophy cleanup.
+                </p>
+              </details>
+            </div>
+          </article>
+
+          <article class="guide-card p-7 prose-copy">
+            <p class="section-label mb-3">Version Note</p>
+            <h2 class="font-display text-3xl text-parchment mb-4">What this hub is based on</h2>
+            <p>
+              This page was updated on <strong>April 28, 2026</strong> using a fresh public mission list, a current Steam community route guide, and launch-window roadmap material that confirms the no-replay and hub-cutoff rules.
+            </p>
+            <p>
+              The parts most likely to need future revision are <strong>mission naming variants in late-game public guides</strong>, any change to <strong>mission replay or cleanup behavior</strong>, and any later patch that softens the current importance of <strong>Jack Squat</strong> as a route checkpoint.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-card-border bg-ink mt-4" role="contentinfo">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-10">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+        <div class="md:col-span-2">
+          <div class="flex items-center gap-2 mb-3">
+            <svg width="22" height="20" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M4 18 Q6 10 14 9 Q22 8 24 18 Z" fill="#d4a843" opacity="0.7"/>
+              <rect x="3" y="17" width="22" height="3" rx="1.5" fill="#c8b89a" opacity="0.7"/>
+              <path d="M10 9 Q12 4 14 3 Q16 4 18 9" fill="#d4a843" opacity="0.7"/>
+            </svg>
+            <span class="font-display text-sm font-bold text-gold">MousePIForHire.org</span>
+          </div>
+          <p class="text-muted text-xs leading-relaxed max-w-sm">
+            An independent fan guide for MOUSE: P.I. For Hire. Not affiliated with, endorsed by, or sponsored by Fumi Games or PlaySide Studios. All trademarks and game assets belong to their respective owners.
+          </p>
+        </div>
+
+        <div>
+          <p class="font-typewriter text-xs text-gold uppercase tracking-widest mb-3">Guides</p>
+          <ul class="space-y-2">
+            <li><a href="/guide/beginners-guide" class="text-muted text-xs hover:text-parchment transition-colors">Beginner&apos;s Guide</a></li>
+            <li><a href="/weapons/" class="text-muted text-xs hover:text-parchment transition-colors">Weapons &amp; Upgrades</a></li>
+            <li><a href="/trophies/platinum-guide" class="text-muted text-xs hover:text-parchment transition-colors">Platinum Roadmap</a></li>
+            <li><a href="/walkthrough/" class="text-muted text-xs hover:text-parchment transition-colors">Full Walkthrough</a></li>
+            <li><a href="/bosses/" class="text-muted text-xs hover:text-parchment transition-colors">Boss Guide</a></li>
+            <li><a href="/dlc/" class="text-muted text-xs hover:text-parchment transition-colors">Story DLC</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="font-typewriter text-xs text-gold uppercase tracking-widest mb-3">Collectibles</p>
+          <ul class="space-y-2 mb-5">
+            <li><a href="/collectibles/newspapers/" class="text-muted text-xs hover:text-parchment transition-colors">All Newspapers</a></li>
+            <li><a href="/collectibles/baseball-cards/" class="text-muted text-xs hover:text-parchment transition-colors">Baseball Cards</a></li>
+            <li><a href="/collectibles/comic-strips/" class="text-muted text-xs hover:text-parchment transition-colors">Comic Strips</a></li>
+            <li><a href="/upgrades/schematics-locations/" class="text-muted text-xs hover:text-parchment transition-colors">Schematics Locations</a></li>
+          </ul>
+          <p class="font-typewriter text-xs text-gold uppercase tracking-widest mb-3">Site</p>
+          <ul class="space-y-2">
+            <li><a href="/news/" class="text-muted text-xs hover:text-parchment transition-colors">News &amp; Patches</a></li>
+            <li><a href="/tips/" class="text-muted text-xs hover:text-parchment transition-colors">Advanced Tips</a></li>
+            <li><a href="/about" class="text-muted text-xs hover:text-parchment transition-colors">About</a></li>
+            <li><a href="/contact" class="text-muted text-xs hover:text-parchment transition-colors">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pt-6 border-t border-card-border flex flex-col sm:flex-row items-center justify-between gap-3">
+        <p class="text-muted text-xs">
+          &copy; 2026 MousePIForHire.org &mdash; Fan site. All game content &copy; Fumi Games &amp; PlaySide Studios.
+        </p>
+        <div class="flex gap-4">
+          <a href="/privacy" class="text-muted text-xs hover:text-parchment transition-colors">Privacy Policy</a>
+          <a href="/disclosure" class="text-muted text-xs hover:text-parchment transition-colors">Ad Disclosure</a>
+          <a href="/sitemap.xml" class="text-muted text-xs hover:text-parchment transition-colors">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!--
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+  -->
+</body>
+</html>

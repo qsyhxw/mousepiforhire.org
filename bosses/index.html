@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mouse PI For Hire Boss Guide Hub</title>
+  <meta name="description" content="Verified Mouse PI For Hire boss hub with confirmed boss encounters, mechanic-based fight notes, no-replay warnings, and safe prep links for tougher battles." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://mousepiforhire.org/bosses/" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Mouse PI For Hire Boss Guide Hub" />
+  <meta property="og:description" content="Cross-checked boss encounter notes, mechanic-heavy fight patterns, and preparation guidance for MOUSE: P.I. For Hire." />
+  <meta property="og:url" content="https://mousepiforhire.org/bosses/" />
+  <meta property="og:site_name" content="MousePIForHire.org" />
+  <meta property="og:image" content="https://mousepiforhire.org/og-cover.jpg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Mouse PI For Hire Boss Guide Hub" />
+  <meta name="twitter:description" content="Confirmed boss encounters, mechanic-driven fight notes, and safe preparation guidance for MOUSE: P.I. For Hire." />
+  <meta name="twitter:image" content="https://mousepiforhire.org/og-cover.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Special+Elite&family=Lato:wght@400;700&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            noir: '#0b0b0b',
+            ink: '#141410',
+            parchment: '#f0e8d5',
+            aged: '#c8b89a',
+            muted: '#7a7060',
+            gold: '#d4a843',
+            'gold-light': '#e8c870',
+            danger: '#b03030',
+            'card-bg': '#1a1a16',
+            'card-border': '#2e2e26'
+          },
+          fontFamily: {
+            display: ['"Playfair Display"', 'Georgia', 'serif'],
+            typewriter: ['"Special Elite"', 'monospace'],
+            body: ['Lato', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      background-color: #0b0b0b;
+      color: #f0e8d5;
+      font-family: 'Lato', sans-serif;
+      overflow-x: hidden;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 9999;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+      background-repeat: repeat;
+      opacity: 0.35;
+      mix-blend-mode: overlay;
+    }
+    .section-label {
+      font-family: 'Special Elite', monospace;
+      font-size: 0.7rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: #d4a843;
+    }
+    .guide-card {
+      background: #1a1a16;
+      border: 1px solid #2e2e26;
+      border-radius: 4px;
+      transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+    }
+    .guide-card:hover {
+      border-color: #d4a843;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 32px rgba(212, 168, 67, 0.12);
+    }
+    .btn-primary {
+      background: #d4a843;
+      color: #0b0b0b;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      padding: 12px 28px;
+      border-radius: 2px;
+      display: inline-block;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.15s;
+    }
+    .btn-primary:hover { background: #e8c870; transform: translateY(-1px); }
+    .btn-ghost {
+      border: 1px solid #d4a843;
+      color: #d4a843;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      padding: 12px 28px;
+      border-radius: 2px;
+      display: inline-block;
+      text-decoration: none;
+      transition: background 0.2s, color 0.2s;
+    }
+    .btn-ghost:hover { background: rgba(212,168,67,0.1); }
+    .badge {
+      font-family: 'Special Elite', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      background: rgba(212,168,67,0.15);
+      border: 1px solid rgba(212,168,67,0.4);
+      color: #d4a843;
+      padding: 4px 12px;
+      border-radius: 2px;
+      display: inline-block;
+      text-transform: uppercase;
+    }
+    .signal-pill {
+      font-family: 'Special Elite', monospace;
+      font-size: 0.6rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 4px 8px;
+      border-radius: 999px;
+      border: 1px solid #2e2e26;
+      color: #c8b89a;
+      background: rgba(200,184,154,0.08);
+    }
+    .signal-pill.gold {
+      color: #d4a843;
+      border-color: rgba(212,168,67,0.4);
+      background: rgba(212,168,67,0.12);
+    }
+    .signal-pill.red {
+      color: #ffb3b3;
+      border-color: rgba(176,48,48,0.45);
+      background: rgba(176,48,48,0.12);
+    }
+    .prose-copy p { color: #c8b89a; line-height: 1.8; }
+    .prose-copy a { color: #e8c870; text-decoration: underline; text-underline-offset: 3px; }
+    .prose-copy strong { color: #f0e8d5; }
+    .mini-pill {
+      font-family: 'Special Elite', monospace;
+      font-size: 0.58rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 4px 8px;
+      border-radius: 999px;
+      border: 1px solid #2e2e26;
+      color: #c8b89a;
+      background: rgba(200,184,154,0.08);
+      display: inline-block;
+    }
+    .mini-pill.gold {
+      color: #d4a843;
+      border-color: rgba(212,168,67,0.4);
+      background: rgba(212,168,67,0.12);
+    }
+    #mobile-menu { display: none; }
+    #mobile-menu.open { display: block; }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .fade-up { animation: fadeUp 0.7s ease both; }
+    .delay-1 { animation-delay: 0.1s; }
+    .delay-2 { animation-delay: 0.2s; }
+    .delay-3 { animation-delay: 0.35s; }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://mousepiforhire.org/#website",
+        "url": "https://mousepiforhire.org/",
+        "name": "MousePIForHire.org"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://mousepiforhire.org/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Bosses",
+            "item": "https://mousepiforhire.org/bosses/"
+          }
+        ]
+      },
+      {
+        "@type": "Article",
+        "@id": "https://mousepiforhire.org/bosses/#article",
+        "headline": "Mouse PI For Hire Boss Guide Hub",
+        "description": "Cross-checked boss encounter notes, mechanic-heavy fight patterns, and preparation guidance for MOUSE: P.I. For Hire.",
+        "author": {
+          "@type": "Organization",
+          "name": "MousePIForHire.org"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "MousePIForHire.org",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://mousepiforhire.org/logo.png"
+          }
+        },
+        "datePublished": "2026-04-28",
+        "dateModified": "2026-04-28",
+        "mainEntityOfPage": "https://mousepiforhire.org/bosses/"
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body class="bg-noir text-parchment font-body">
+  <header class="sticky top-0 z-50 bg-noir border-b border-card-border" role="banner">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 flex items-center justify-between h-14">
+      <a href="/" class="flex items-center gap-2 group" aria-label="MousePIForHire.org Home">
+        <svg width="28" height="24" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <ellipse cx="14" cy="20" rx="13" ry="3.5" fill="#d4a843" opacity="0.3"/>
+          <path d="M4 18 Q6 10 14 9 Q22 8 24 18 Z" fill="#d4a843"/>
+          <path d="M8 18 Q9 12 14 11 Q19 10 20 18" fill="#0b0b0b" opacity="0.5"/>
+          <rect x="3" y="17" width="22" height="3" rx="1.5" fill="#c8b89a"/>
+          <path d="M10 9 Q12 4 14 3 Q16 4 18 9" fill="#d4a843"/>
+          <circle cx="20" cy="14" r="1.5" fill="#b03030"/>
+        </svg>
+        <span class="font-display text-base font-bold text-gold tracking-tight group-hover:text-gold-light transition-colors">
+          MousePIForHire<span class="text-muted">.org</span>
+        </span>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-6" aria-label="Main navigation">
+        <a href="/guide/beginners-guide" class="font-typewriter text-xs text-aged hover:text-gold transition-colors tracking-wide uppercase">Guide</a>
+        <a href="/weapons/" class="font-typewriter text-xs text-aged hover:text-gold transition-colors tracking-wide uppercase">Weapons</a>
+        <a href="/trophies/" class="font-typewriter text-xs text-aged hover:text-gold transition-colors tracking-wide uppercase">Trophies</a>
+        <a href="/walkthrough/" class="font-typewriter text-xs text-aged hover:text-gold transition-colors tracking-wide uppercase">Walkthrough</a>
+        <a href="/collectibles/" class="font-typewriter text-xs text-aged hover:text-gold transition-colors tracking-wide uppercase">Collectibles</a>
+        <a href="/dlc/" class="font-typewriter text-xs text-aged hover:text-gold transition-colors tracking-wide uppercase">DLC</a>
+        <a href="/news/" class="font-typewriter text-xs text-danger hover:text-red-400 transition-colors tracking-wide uppercase">● News</a>
+      </nav>
+
+      <button
+        class="md:hidden text-aged hover:text-gold transition-colors"
+        aria-label="Toggle mobile menu"
+        onclick="document.getElementById('mobile-menu').classList.toggle('open')"
+      >
+        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <line x1="2" y1="6" x2="20" y2="6"/>
+          <line x1="2" y1="11" x2="20" y2="11"/>
+          <line x1="2" y1="16" x2="20" y2="16"/>
+        </svg>
+      </button>
+    </div>
+
+    <div id="mobile-menu" class="md:hidden bg-ink border-t border-card-border px-4 py-4 space-y-3">
+      <a href="/guide/beginners-guide" class="block font-typewriter text-xs text-aged hover:text-gold uppercase tracking-wide py-1">Guide</a>
+      <a href="/weapons/" class="block font-typewriter text-xs text-aged hover:text-gold uppercase tracking-wide py-1">Weapons</a>
+      <a href="/trophies/" class="block font-typewriter text-xs text-aged hover:text-gold uppercase tracking-wide py-1">Trophies</a>
+      <a href="/walkthrough/" class="block font-typewriter text-xs text-aged hover:text-gold uppercase tracking-wide py-1">Walkthrough</a>
+      <a href="/collectibles/" class="block font-typewriter text-xs text-aged hover:text-gold uppercase tracking-wide py-1">Collectibles</a>
+      <a href="/dlc/" class="block font-typewriter text-xs text-aged hover:text-gold uppercase tracking-wide py-1">DLC</a>
+      <a href="/news/" class="block font-typewriter text-xs text-danger uppercase tracking-wide py-1">● Latest News</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 pt-10 pb-12 md:pt-14 md:pb-16">
+      <div class="grid grid-cols-1 lg:grid-cols-[1.05fr_0.95fr] gap-8 items-center">
+        <div class="fade-up">
+          <div class="flex flex-wrap gap-3 mb-5">
+            <span class="badge">Verified Boss Hub</span>
+            <span class="signal-pill gold">Robo-Betty Confirmed</span>
+            <span class="signal-pill">Mechanic Fights</span>
+          </div>
+          <p class="section-label mb-3">Bosses / Major Fights</p>
+          <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl leading-tight text-parchment">
+            Mouse PI For Hire Boss Guide Hub
+          </h1>
+          <p class="text-aged text-base sm:text-lg leading-8 mt-6 max-w-2xl">
+            This hub is for the fights that ask more of you than normal room clears. The strongest current sources agree that MOUSE: P.I. For Hire uses <strong class="text-parchment">mechanic-driven boss encounters</strong>, from the confirmed <strong class="text-parchment">Robo-Betty</strong> battle to later showdown-style fights that care about awareness, movement, and not panicking in a flashy arena.
+          </p>
+          <div class="flex flex-wrap gap-4 mt-8">
+            <a href="#boss-types" class="btn-primary">See Boss Types</a>
+            <a href="/weapons/" class="btn-ghost">Open Weapons Guide</a>
+          </div>
+        </div>
+
+        <figure class="guide-card overflow-hidden fade-up delay-1">
+          <img
+            src="/images/mouse-pi-for-hire/weapons/mouse-pi-weapons-boss-arena-01.jpg"
+            alt="MOUSE: P.I. For Hire boss arena screenshot used for the boss guide hub"
+            class="w-full h-full min-h-[320px] object-cover"
+            width="1200"
+            height="675"
+          />
+        </figure>
+      </div>
+    </section>
+
+    <section class="border-y border-card-border bg-ink/60">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 py-14 md:py-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-5">
+          <article class="guide-card p-6">
+            <p class="section-label mb-2">Confirmed Boss</p>
+            <h2 class="font-display text-2xl text-parchment">Robo-Betty</h2>
+            <p class="text-aged text-sm leading-7 mt-3">
+              The cleanest fully confirmed named boss is <strong class="text-parchment">Robo-Betty</strong>, officially presented as a <strong class="text-parchment">three-stage battle</strong> in a secret laboratory.
+            </p>
+          </article>
+
+          <article class="guide-card p-6">
+            <p class="section-label mb-2">Mechanic Example</p>
+            <h2 class="font-display text-2xl text-parchment">Third Wife</h2>
+            <p class="text-aged text-sm leading-7 mt-3">
+              Preview coverage for <strong class="text-parchment">Third Wife</strong> shows a fight that wants the <strong class="text-parchment">flashlight mechanic</strong> before normal damage really sticks.
+            </p>
+          </article>
+
+          <article class="guide-card p-6">
+            <p class="section-label mb-2">Fight Pattern</p>
+            <h2 class="font-display text-2xl text-parchment">Set-Piece Pressure</h2>
+            <p class="text-aged text-sm leading-7 mt-3">
+              Release-window coverage consistently describes bosses as <strong class="text-parchment">style and environment contrasts</strong> rather than just bigger versions of regular enemies.
+            </p>
+          </article>
+
+          <article class="guide-card p-6">
+            <p class="section-label mb-2">Route Rule</p>
+            <h2 class="font-display text-2xl text-parchment">No Replay Safety</h2>
+            <p class="text-aged text-sm leading-7 mt-3">
+              Because there is no comfortable post-story mission replay path, a boss hub also has to be a <strong class="text-parchment">prep hub</strong>. Manual saves and pre-fight loadout discipline matter.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 py-14 md:py-16">
+      <div class="grid grid-cols-1 lg:grid-cols-[1.08fr_0.92fr] gap-8 items-start">
+        <article class="guide-card p-7 prose-copy">
+          <p class="section-label mb-3">How To Read This Hub</p>
+          <h2 class="font-display text-3xl text-parchment mb-4">Why the boss page talks more about mechanics than exact counts</h2>
+          <p>
+            Current public sources are much stronger on <strong>how the boss fights behave</strong> than on any perfectly normalized list of every single major encounter. So this hub stays honest: it focuses on the fights and patterns that are well supported right now instead of inventing a fake-clean total just because a hub page looks nice with one.
+          </p>
+          <p>
+            The good news is that the stable information is also the information that helps most. Bosses in MOUSE: P.I. For Hire are repeatedly described as <strong>mechanic checks, arena-awareness checks, and movement checks</strong>. That makes preparation more valuable than swagger.
+          </p>
+          <p>
+            If you already know a fight is giving you trouble, open the <a href="/weapons/" class="text-gold hover:text-gold-light transition-colors">Weapons Guide</a> alongside this page. Boss trouble in this game usually starts feeling better the moment your weapon choice, movement rhythm, and patience stop arguing with each other.
+          </p>
+        </article>
+
+        <aside class="guide-card p-7">
+          <p class="section-label mb-3">Boss Rules</p>
+          <h2 class="font-display text-3xl text-parchment mb-4">The prep habits that matter most</h2>
+          <ul class="space-y-3 text-aged text-sm leading-7">
+            <li>Keep a manual save before any fight that feels like a set-piece escalation.</li>
+            <li>Watch for gimmicks before assuming raw damage is the whole answer.</li>
+            <li>Respect arena geometry, not just the boss health bar.</li>
+            <li>Use the fight to learn tempo, not only to burn ammo faster.</li>
+            <li>Do not confuse "harder enemy" with "same rules, bigger model."</li>
+          </ul>
+        </aside>
+      </div>
+
+      <figure class="guide-card overflow-hidden mt-8">
+        <div class="grid grid-cols-1 md:grid-cols-[0.74fr_1.26fr] items-stretch">
+          <img
+            src="/images/mouse-pi-for-hire/steam-screenshots/mouse-pi-screenshot-05.jpg"
+            alt="MOUSE: P.I. For Hire gameplay screenshot used as a visual divider for boss fight preparation"
+            class="w-full h-full min-h-[280px] object-cover"
+            width="1920"
+            height="1080"
+          />
+          <figcaption class="px-6 py-6 md:px-8 md:py-8">
+            <p class="section-label mb-3">Fight Mood</p>
+            <h3 class="font-display text-2xl sm:text-3xl text-parchment mb-4">The best boss read is usually happening in the room, not in the health bar</h3>
+            <p class="text-aged text-sm sm:text-base leading-8">
+              When a fight suddenly feels unfair, the fix is often not more panic damage. It is noticing the prop, light cue, movement lane, or phase change the encounter has been asking you to respect all along.
+            </p>
+          </figcaption>
+        </div>
+      </figure>
+    </section>
+
+    <section id="boss-types" class="border-y border-card-border bg-ink/60">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 py-14 md:py-16">
+        <div class="max-w-4xl mb-10">
+          <p class="section-label mb-3">Boss Types</p>
+          <h2 class="font-display text-3xl sm:text-4xl text-parchment">The boss patterns with the strongest current support</h2>
+          <p class="text-aged mt-4 leading-8">
+            These categories are built from the boss encounters and review notes that are best supported across release-window sources.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <article class="guide-card p-6">
+            <span class="mini-pill gold mb-3">Confirmed Encounter</span>
+            <h3 class="font-display text-2xl text-parchment">Multi-phase lab bosses</h3>
+            <p class="text-aged text-sm leading-7 mt-3">
+              <strong class="text-parchment">Robo-Betty</strong> is the clearest confirmed example here: a named boss in a secret laboratory, officially shown as a <strong class="text-parchment">three-stage battle</strong>. The useful lesson is not just the name. It is that the game is willing to escalate a fight in layers instead of handing you one static damage race.
+            </p>
+          </article>
+
+          <article class="guide-card p-6">
+            <span class="mini-pill gold mb-3">Preview-Confirmed Pattern</span>
+            <h3 class="font-display text-2xl text-parchment">Mechanic-gated damage fights</h3>
+            <p class="text-aged text-sm leading-7 mt-3">
+              <strong class="text-parchment">Third Wife</strong> is the cleanest known example of a boss that wants a <strong class="text-parchment">specific mechanic</strong> before ordinary shooting becomes meaningful. That is exactly the kind of fight where observation beats stubbornness.
+            </p>
+          </article>
+
+          <article class="guide-card p-6">
+            <span class="mini-pill gold mb-3">Release Pattern</span>
+            <h3 class="font-display text-2xl text-parchment">Style-and-environment contrast fights</h3>
+            <p class="text-aged text-sm leading-7 mt-3">
+              Reviews of the shipped game repeatedly point out that bosses stand apart from the core enemy roster in <strong class="text-parchment">style, arena feel, and pacing</strong>. That means the right answer is often adapting your habits, not just optimizing the same hallway combat loop harder.
+            </p>
+          </article>
+
+          <article class="guide-card p-6">
+            <span class="mini-pill gold mb-3">Hub Guidance</span>
+            <h3 class="font-display text-2xl text-parchment">Final-showdown preparation without fake specifics</h3>
+            <p class="text-aged text-sm leading-7 mt-3">
+              Public guide libraries clearly frame the boss route as building from early named fights toward a <strong class="text-parchment">final showdown</strong>. What is still less clean across sources is the exact normalized count of "major bosses," so the safe hub move is to focus on preparation principles rather than made-up certainty.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 py-14 md:py-16">
+      <div class="grid grid-cols-1 lg:grid-cols-[1.15fr_0.85fr] gap-8 items-start">
+        <article class="guide-card p-7 prose-copy">
+          <p class="section-label mb-3">Pair These Pages</p>
+          <h2 class="font-display text-3xl text-parchment mb-4">Best pages to open beside a boss attempt</h2>
+          <p>
+            Boss prep gets cleaner when you stop treating the fight page as a solo document. Use the <a href="/weapons/">Weapons Guide</a> for loadout decisions, the <a href="/guide/beginners-guide">Beginner&apos;s Guide</a> for movement and room-reading habits, and the <a href="/walkthrough/">Walkthrough Hub</a> if your real issue is the broader route around the fight instead of the fight itself.
+          </p>
+          <p>
+            If you are protecting a one-run trophy route, keep the <a href="/trophies/platinum-guide">Platinum Guide</a> nearby too. Bosses are rarely isolated in practice. They live inside a larger chain of side jobs, collectibles, ammo discipline, and missable pressure.
+          </p>
+        </article>
+
+        <aside class="guide-card p-7">
+          <p class="section-label mb-3">Safety Note</p>
+          <h2 class="font-display text-3xl text-parchment mb-4">Why this hub avoids an exact boss count</h2>
+          <p class="text-aged text-sm leading-7">
+            The currently strongest public sources are very good at confirming named fights and mechanics, but not yet clean enough on a single normalized shipped boss total. Rather than pretend otherwise, this page keeps the wording precise where the evidence is strong and modest where it is not.
+          </p>
+        </aside>
+      </div>
+
+      <figure class="guide-card overflow-hidden mt-8">
+        <div class="grid grid-cols-1 md:grid-cols-[0.74fr_1.26fr] items-stretch">
+          <img
+            src="/images/mouse-pi-for-hire/home/mouse-pi-home-hero-combat-01.jpg"
+            alt="MOUSE: P.I. For Hire combat artwork used to support boss preparation notes"
+            class="w-full h-full min-h-[280px] object-cover"
+            width="1920"
+            height="1080"
+          />
+          <figcaption class="px-6 py-6 md:px-8 md:py-8">
+            <p class="section-label mb-3">Preparation Reminder</p>
+            <h3 class="font-display text-2xl sm:text-3xl text-parchment mb-4">Boss confidence usually starts before the cutscene does</h3>
+            <p class="text-aged text-sm sm:text-base leading-8">
+              The smooth attempts are the ones where the player arrives with a sane weapon plan, a recent fallback save, and enough emotional room to watch the encounter instead of instantly trying to overpower it.
+            </p>
+          </figcaption>
+        </div>
+      </figure>
+    </section>
+
+    <section class="border-y border-card-border bg-ink/60">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 py-14 md:py-16">
+        <div class="grid grid-cols-1 gap-8">
+          <article class="guide-card p-7">
+            <p class="section-label mb-3">FAQ</p>
+            <h2 class="font-display text-3xl text-parchment mb-5">Quick boss answers</h2>
+            <div class="space-y-4">
+              <details class="border border-card-border rounded-sm px-5 py-4 bg-noir/40">
+                <summary class="font-display text-xl text-parchment">Which boss is most clearly confirmed right now?</summary>
+                <p class="text-aged text-sm leading-7 mt-4">
+                  <strong class="text-parchment">Robo-Betty</strong> is the strongest fully confirmed named boss, with release-window coverage clearly describing a <strong class="text-parchment">three-stage</strong> lab battle.
+                </p>
+              </details>
+              <details class="border border-card-border rounded-sm px-5 py-4 bg-noir/40">
+                <summary class="font-display text-xl text-parchment">Are bosses mostly bigger normal enemies?</summary>
+                <p class="text-aged text-sm leading-7 mt-4">
+                  Not really. Current sources repeatedly describe bosses as encounters with their own mechanics, pacing, or arena logic rather than just enlarged hallway fights.
+                </p>
+              </details>
+              <details class="border border-card-border rounded-sm px-5 py-4 bg-noir/40">
+                <summary class="font-display text-xl text-parchment">Why does a boss page care about manual saves?</summary>
+                <p class="text-aged text-sm leading-7 mt-4">
+                  Because the broader route still has no comfortable post-story replay safety net. A good fallback save before a risky stretch is part of boss preparation in this game.
+                </p>
+              </details>
+              <details class="border border-card-border rounded-sm px-5 py-4 bg-noir/40">
+                <summary class="font-display text-xl text-parchment">Should I raise the difficulty for a better boss experience?</summary>
+                <p class="text-aged text-sm leading-7 mt-4">
+                  There are no difficulty-specific trophies, so the cleanest advice is still to choose the setting that lets you learn the mechanics and arena cues without turning every mistake into unnecessary chaos.
+                </p>
+              </details>
+            </div>
+          </article>
+
+          <article class="guide-card p-7 prose-copy">
+            <p class="section-label mb-3">Version Note</p>
+            <h2 class="font-display text-3xl text-parchment mb-4">What this hub is based on</h2>
+            <p>
+              This page was updated on <strong>April 28, 2026</strong> using official or official-derived boss reveal coverage, release-window reviews, and current route-guide material that confirms the game's no-replay cleanup pressure.
+            </p>
+            <p>
+              The pieces most likely to need future revision are <strong>the normalized total count of major bosses</strong>, any new <strong>late-game boss naming consensus</strong>, and any later patch or guide update that changes how specific fight mechanics are commonly explained.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-card-border bg-ink mt-4" role="contentinfo">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-10">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+        <div class="md:col-span-2">
+          <div class="flex items-center gap-2 mb-3">
+            <svg width="22" height="20" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M4 18 Q6 10 14 9 Q22 8 24 18 Z" fill="#d4a843" opacity="0.7"/>
+              <rect x="3" y="17" width="22" height="3" rx="1.5" fill="#c8b89a" opacity="0.7"/>
+              <path d="M10 9 Q12 4 14 3 Q16 4 18 9" fill="#d4a843" opacity="0.7"/>
+            </svg>
+            <span class="font-display text-sm font-bold text-gold">MousePIForHire.org</span>
+          </div>
+          <p class="text-muted text-xs leading-relaxed max-w-sm">
+            An independent fan guide for MOUSE: P.I. For Hire. Not affiliated with, endorsed by, or sponsored by Fumi Games or PlaySide Studios. All trademarks and game assets belong to their respective owners.
+          </p>
+        </div>
+
+        <div>
+          <p class="font-typewriter text-xs text-gold uppercase tracking-widest mb-3">Guides</p>
+          <ul class="space-y-2">
+            <li><a href="/guide/beginners-guide" class="text-muted text-xs hover:text-parchment transition-colors">Beginner&apos;s Guide</a></li>
+            <li><a href="/weapons/" class="text-muted text-xs hover:text-parchment transition-colors">Weapons &amp; Upgrades</a></li>
+            <li><a href="/trophies/platinum-guide" class="text-muted text-xs hover:text-parchment transition-colors">Platinum Roadmap</a></li>
+            <li><a href="/walkthrough/" class="text-muted text-xs hover:text-parchment transition-colors">Full Walkthrough</a></li>
+            <li><a href="/bosses/" class="text-muted text-xs hover:text-parchment transition-colors">Boss Guide</a></li>
+            <li><a href="/dlc/" class="text-muted text-xs hover:text-parchment transition-colors">Story DLC</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="font-typewriter text-xs text-gold uppercase tracking-widest mb-3">Collectibles</p>
+          <ul class="space-y-2 mb-5">
+            <li><a href="/collectibles/newspapers/" class="text-muted text-xs hover:text-parchment transition-colors">All Newspapers</a></li>
+            <li><a href="/collectibles/baseball-cards/" class="text-muted text-xs hover:text-parchment transition-colors">Baseball Cards</a></li>
+            <li><a href="/collectibles/comic-strips/" class="text-muted text-xs hover:text-parchment transition-colors">Comic Strips</a></li>
+            <li><a href="/upgrades/schematics-locations/" class="text-muted text-xs hover:text-parchment transition-colors">Schematics Locations</a></li>
+          </ul>
+          <p class="font-typewriter text-xs text-gold uppercase tracking-widest mb-3">Site</p>
+          <ul class="space-y-2">
+            <li><a href="/news/" class="text-muted text-xs hover:text-parchment transition-colors">News &amp; Patches</a></li>
+            <li><a href="/tips/" class="text-muted text-xs hover:text-parchment transition-colors">Advanced Tips</a></li>
+            <li><a href="/about" class="text-muted text-xs hover:text-parchment transition-colors">About</a></li>
+            <li><a href="/contact" class="text-muted text-xs hover:text-parchment transition-colors">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pt-6 border-t border-card-border flex flex-col sm:flex-row items-center justify-between gap-3">
+        <p class="text-muted text-xs">
+          &copy; 2026 MousePIForHire.org &mdash; Fan site. All game content &copy; Fumi Games &amp; PlaySide Studios.
+        </p>
+        <div class="flex gap-4">
+          <a href="/privacy" class="text-muted text-xs hover:text-parchment transition-colors">Privacy Policy</a>
+          <a href="/disclosure" class="text-muted text-xs hover:text-parchment transition-colors">Ad Disclosure</a>
+          <a href="/sitemap.xml" class="text-muted text-xs hover:text-parchment transition-colors">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!--
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+  -->
+</body>
+</html>
