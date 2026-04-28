@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mouse PI For Hire Advanced Tips Guide</title>
+  <meta name="description" content="Verified Mouse PI For Hire advanced tips guide covering movement, lockpicking, save strategy, upgrade routing, and hub-safe cleanup habits." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://mousepiforhire.org/tips/" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Mouse PI For Hire Advanced Tips Guide" />
+  <meta property="og:description" content="Cross-checked advanced route, combat, lockpick, and cleanup habits for MOUSE: P.I. For Hire." />
+  <meta property="og:url" content="https://mousepiforhire.org/tips/" />
+  <meta property="og:site_name" content="MousePIForHire.org" />
+  <meta property="og:image" content="https://mousepiforhire.org/og-cover.jpg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Mouse PI For Hire Advanced Tips Guide" />
+  <meta name="twitter:description" content="Advanced MOUSE: P.I. For Hire tips for movement, saves, collectibles, hub timing, and smarter upgrade routing." />
+  <meta name="twitter:image" content="https://mousepiforhire.org/og-cover.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Special+Elite&family=Lato:wght@400;700&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            noir: '#0b0b0b',
+            ink: '#141410',
+            parchment: '#f0e8d5',
+            aged: '#c8b89a',
+            muted: '#7a7060',
+            gold: '#d4a843',
+            'gold-light': '#e8c870',
+            danger: '#b03030',
+            'card-bg': '#1a1a16',
+            'card-border': '#2e2e26'
+          },
+          fontFamily: {
+            display: ['"Playfair Display"', 'Georgia', 'serif'],
+            typewriter: ['"Special Elite"', 'monospace'],
+            body: ['Lato', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      background-color: #0b0b0b;
+      color: #f0e8d5;
+      font-family: 'Lato', sans-serif;
+      overflow-x: hidden;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 9999;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+      background-repeat: repeat;
+      opacity: 0.35;
+      mix-blend-mode: overlay;
+    }
+    .section-label {
+      font-family: 'Special Elite', monospace;
+      font-size: 0.7rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: #d4a843;
+    }
+    .guide-card {
+      background: #1a1a16;
+      border: 1px solid #2e2e26;
+      border-radius: 4px;
+      transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+    }
+    .guide-card:hover {
+      border-color: #d4a843;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 32px rgba(212, 168, 67, 0.12);
+    }
+    .btn-primary {
+      background: #d4a843;
+      color: #0b0b0b;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      padding: 12px 28px;
+      border-radius: 2px;
+      display: inline-block;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.15s;
+    }
+    .btn-primary:hover { background: #e8c870; transform: translateY(-1px); }
+    .btn-ghost {
+      border: 1px solid #d4a843;
+      color: #d4a843;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      padding: 12px 28px;
+      border-radius: 2px;
+      display: inline-block;
+      text-decoration: none;
+      transition: background 0.2s, color 0.2s;
+    }
+    .btn-ghost:hover { background: rgba(212,168,67,0.1); }
+    .badge {
+      font-family: 'Special Elite', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      background: rgba(212,168,67,0.15);
+      border: 1px solid rgba(212,168,67,0.4);
+      color: #d4a843;
+      padding: 4px 12px;
+      border-radius: 2px;
+      display: inline-block;
+      text-transform: uppercase;
+    }
+    .signal-pill {
+      font-family: 'Special Elite', monospace;
+      font-size: 0.6rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 4px 8px;
+      border-radius: 999px;
+      border: 1px solid #2e2e26;
+      color: #c8b89a;
+      background: rgba(200,184,154,0.08);
+    }
+    .signal-pill.gold {
+      color: #d4a843;
+      border-color: rgba(212,168,67,0.4);
+      background: rgba(212,168,67,0.12);
+    }
+    .signal-pill.red {
+      color: #ffb3b3;
+      border-color: rgba(176,48,48,0.45);
+      background: rgba(176,48,48,0.12);
+    }
+    .prose-copy p { color: #c8b89a; line-height: 1.8; }
+    .prose-copy a { color: #e8c870; text-decoration: underline; text-underline-offset: 3px; }
+    .prose-copy strong { color: #f0e8d5; }
+    .checklist-row {
+      border-top: 1px solid #2e2e26;
+      padding-top: 1.1rem;
+      margin-top: 1.1rem;
+    }
+    .checklist-row:first-child {
+      border-top: none;
+      margin-top: 0;
+      padding-top: 0;
+    }
+    #mobile-menu { display: none; }
+    #mobile-menu.open { display: block; }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .fade-up { animation: fadeUp 0.7s ease both; }
+    .delay-1 { animation-delay: 0.1s; }
+    .delay-2 { animation-delay: 0.2s; }
+    .delay-3 { animation-delay: 0.35s; }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://mousepiforhire.org/#website",
+        "url": "https://mousepiforhire.org/",
+        "name": "MousePIForHire.org"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://mousepiforhire.org/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Tips",
+            "item": "https://mousepiforhire.org/tips/"
+          }
+        ]
+      },
+      {
+        "@type": "Article",
+        "@id": "https://mousepiforhire.org/tips/#article",
+        "headline": "Mouse PI For Hire Advanced Tips Guide",
+        "description": "Cross-checked advanced route, combat, lockpick, and cleanup habits for MOUSE: P.I. For Hire.",
+        "author": {
+          "@type": "Organization",
+          "name": "MousePIForHire.org"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "MousePIForHire.org",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://mousepiforhire.org/logo.png"
+          }
+        },
+        "datePublished": "2026-04-28",
+        "dateModified": "2026-04-28",
+        "mainEntityOfPage": "https://mousepiforhire.org/tips/"
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body class="bg-noir text-parchment font-body">
+  <header class="sticky top-0 z-50 bg-noir border-b border-card-border" role="banner">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 flex items-center justify-between h-14">
+      <a href="/" class="flex items-center gap-2 group" aria-label="MousePIForHire.org Home">
+        <svg width="28" height="24" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <ellipse cx="14" cy="20" rx="13" ry="3.5" fill="#d4a843" opacity="0.3"/>
+          <path d="M4 18 Q6 10 14 9 Q22 8 24 18 Z" fill="#d4a843"/>
+          <path d="M8 18 Q9 12 14 11 Q19 10 20 18" fill="#0b0b0b" opacity="0.5"/>
+          <rect x="3" y="17" width="22" height="3" rx="1.5" fill="#c8b89a"/>
+          <path d="M10 9 Q12 4 14 3 Q16 4 18 9" fill="#d4a843"/>
+          <circle cx="20" cy="14" r="1.5" fill="#b03030"/>
+        </svg>
+        <span class="font-display text-base font-bold text-gold tracking-tight group-hover:text-gold-light transition-colors">
+          MousePIForHire<span class="text-muted">.org</span>
+        </span>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-6" aria-label="Main navigation">
+        <a href="/guide/beginners-guide" class="font-typewriter text-xs text-aged hover:text-gold transition-colors tracking-wide uppercase">Guide</a>
+        <a href="/weapons/" class="font-typewriter text-xs text-aged hover:text-gold transition-colors tracking-wide uppercase">Weapons</a>
+        <a href="/trophies/" class="font-typewriter text-xs text-aged hover:text-gold transition-colors tracking-wide uppercase">Trophies</a>
+        <a href="/walkthrough/" class="font-typewriter text-xs text-aged hover:text-gold transition-colors tracking-wide uppercase">Walkthrough</a>
+        <a href="/collectibles/" class="font-typewriter text-xs text-aged hover:text-gold transition-colors tracking-wide uppercase">Collectibles</a>
+        <a href="/dlc/" class="font-typewriter text-xs text-aged hover:text-gold transition-colors tracking-wide uppercase">DLC</a>
+        <a href="/news/" class="font-typewriter text-xs text-danger hover:text-red-400 transition-colors tracking-wide uppercase">● News</a>
+      </nav>
+
+      <button
+        class="md:hidden text-aged hover:text-gold transition-colors"
+        aria-label="Toggle mobile menu"
+        onclick="document.getElementById('mobile-menu').classList.toggle('open')"
+      >
+        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <line x1="2" y1="6" x2="20" y2="6"/>
+          <line x1="2" y1="11" x2="20" y2="11"/>
+          <line x1="2" y1="16" x2="20" y2="16"/>
+        </svg>
+      </button>
+    </div>
+
+    <div id="mobile-menu" class="md:hidden bg-ink border-t border-card-border px-4 py-4 space-y-3">
+      <a href="/guide/beginners-guide" class="block font-typewriter text-xs text-aged hover:text-gold uppercase tracking-wide py-1">Guide</a>
+      <a href="/weapons/" class="block font-typewriter text-xs text-aged hover:text-gold uppercase tracking-wide py-1">Weapons</a>
+      <a href="/trophies/" class="block font-typewriter text-xs text-aged hover:text-gold uppercase tracking-wide py-1">Trophies</a>
+      <a href="/walkthrough/" class="block font-typewriter text-xs text-aged hover:text-gold uppercase tracking-wide py-1">Walkthrough</a>
+      <a href="/collectibles/" class="block font-typewriter text-xs text-aged hover:text-gold uppercase tracking-wide py-1">Collectibles</a>
+      <a href="/dlc/" class="block font-typewriter text-xs text-aged hover:text-gold uppercase tracking-wide py-1">DLC</a>
+      <a href="/news/" class="block font-typewriter text-xs text-danger uppercase tracking-wide py-1">● Latest News</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 pt-10 pb-12 md:pt-14 md:pb-16">
+      <div class="grid grid-cols-1 lg:grid-cols-[1.05fr_0.95fr] gap-8 items-center">
+        <div class="fade-up">
+          <div class="flex flex-wrap gap-3 mb-5">
+            <span class="badge">Verified Advanced Guide</span>
+            <span class="signal-pill gold">Checked Apr 28, 2026</span>
+            <span class="signal-pill red">Route-risk aware</span>
+          </div>
+          <p class="section-label mb-3">Tips / Advanced Play</p>
+          <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl leading-tight text-parchment">
+            Mouse PI For Hire Advanced Tips Guide
+          </h1>
+          <p class="text-aged text-base sm:text-lg leading-8 mt-6 max-w-2xl">
+            This page is for the part after the beginner panic settles down. It focuses on the habits that current public sources keep agreeing on: keep moving, save before risky locks, treat <strong class="text-parchment">Jack Squat</strong> like a deadline, and never confuse shop recovery with true route safety.
+          </p>
+          <div class="flex flex-wrap gap-4 mt-8">
+            <a href="#checklist" class="btn-primary">Open Advanced Checklist</a>
+            <a href="/trophies/platinum-guide" class="btn-ghost">Open Platinum Guide</a>
+          </div>
+        </div>
+
+        <figure class="guide-card overflow-hidden fade-up delay-1">
+          <img
+            src="/images/mouse-pi-for-hire/steam-screenshots/mouse-pi-screenshot-06.jpg"
+            alt="MOUSE: P.I. For Hire combat screenshot used for the advanced tips page hero"
+            class="w-full h-full min-h-[320px] object-cover"
+            width="1920"
+            height="1080"
+          />
+        </figure>
+      </div>
+    </section>
+
+    <section class="border-y border-card-border bg-ink/60">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 py-14 md:py-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-5">
+          <article class="guide-card p-6">
+            <p class="section-label mb-2">Combat Core</p>
+            <h2 class="font-display text-2xl text-parchment">Always Moving</h2>
+            <p class="text-aged text-sm leading-7 mt-3">
+              Fresh beginner coverage and review coverage both treat constant movement and strafing as a core survival rule, not optional style.
+            </p>
+          </article>
+          <article class="guide-card p-6">
+            <p class="section-label mb-2">Risk Control</p>
+            <h2 class="font-display text-2xl text-parchment">Save Before Locks</h2>
+            <p class="text-aged text-sm leading-7 mt-3">
+              Tailpicking mistakes on black safes can permanently jam them, which turns a simple pre-lock save into one of the strongest habits in the game.
+            </p>
+          </article>
+          <article class="guide-card p-6">
+            <p class="section-label mb-2">Late-Run Safety</p>
+            <h2 class="font-display text-2xl text-parchment">Jack Squat</h2>
+            <p class="text-aged text-sm leading-7 mt-3">
+              Current route guides still treat <strong class="text-parchment">Jack Squat</strong> as the practical hub cutoff for cleanup-sensitive systems.
+            </p>
+          </article>
+          <article class="guide-card p-6">
+            <p class="section-label mb-2">Upgrade Truth</p>
+            <h2 class="font-display text-2xl text-parchment">Schematics First</h2>
+            <p class="text-aged text-sm leading-7 mt-3">
+              Shop recovery helps some collectible lanes, but current guides do not treat <strong class="text-parchment">Schematics</strong> as a vendor-fixable category.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 py-14 md:py-16">
+      <div class="grid grid-cols-1 lg:grid-cols-[1.08fr_0.92fr] gap-8 items-start">
+        <article class="guide-card p-7 prose-copy">
+          <p class="section-label mb-3">How Advanced Play Changes</p>
+          <h2 class="font-display text-3xl text-parchment mb-4">The game gets easier when you stop treating its systems separately</h2>
+          <p>
+            The best advanced habit in MOUSE: P.I. For Hire is not a fancy aim trick. It is seeing how combat, locks, collectibles, and hub timing all lean on the same thing: good route discipline. The player who keeps one clean save trail, checks the room before moving on, and respects mission cutoffs usually has an easier time than the player who tries to improvise every cleanup later.
+          </p>
+          <p>
+            That is why this page avoids vague “play smarter” fluff. The strongest current sources are surprisingly aligned on the practical stuff: mobility matters, environmental kills are worth noticing, black safes deserve respect, and late cleanup gets much shakier once the hub-sensitive part of the campaign starts closing.
+          </p>
+        </article>
+
+        <aside class="guide-card p-7">
+          <p class="section-label mb-3">Best Pairings</p>
+          <h2 class="font-display text-3xl text-parchment mb-4">Open these pages next</h2>
+          <ul class="space-y-4 text-aged text-sm leading-7">
+            <li><a href="/guide/beginners-guide" class="text-gold hover:text-gold-light transition-colors">Beginner&apos;s Guide</a> for the earlier survival layer.</li>
+            <li><a href="/weapons/" class="text-gold hover:text-gold-light transition-colors">Weapons</a> for upgrade and matchup context.</li>
+            <li><a href="/collectibles/" class="text-gold hover:text-gold-light transition-colors">Collectibles Hub</a> for shop-recovery and route-risk logic.</li>
+            <li><a href="/upgrades/schematics-locations/" class="text-gold hover:text-gold-light transition-colors">Schematics Locations</a> when your run needs upgrade routing, not guesswork.</li>
+          </ul>
+        </aside>
+      </div>
+
+      <figure class="guide-card overflow-hidden mt-8">
+        <div class="grid grid-cols-1 md:grid-cols-[0.74fr_1.26fr] items-stretch">
+          <img
+            src="/images/mouse-pi-for-hire/weapons/mouse-pi-weapons-gunfight-room-01.jpg"
+            alt="MOUSE: P.I. For Hire gunfight room screenshot used to illustrate advanced combat rhythm"
+            class="w-full h-full min-h-[280px] object-cover"
+            width="1920"
+            height="1080"
+          />
+          <figcaption class="px-6 py-6 md:px-8 md:py-8">
+            <p class="section-label mb-3">Combat Mood</p>
+            <h3 class="font-display text-2xl sm:text-3xl text-parchment mb-4">Your arena awareness is part of your loadout</h3>
+            <p class="text-aged text-sm sm:text-base leading-8">
+              Reviews and guides both point to the same idea: when a room offers barrels, crush hazards, or better angles, using them is not a gimmick. It is part of how the game expects pressure to be managed.
+            </p>
+          </figcaption>
+        </div>
+      </figure>
+    </section>
+
+    <section id="checklist" class="border-y border-card-border bg-ink/60">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 py-14 md:py-16">
+        <div class="max-w-4xl mb-10">
+          <p class="section-label mb-3">Advanced Checklist</p>
+          <h2 class="font-display text-3xl sm:text-4xl text-parchment">The habits worth locking in for a clean run</h2>
+          <p class="text-aged mt-4 leading-8">
+            These are the strongest route-level tips from the current fact set. Where source support is slightly thinner, the wording stays practical instead of absolute.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          <article class="guide-card p-7">
+            <p class="section-label mb-4">Combat Habits</p>
+            <div class="checklist-row">
+              <h3 class="font-display text-2xl text-parchment">1. Move first, shoot second</h3>
+              <p class="text-aged text-sm leading-7 mt-3">
+                Standing still is one of the most consistently punished habits in current coverage. Keep strafing, use the short stamina dash to break melee pressure, and avoid turning fights into static peek battles.
+              </p>
+            </div>
+            <div class="checklist-row">
+              <h3 class="font-display text-2xl text-parchment">2. Use environmental kills whenever the room offers them</h3>
+              <p class="text-aged text-sm leading-7 mt-3">
+                Explosive barrels, pianos, and anvils are all supported by fresh coverage as real combat tools. If a crowded fight can be shortened by the room itself, take that discount.
+              </p>
+            </div>
+            <div class="checklist-row">
+              <h3 class="font-display text-2xl text-parchment">3. Treat damage-over-time as pressure management, not just style</h3>
+              <p class="text-aged text-sm leading-7 mt-3">
+                Current trophy-route commentary especially likes the <strong class="text-parchment">Devarnisher</strong> for corrosive damage-over-time on bosses. The source support here is solid but not broad enough to call it the only answer, so the safest takeaway is that sustained damage can keep value even during mobile boss behavior.
+              </p>
+            </div>
+          </article>
+
+          <article class="guide-card p-7">
+            <p class="section-label mb-4">Locks And Saves</p>
+            <div class="checklist-row">
+              <h3 class="font-display text-2xl text-parchment">4. Save before every black safe you would hate to lose</h3>
+              <p class="text-aged text-sm leading-7 mt-3">
+                Lockpick guides agree that failed black safes can jam permanently. That makes a pre-lock manual save one of the highest-value habits in the whole run.
+              </p>
+            </div>
+            <div class="checklist-row">
+              <h3 class="font-display text-2xl text-parchment">5. Use the 50 save slots like a route tool</h3>
+              <p class="text-aged text-sm leading-7 mt-3">
+                Current public guides explicitly mention 50 save slots. Keep milestone saves before risky missions, collectible-heavy stages, and hub-sensitive turns instead of relying on one rolling slot.
+              </p>
+            </div>
+            <div class="checklist-row">
+              <h3 class="font-display text-2xl text-parchment">6. Assume there is no comfortable replay cleanup later</h3>
+              <p class="text-aged text-sm leading-7 mt-3">
+                The no-replay warning is one of the strongest facts in the current route literature. If you leave a room with unfinished business, treat that as a conscious gamble, not as normal cleanup planning.
+              </p>
+            </div>
+          </article>
+
+          <article class="guide-card p-7">
+            <p class="section-label mb-4">Route Habits</p>
+            <div class="checklist-row">
+              <h3 class="font-display text-2xl text-parchment">7. Treat Jack Squat like a deadline, not a trivia answer</h3>
+              <p class="text-aged text-sm leading-7 mt-3">
+                Side jobs, baseball-card related progress, and other hub-sensitive systems are much safer when pushed forward before <strong class="text-parchment">Jack Squat</strong>. Current route consensus is strong on that point.
+              </p>
+            </div>
+            <div class="checklist-row">
+              <h3 class="font-display text-2xl text-parchment">8. Think of shop recovery as backup only</h3>
+              <p class="text-aged text-sm leading-7 mt-3">
+                Official developer guidance says missed <strong class="text-parchment">Newspapers</strong>, <strong class="text-parchment">Comic Strips</strong>, and <strong class="text-parchment">Baseball Cards</strong> can later appear in the shop. Useful, yes. Safe enough to stop checking rooms, no.
+              </p>
+            </div>
+            <div class="checklist-row">
+              <h3 class="font-display text-2xl text-parchment">9. Prioritize schematics over most comfort-cleanup assumptions</h3>
+              <p class="text-aged text-sm leading-7 mt-3">
+                Current guides do not treat schematics as buy-back collectibles, and they also tie them directly to full-weapon-upgrade progress. If you are choosing between a vague future revisit and a schematic detour now, the detour usually wins.
+              </p>
+            </div>
+          </article>
+
+          <article class="guide-card p-7">
+            <p class="section-label mb-4">Collectibles And Economy</p>
+            <div class="checklist-row">
+              <h3 class="font-display text-2xl text-parchment">10. Do not let the card minigame drain your route discipline</h3>
+              <p class="text-aged text-sm leading-7 mt-3">
+                Current guides place the Baseball Cards minigame at the <strong class="text-parchment">Little &amp; Big Bar</strong> hub and at <strong class="text-parchment">Roadhouse</strong> bars during missions. That makes cards part route system, part economy system, and part unlock pressure.
+              </p>
+            </div>
+            <div class="checklist-row">
+              <h3 class="font-display text-2xl text-parchment">11. Free card pickups are worth more than they look</h3>
+              <p class="text-aged text-sm leading-7 mt-3">
+                Current card guides consistently describe a <strong class="text-parchment">$50</strong> minigame entry cost, though that number comes from a narrower source base than the major route facts on this page. It is still strong enough to justify the practical rule: natural pickups save both money and cleanup stress.
+              </p>
+            </div>
+            <div class="checklist-row">
+              <h3 class="font-display text-2xl text-parchment">12. Let mission progress unlock your weapon plan naturally</h3>
+              <p class="text-aged text-sm leading-7 mt-3">
+                Current weapon guides describe the arsenal as being unlocked through normal campaign progress rather than through hidden vendors. The clean advanced takeaway is simple: plan upgrades around what the campaign is already handing you instead of hoarding for imagined secret-buy spikes.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 py-14 md:py-16">
+      <div class="grid grid-cols-1 gap-8">
+        <figure class="guide-card overflow-hidden">
+          <div class="grid grid-cols-1 md:grid-cols-[1.2fr_0.8fr] items-stretch">
+            <img
+              src="/images/mouse-pi-for-hire/home/mouse-pi-home-tool-upgrades-01.jpg"
+              alt="MOUSE: P.I. For Hire upgrade-themed artwork used to support schematic and routing tips"
+              class="w-full h-full min-h-[280px] object-cover"
+              width="1920"
+              height="1080"
+            />
+            <figcaption class="px-6 py-6 md:px-8 md:py-8">
+              <p class="section-label mb-3">Upgrade Reminder</p>
+              <h2 class="font-display text-2xl sm:text-3xl text-parchment mb-4">A neat inventory screen later does not undo a lazy route now</h2>
+              <p class="text-aged text-sm sm:text-base leading-8">
+                The safest version of advanced play is boring in a good way: save often, clear the room while you are in it, and treat upgrade currency like progression instead of decorative loot.
+              </p>
+            </figcaption>
+          </div>
+        </figure>
+
+        <article class="guide-card p-7 prose-copy">
+          <p class="section-label mb-3">FAQ</p>
+          <h2 class="font-display text-3xl text-parchment mb-5">Quick advanced answers</h2>
+          <div class="space-y-4">
+            <details class="border border-card-border rounded-sm px-5 py-4 bg-noir/40">
+              <summary class="font-display text-xl text-parchment">What is the single best advanced habit in MOUSE: P.I. For Hire?</summary>
+              <p class="text-aged text-sm leading-7 mt-4">
+                Keep moving and keep protecting your route with manual saves. Most of the page flows from that pair of habits.
+              </p>
+            </details>
+            <details class="border border-card-border rounded-sm px-5 py-4 bg-noir/40">
+              <summary class="font-display text-xl text-parchment">Can I rely on the shop to fix missed collectibles?</summary>
+              <p class="text-aged text-sm leading-7 mt-4">
+                Only partly. Current official guidance supports shop recovery for Newspapers, Comic Strips, and Baseball Cards, not for every collectible family.
+              </p>
+            </details>
+            <details class="border border-card-border rounded-sm px-5 py-4 bg-noir/40">
+              <summary class="font-display text-xl text-parchment">Why does this page keep warning about Jack Squat?</summary>
+              <p class="text-aged text-sm leading-7 mt-4">
+                Because current route guides keep treating it as the practical cutoff for hub-sensitive progress, and that affects much more than trophies alone.
+              </p>
+            </details>
+            <details class="border border-card-border rounded-sm px-5 py-4 bg-noir/40">
+              <summary class="font-display text-xl text-parchment">Which collectible type is least safe to postpone?</summary>
+              <p class="text-aged text-sm leading-7 mt-4">
+                Schematics are the clearest answer, because current guidance does not frame them as a shop-cleanup category and they directly shape upgrade flexibility.
+              </p>
+            </details>
+          </div>
+        </article>
+
+        <article class="guide-card p-7 prose-copy">
+          <p class="section-label mb-3">Version Note</p>
+          <h2 class="font-display text-3xl text-parchment mb-4">What this page is based on</h2>
+          <p>
+            This page was written on <strong>April 28, 2026</strong> using launch-window public guides, review coverage, the Steam achievements page, and an official Steam developer reply published or accessed between <strong>April 14 and April 28, 2026</strong>.
+          </p>
+          <p>
+            The parts most likely to need future updates are the <strong>Baseball Cards economy details</strong>, the strongest current <strong>boss-weapon recommendation language</strong>, and any patch that changes hub cleanup or replay behavior.
+          </p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-card-border bg-ink mt-4" role="contentinfo">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-10">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+        <div class="md:col-span-2">
+          <div class="flex items-center gap-2 mb-3">
+            <svg width="22" height="20" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M4 18 Q6 10 14 9 Q22 8 24 18 Z" fill="#d4a843" opacity="0.7"/>
+              <rect x="3" y="17" width="22" height="3" rx="1.5" fill="#c8b89a" opacity="0.7"/>
+              <path d="M10 9 Q12 4 14 3 Q16 4 18 9" fill="#d4a843" opacity="0.7"/>
+            </svg>
+            <span class="font-display text-sm font-bold text-gold">MousePIForHire.org</span>
+          </div>
+          <p class="text-muted text-xs leading-relaxed max-w-sm">
+            An independent fan guide for MOUSE: P.I. For Hire. Not affiliated with, endorsed by, or sponsored by Fumi Games or PlaySide Studios. All trademarks and game assets belong to their respective owners.
+          </p>
+        </div>
+
+        <div>
+          <p class="font-typewriter text-xs text-gold uppercase tracking-widest mb-3">Guides</p>
+          <ul class="space-y-2">
+            <li><a href="/guide/beginners-guide" class="text-muted text-xs hover:text-parchment transition-colors">Beginner&apos;s Guide</a></li>
+            <li><a href="/weapons/" class="text-muted text-xs hover:text-parchment transition-colors">Weapons &amp; Upgrades</a></li>
+            <li><a href="/trophies/platinum-guide" class="text-muted text-xs hover:text-parchment transition-colors">Platinum Roadmap</a></li>
+            <li><a href="/walkthrough/" class="text-muted text-xs hover:text-parchment transition-colors">Full Walkthrough</a></li>
+            <li><a href="/bosses/" class="text-muted text-xs hover:text-parchment transition-colors">Boss Guide</a></li>
+            <li><a href="/dlc/" class="text-muted text-xs hover:text-parchment transition-colors">Story DLC</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="font-typewriter text-xs text-gold uppercase tracking-widest mb-3">Collectibles</p>
+          <ul class="space-y-2 mb-5">
+            <li><a href="/collectibles/newspapers/" class="text-muted text-xs hover:text-parchment transition-colors">All Newspapers</a></li>
+            <li><a href="/collectibles/baseball-cards/" class="text-muted text-xs hover:text-parchment transition-colors">Baseball Cards</a></li>
+            <li><a href="/collectibles/comic-strips/" class="text-muted text-xs hover:text-parchment transition-colors">Comic Strips</a></li>
+            <li><a href="/upgrades/schematics-locations/" class="text-muted text-xs hover:text-parchment transition-colors">Schematics Locations</a></li>
+          </ul>
+          <p class="font-typewriter text-xs text-gold uppercase tracking-widest mb-3">Site</p>
+          <ul class="space-y-2">
+            <li><a href="/news/" class="text-muted text-xs hover:text-parchment transition-colors">News &amp; Patches</a></li>
+            <li><a href="/tips/" class="text-muted text-xs hover:text-parchment transition-colors">Advanced Tips</a></li>
+            <li><a href="/about" class="text-muted text-xs hover:text-parchment transition-colors">About</a></li>
+            <li><a href="/contact" class="text-muted text-xs hover:text-parchment transition-colors">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pt-6 border-t border-card-border flex flex-col sm:flex-row items-center justify-between gap-3">
+        <p class="text-muted text-xs">
+          &copy; 2026 MousePIForHire.org &mdash; Fan site. All game content &copy; Fumi Games &amp; PlaySide Studios.
+        </p>
+        <div class="flex gap-4">
+          <a href="/privacy" class="text-muted text-xs hover:text-parchment transition-colors">Privacy Policy</a>
+          <a href="/disclosure" class="text-muted text-xs hover:text-parchment transition-colors">Ad Disclosure</a>
+          <a href="/sitemap.xml" class="text-muted text-xs hover:text-parchment transition-colors">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!--
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+  -->
+</body>
+</html>
