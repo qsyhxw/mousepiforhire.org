@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mouse PI For Hire News & Patch Notes</title>
+  <meta name="description" content="Verified Mouse PI For Hire news hub tracking patch notes, hotfix rollout, platform version differences, trophy fixes, and current known-issue status." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://mousepiforhire.org/news/" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Mouse PI For Hire News & Patch Notes" />
+  <meta property="og:description" content="Cross-checked MOUSE: P.I. For Hire patch notes, hotfix timeline, platform rollout differences, and fix status for launch issues." />
+  <meta property="og:url" content="https://mousepiforhire.org/news/" />
+  <meta property="og:site_name" content="MousePIForHire.org" />
+  <meta property="og:image" content="https://mousepiforhire.org/og-cover.jpg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Mouse PI For Hire News & Patch Notes" />
+  <meta name="twitter:description" content="Latest verified MOUSE: P.I. For Hire hotfixes, platform rollout notes, and launch issue tracking." />
+  <meta name="twitter:image" content="https://mousepiforhire.org/og-cover.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Special+Elite&family=Lato:wght@400;700&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            noir: '#0b0b0b',
+            ink: '#141410',
+            parchment: '#f0e8d5',
+            aged: '#c8b89a',
+            muted: '#7a7060',
+            gold: '#d4a843',
+            'gold-light': '#e8c870',
+            danger: '#b03030',
+            'card-bg': '#1a1a16',
+            'card-border': '#2e2e26'
+          },
+          fontFamily: {
+            display: ['"Playfair Display"', 'Georgia', 'serif'],
+            typewriter: ['"Special Elite"', 'monospace'],
+            body: ['Lato', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      background-color: #0b0b0b;
+      color: #f0e8d5;
+      font-family: 'Lato', sans-serif;
+      overflow-x: hidden;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 9999;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+      background-repeat: repeat;
+      opacity: 0.35;
+      mix-blend-mode: overlay;
+    }
+    .section-label {
+      font-family: 'Special Elite', monospace;
+      font-size: 0.7rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: #d4a843;
+    }
+    .guide-card {
+      background: #1a1a16;
+      border: 1px solid #2e2e26;
+      border-radius: 4px;
+      transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+    }
+    .guide-card:hover {
+      border-color: #d4a843;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 32px rgba(212, 168, 67, 0.12);
+    }
+    .btn-primary {
+      background: #d4a843;
+      color: #0b0b0b;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      padding: 12px 28px;
+      border-radius: 2px;
+      display: inline-block;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.15s;
+    }
+    .btn-primary:hover { background: #e8c870; transform: translateY(-1px); }
+    .btn-ghost {
+      border: 1px solid #d4a843;
+      color: #d4a843;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      padding: 12px 28px;
+      border-radius: 2px;
+      display: inline-block;
+      text-decoration: none;
+      transition: background 0.2s, color 0.2s;
+    }
+    .btn-ghost:hover { background: rgba(212,168,67,0.1); }
+    .badge {
+      font-family: 'Special Elite', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      background: rgba(212,168,67,0.15);
+      border: 1px solid rgba(212,168,67,0.4);
+      color: #d4a843;
+      padding: 4px 12px;
+      border-radius: 2px;
+      display: inline-block;
+      text-transform: uppercase;
+    }
+    .signal-pill {
+      font-family: 'Special Elite', monospace;
+      font-size: 0.6rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 4px 8px;
+      border-radius: 999px;
+      border: 1px solid #2e2e26;
+      color: #c8b89a;
+      background: rgba(200,184,154,0.08);
+    }
+    .signal-pill.gold {
+      color: #d4a843;
+      border-color: rgba(212,168,67,0.4);
+      background: rgba(212,168,67,0.12);
+    }
+    .signal-pill.red {
+      color: #ffb3b3;
+      border-color: rgba(176,48,48,0.45);
+      background: rgba(176,48,48,0.12);
+    }
+    .prose-copy p { color: #c8b89a; line-height: 1.8; }
+    .prose-copy a { color: #e8c870; text-decoration: underline; text-underline-offset: 3px; }
+    .prose-copy strong { color: #f0e8d5; }
+    .mini-pill {
+      font-family: 'Special Elite', monospace;
+      font-size: 0.58rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 4px 8px;
+      border-radius: 999px;
+      border: 1px solid #2e2e26;
+      color: #c8b89a;
+      background: rgba(200,184,154,0.08);
+      display: inline-block;
+    }
+    .mini-pill.gold {
+      color: #d4a843;
+      border-color: rgba(212,168,67,0.4);
+      background: rgba(212,168,67,0.12);
+    }
+    .timeline-row {
+      border-top: 1px solid #2e2e26;
+      padding-top: 1.2rem;
+      margin-top: 1.2rem;
+    }
+    .timeline-row:first-child {
+      border-top: none;
+      padding-top: 0;
+      margin-top: 0;
+    }
+    #mobile-menu { display: none; }
+    #mobile-menu.open { display: block; }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .fade-up { animation: fadeUp 0.7s ease both; }
+    .delay-1 { animation-delay: 0.1s; }
+    .delay-2 { animation-delay: 0.2s; }
+    .delay-3 { animation-delay: 0.35s; }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://mousepiforhire.org/#website",
+        "url": "https://mousepiforhire.org/",
+        "name": "MousePIForHire.org"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://mousepiforhire.org/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "News",
+            "item": "https://mousepiforhire.org/news/"
+          }
+        ]
+      },
+      {
+        "@type": "Article",
+        "@id": "https://mousepiforhire.org/news/#article",
+        "headline": "Mouse PI For Hire News & Patch Notes",
+        "description": "Cross-checked MOUSE: P.I. For Hire patch notes, hotfix timeline, platform rollout differences, and fix status for launch issues.",
+        "author": {
+          "@type": "Organization",
+          "name": "MousePIForHire.org"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "MousePIForHire.org",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://mousepiforhire.org/logo.png"
+          }
+        },
+        "datePublished": "2026-04-28",
+        "dateModified": "2026-04-28",
+        "mainEntityOfPage": "https://mousepiforhire.org/news/"
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body class="bg-noir text-parchment font-body">
+  <header class="sticky top-0 z-50 bg-noir border-b border-card-border" role="banner">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 flex items-center justify-between h-14">
+      <a href="/" class="flex items-center gap-2 group" aria-label="MousePIForHire.org Home">
+        <svg width="28" height="24" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <ellipse cx="14" cy="20" rx="13" ry="3.5" fill="#d4a843" opacity="0.3"/>
+          <path d="M4 18 Q6 10 14 9 Q22 8 24 18 Z" fill="#d4a843"/>
+          <path d="M8 18 Q9 12 14 11 Q19 10 20 18" fill="#0b0b0b" opacity="0.5"/>
+          <rect x="3" y="17" width="22" height="3" rx="1.5" fill="#c8b89a"/>
+          <path d="M10 9 Q12 4 14 3 Q16 4 18 9" fill="#d4a843"/>
+          <circle cx="20" cy="14" r="1.5" fill="#b03030"/>
+        </svg>
+        <span class="font-display text-base font-bold text-gold tracking-tight group-hover:text-gold-light transition-colors">
+          MousePIForHire<span class="text-muted">.org</span>
+        </span>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-6" aria-label="Main navigation">
+        <a href="/guide/beginners-guide" class="font-typewriter text-xs text-aged hover:text-gold transition-colors tracking-wide uppercase">Guide</a>
+        <a href="/weapons/" class="font-typewriter text-xs text-aged hover:text-gold transition-colors tracking-wide uppercase">Weapons</a>
+        <a href="/trophies/" class="font-typewriter text-xs text-aged hover:text-gold transition-colors tracking-wide uppercase">Trophies</a>
+        <a href="/walkthrough/" class="font-typewriter text-xs text-aged hover:text-gold transition-colors tracking-wide uppercase">Walkthrough</a>
+        <a href="/collectibles/" class="font-typewriter text-xs text-aged hover:text-gold transition-colors tracking-wide uppercase">Collectibles</a>
+        <a href="/dlc/" class="font-typewriter text-xs text-aged hover:text-gold transition-colors tracking-wide uppercase">DLC</a>
+        <a href="/news/" class="font-typewriter text-xs text-danger hover:text-red-400 transition-colors tracking-wide uppercase">● News</a>
+      </nav>
+
+      <button
+        class="md:hidden text-aged hover:text-gold transition-colors"
+        aria-label="Toggle mobile menu"
+        onclick="document.getElementById('mobile-menu').classList.toggle('open')"
+      >
+        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <line x1="2" y1="6" x2="20" y2="6"/>
+          <line x1="2" y1="11" x2="20" y2="11"/>
+          <line x1="2" y1="16" x2="20" y2="16"/>
+        </svg>
+      </button>
+    </div>
+
+    <div id="mobile-menu" class="md:hidden bg-ink border-t border-card-border px-4 py-4 space-y-3">
+      <a href="/guide/beginners-guide" class="block font-typewriter text-xs text-aged hover:text-gold uppercase tracking-wide py-1">Guide</a>
+      <a href="/weapons/" class="block font-typewriter text-xs text-aged hover:text-gold uppercase tracking-wide py-1">Weapons</a>
+      <a href="/trophies/" class="block font-typewriter text-xs text-aged hover:text-gold uppercase tracking-wide py-1">Trophies</a>
+      <a href="/walkthrough/" class="block font-typewriter text-xs text-aged hover:text-gold uppercase tracking-wide py-1">Walkthrough</a>
+      <a href="/collectibles/" class="block font-typewriter text-xs text-aged hover:text-gold uppercase tracking-wide py-1">Collectibles</a>
+      <a href="/dlc/" class="block font-typewriter text-xs text-aged hover:text-gold uppercase tracking-wide py-1">DLC</a>
+      <a href="/news/" class="block font-typewriter text-xs text-danger uppercase tracking-wide py-1">● Latest News</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 pt-10 pb-12 md:pt-14 md:pb-16">
+      <div class="grid grid-cols-1 lg:grid-cols-[1.05fr_0.95fr] gap-8 items-center">
+        <div class="fade-up">
+          <div class="flex flex-wrap gap-3 mb-5">
+            <span class="badge">Verified Patch Tracker</span>
+            <span class="signal-pill gold">Latest checked: v1.0.6</span>
+            <span class="signal-pill red">Updated Apr 28, 2026</span>
+          </div>
+          <p class="section-label mb-3">News / Patches / Hotfixes</p>
+          <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl leading-tight text-parchment">
+            Mouse PI For Hire News & Patch Notes
+          </h1>
+          <p class="text-aged text-base sm:text-lg leading-8 mt-6 max-w-2xl">
+            This page tracks the public post-launch fix history for MOUSE: P.I. For Hire: hotfix dates, Steam build IDs, console rollout notes, trophy-related fixes, and the current shape of known issue cleanup. Where the public record is incomplete, the wording stays narrow and honest.
+          </p>
+          <div class="flex flex-wrap gap-4 mt-8">
+            <a href="#timeline" class="btn-primary">Open Patch Timeline</a>
+            <a href="/trophies/platinum-guide" class="btn-ghost">Open Platinum Guide</a>
+          </div>
+        </div>
+
+        <figure class="guide-card overflow-hidden fade-up delay-1">
+          <img
+            src="/images/mouse-pi-for-hire/trophies/mouse-pi-trophies-city-map-01.jpg"
+            alt="MOUSE: P.I. For Hire city map artwork used for the patch and news tracker page"
+            class="w-full h-full min-h-[320px] object-cover"
+            width="1200"
+            height="675"
+          />
+        </figure>
+      </div>
+    </section>
+
+    <section class="border-y border-card-border bg-ink/60">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 py-14 md:py-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-5">
+          <article class="guide-card p-6">
+            <p class="section-label mb-2">Latest Public Hotfix</p>
+            <h2 class="font-display text-2xl text-parchment">v1.0.6</h2>
+            <p class="text-aged text-sm leading-7 mt-3">
+              The newest public hotfix we verified is <strong class="text-parchment">v1.0.6</strong>, posted on <strong class="text-parchment">April 25, 2026</strong> for <strong class="text-parchment">Steam build 22923861</strong>.
+            </p>
+          </article>
+          <article class="guide-card p-6">
+            <p class="section-label mb-2">Launch Week Pace</p>
+            <h2 class="font-display text-2xl text-parchment">5 Public Fixes</h2>
+            <p class="text-aged text-sm leading-7 mt-3">
+              We verified <strong class="text-parchment">v1.0.1</strong>, <strong class="text-parchment">v1.0.3</strong>, <strong class="text-parchment">v1.0.4</strong>, <strong class="text-parchment">v1.0.5</strong>, and <strong class="text-parchment">v1.0.6</strong> in the launch window.
+            </p>
+          </article>
+          <article class="guide-card p-6">
+            <p class="section-label mb-2">Platform Rollout</p>
+            <h2 class="font-display text-2xl text-parchment">Steam Leads First</h2>
+            <p class="text-aged text-sm leading-7 mt-3">
+              The checked public notes consistently show <strong class="text-parchment">Steam first</strong>, with PlayStation 5 and Xbox Series X|S often following on a separate rollout schedule.
+            </p>
+          </article>
+          <article class="guide-card p-6">
+            <p class="section-label mb-2">Trophy Angle</p>
+            <h2 class="font-display text-2xl text-parchment">Clue Fixes Confirmed</h2>
+            <p class="text-aged text-sm leading-7 mt-3">
+              Official hotfix notes explicitly addressed clue-collection problems tied to <strong class="text-parchment">Our Lesser Brothers</strong> and <strong class="text-parchment">Secrets of the Shrew Shortage</strong>.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 py-14 md:py-16">
+      <div class="grid grid-cols-1 lg:grid-cols-[1.08fr_0.92fr] gap-8 items-start">
+        <article class="guide-card p-7 prose-copy">
+          <p class="section-label mb-3">Status Read</p>
+          <h2 class="font-display text-3xl text-parchment mb-4">What the current public patch trail actually tells us</h2>
+          <p>
+            The launch-week pattern is pretty clear: the game shipped on <strong>April 16, 2026</strong>, then entered a rapid hotfix phase with multiple public updates in just over a week. The facts are strongest on <strong>Steam build timing</strong>, <strong>hotfix content</strong>, and <strong>select PlayStation 5 / Xbox version numbers</strong>. They are weaker on full platform parity reporting, especially where the public notes stop short of spelling out every Nintendo Switch 2 build.
+          </p>
+          <p>
+            For players, that means this page works best as a verification layer. If you are troubleshooting a trophy, a blocked quest, a clue that did not register, or a mismatch between Steam and console behavior, this is where the official fix trail starts.
+          </p>
+          <p>
+            It also matters for route planning. The <a href="/trophies/platinum-guide" class="text-gold hover:text-gold-light transition-colors">Platinum Guide</a>, <a href="/walkthrough/" class="text-gold hover:text-gold-light transition-colors">Walkthrough Hub</a>, and <a href="/tips/" class="text-gold hover:text-gold-light transition-colors">Advanced Tips</a> all become more trustworthy when their bug warnings are read through the latest hotfix state instead of frozen at launch-day panic.
+          </p>
+        </article>
+
+        <aside class="guide-card p-7">
+          <p class="section-label mb-3">Quick Read</p>
+          <h2 class="font-display text-3xl text-parchment mb-4">The short version</h2>
+          <ul class="space-y-3 text-aged text-sm leading-7">
+            <li>Latest checked public hotfix: <strong class="text-parchment">v1.0.6</strong>.</li>
+            <li>Steam builds are the cleanest version anchor in public sources.</li>
+            <li>Console rollout can lag behind Steam by a patch post or a few days.</li>
+            <li>Clue and quest progress fixes were a major focus in v1.0.4 through v1.0.6.</li>
+            <li>The team says a first major patch is planned for the coming weeks.</li>
+          </ul>
+        </aside>
+      </div>
+
+      <figure class="guide-card overflow-hidden mt-8">
+        <div class="grid grid-cols-1 md:grid-cols-[0.74fr_1.26fr] items-stretch">
+          <img
+            src="/images/mouse-pi-for-hire/steam-screenshots/mouse-pi-screenshot-08.jpg"
+            alt="MOUSE: P.I. For Hire gameplay screenshot used to support the patch tracker page"
+            class="w-full h-full min-h-[280px] object-cover"
+            width="1920"
+            height="1080"
+          />
+          <figcaption class="px-6 py-6 md:px-8 md:py-8">
+            <p class="section-label mb-3">Why This Page Exists</p>
+            <h3 class="font-display text-2xl sm:text-3xl text-parchment mb-4">Launch-week fixes can quietly change whether old warnings are still true</h3>
+            <p class="text-aged text-sm sm:text-base leading-8">
+              A route warning from April 16 can still be useful on April 28, but only if we know whether it survived five public hotfixes. That is the whole point of this page.
+            </p>
+          </figcaption>
+        </div>
+      </figure>
+    </section>
+
+    <section id="timeline" class="border-y border-card-border bg-ink/60">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 py-14 md:py-16">
+        <div class="max-w-4xl mb-10">
+          <p class="section-label mb-3">Patch Timeline</p>
+          <h2 class="font-display text-3xl sm:text-4xl text-parchment">The verified public hotfix chain so far</h2>
+          <p class="text-aged mt-4 leading-8">
+            These entries are restricted to fixes we could ground in checked public notes, build records, or current platform-version reporting.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-[1.08fr_0.92fr] gap-8">
+          <article class="guide-card p-7">
+            <div class="timeline-row">
+              <div class="flex flex-wrap gap-2 mb-3">
+                <span class="mini-pill gold">Apr 25, 2026</span>
+                <span class="mini-pill">v1.0.6</span>
+                <span class="mini-pill">Steam build 22923861</span>
+              </div>
+              <h3 class="font-display text-2xl text-parchment">Latest public hotfix</h3>
+              <p class="text-aged text-sm leading-7 mt-3">
+                The newest official hotfix in the checked record fixes a quest object that could stay stuck in a carry state, improves background-process cleanup when the game closes, and adds a Privacy Policy button to the title screen. The same official note says PlayStation 5 and Xbox Series X|S rollout is planned for the week beginning <strong class="text-parchment">April 27, 2026</strong>.
+              </p>
+            </div>
+
+            <div class="timeline-row">
+              <div class="flex flex-wrap gap-2 mb-3">
+                <span class="mini-pill gold">Apr 20, 2026</span>
+                <span class="mini-pill">v1.0.5</span>
+                <span class="mini-pill">Steam build 22862861</span>
+              </div>
+              <h3 class="font-display text-2xl text-parchment">Quest and settings cleanup</h3>
+              <p class="text-aged text-sm leading-7 mt-3">
+                Public patch summaries for v1.0.5 center on stability and progression cleanup: black-screen hangs, saved FPS settings between sessions, Tinsel Ave issues, Wallop Bay issues, a blocker in <strong class="text-parchment">Friends in Deep Places</strong>, and an item problem in <strong class="text-parchment">Slugs in the Shell</strong>.
+              </p>
+            </div>
+
+            <div class="timeline-row">
+              <div class="flex flex-wrap gap-2 mb-3">
+                <span class="mini-pill gold">Apr 19, 2026</span>
+                <span class="mini-pill">v1.0.4</span>
+                <span class="mini-pill">Steam build 22852168</span>
+              </div>
+              <h3 class="font-display text-2xl text-parchment">Clue and input fixes</h3>
+              <p class="text-aged text-sm leading-7 mt-3">
+                This was one of the most trophy-relevant early hotfixes. Official notes explicitly say it fixed clue-collection problems for <strong class="text-parchment">Our Lesser Brothers</strong> and <strong class="text-parchment">Secrets of the Shrew Shortage</strong>, while also cleaning up rebinding issues for WASD, space, and left shift.
+              </p>
+            </div>
+
+            <div class="timeline-row">
+              <div class="flex flex-wrap gap-2 mb-3">
+                <span class="mini-pill gold">Apr 18, 2026</span>
+                <span class="mini-pill">v1.0.3</span>
+                <span class="mini-pill">Steam build 22849803</span>
+              </div>
+              <h3 class="font-display text-2xl text-parchment">Boot crash and Curdsville blocker</h3>
+              <p class="text-aged text-sm leading-7 mt-3">
+                The checked official note for v1.0.3 targets a launch crash at startup and a progression blocker in <strong class="text-parchment">Curdsville</strong> where an evidence marker could fail to let players proceed.
+              </p>
+            </div>
+
+            <div class="timeline-row">
+              <div class="flex flex-wrap gap-2 mb-3">
+                <span class="mini-pill gold">Apr 16, 2026</span>
+                <span class="mini-pill">v1.0.1</span>
+                <span class="mini-pill">Steam build 22814717</span>
+              </div>
+              <h3 class="font-display text-2xl text-parchment">Immediate launch-day cleanup</h3>
+              <p class="text-aged text-sm leading-7 mt-3">
+                The first public hotfix landed on release day. It focused on early achievement and interaction issues, including the <strong class="text-parchment">True Beast Powerup</strong> achievement and a broken panel near the autopsy table in <strong class="text-parchment">Powerpoint</strong>.
+              </p>
+            </div>
+          </article>
+
+          <aside class="guide-card p-7">
+            <p class="section-label mb-3">What Changed Fastest</p>
+            <h2 class="font-display text-3xl text-parchment mb-4">The early fix pattern</h2>
+            <ul class="space-y-4 text-aged text-sm leading-7">
+              <li>Achievement and clue registration issues were addressed quickly.</li>
+              <li>Quest blockers and room-specific softlocks were a recurring hotfix target.</li>
+              <li>Steam build IDs are the cleanest public reference point for version tracking.</li>
+              <li>Console rollout details exist, but not always as cleanly or as quickly as Steam notes.</li>
+            </ul>
+
+            <div class="guide-card p-5 mt-6 bg-noir/35 border border-card-border">
+              <p class="section-label mb-2">Practical Tip</p>
+              <p class="text-aged text-sm leading-7">
+                If a guide, forum post, or trophy warning sounds scary, check its date first. Launch-day advice can age quickly when the game gets five public hotfixes in nine days.
+              </p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 py-14 md:py-16">
+      <div class="grid grid-cols-1 lg:grid-cols-[1.15fr_0.85fr] gap-8 items-start">
+        <article class="guide-card p-7 prose-copy">
+          <p class="section-label mb-3">Platform Differences</p>
+          <h2 class="font-display text-3xl text-parchment mb-4">How the checked rollout differs by platform</h2>
+          <p>
+            The public record we verified is strongest for <strong>Steam</strong>, because the build IDs are clean and the official hotfix posts line up well with SteamDB. <strong>PlayStation 5</strong> and <strong>Xbox Series X|S</strong> also appear in the checked notes, but usually as follow-up rollouts rather than the first version anchor. That means the same fix can be public knowledge on Steam before the console timing is fully settled in the same note.
+          </p>
+          <p>
+            There is one especially useful pattern here: the official v1.0.6 note says the console rollout is planned for the week beginning <strong>April 27, 2026</strong>, which is exactly the kind of detail players need when a Steam issue looks fixed but their console still behaves like an older build.
+          </p>
+          <p>
+            The checked hotfix notes do <strong>not</strong> give us the same neat version-number trail for <strong>Nintendo Switch 2</strong>. That does not prove parity is missing. It simply means the public notes we checked are more explicit about Steam, PS5, and Xbox than they are about Switch 2 version strings.
+          </p>
+        </article>
+
+        <aside class="guide-card p-7">
+          <p class="section-label mb-3">Version Anchors</p>
+          <h2 class="font-display text-3xl text-parchment mb-4">Useful numbers to remember</h2>
+          <ul class="space-y-3 text-aged text-sm leading-7">
+            <li><strong class="text-parchment">22814717</strong> = Steam build for v1.0.1</li>
+            <li><strong class="text-parchment">22849803</strong> = Steam build for v1.0.3</li>
+            <li><strong class="text-parchment">22852168</strong> = Steam build for v1.0.4</li>
+            <li><strong class="text-parchment">22862861</strong> = Steam build for v1.0.5</li>
+            <li><strong class="text-parchment">22923861</strong> = Steam build for v1.0.6</li>
+          </ul>
+        </aside>
+      </div>
+
+      <figure class="guide-card overflow-hidden mt-8">
+        <div class="grid grid-cols-1 md:grid-cols-[1.2fr_0.8fr] items-stretch">
+          <img
+            src="/images/mouse-pi-for-hire/home/mouse-pi-home-tool-trophies-01.jpg"
+            alt="MOUSE: P.I. For Hire trophy board artwork used to support hotfix and achievement-fix coverage"
+            class="w-full h-full min-h-[280px] object-cover"
+            width="1920"
+            height="1080"
+          />
+          <figcaption class="px-6 py-6 md:px-8 md:py-8">
+            <p class="section-label mb-3">Trophy Watch</p>
+            <h3 class="font-display text-2xl sm:text-3xl text-parchment mb-4">Patch notes matter most when a completion route touches a fragile trigger</h3>
+            <p class="text-aged text-sm sm:text-base leading-8">
+              If your run cares about clue counts, side-job completion, or platform-specific achievement behavior, patch context stops being optional trivia and starts becoming route information.
+            </p>
+          </figcaption>
+        </div>
+      </figure>
+    </section>
+
+    <section class="border-y border-card-border bg-ink/60">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 py-14 md:py-16">
+        <div class="grid grid-cols-1 lg:grid-cols-[1.08fr_0.92fr] gap-8 items-start">
+          <article class="guide-card p-7 prose-copy">
+            <p class="section-label mb-3">Known Issue Status</p>
+            <h2 class="font-display text-3xl text-parchment mb-4">What looks improved, and what still deserves caution</h2>
+            <p>
+              The cleanest current improvement story is around <strong>clue collection</strong> and <strong>quest-blocking bugs</strong>. Official notes for v1.0.4 through v1.0.6 repeatedly target those two areas, and that matters a lot because those are exactly the categories that can poison a collectible route or a trophy run.
+            </p>
+            <p>
+              The public sources we checked do <strong>not</strong> maintain a neat unresolved-issues master list. Instead, they read like a chain of targeted fixes. So the safest current stance is this: several high-value launch problems were clearly addressed, but a cautious player should still keep manual fallback saves and stay alert around progression-sensitive objectives until the first major patch lands.
+            </p>
+            <p>
+              That is also why this page should be read together with the <a href="/trophies/platinum-guide" class="text-gold hover:text-gold-light transition-colors">Platinum Guide</a> and <a href="/walkthrough/" class="text-gold hover:text-gold-light transition-colors">Walkthrough Hub</a>. Fix history changes how severe some old warnings still are, but it does not magically turn a no-replay game into a casual cleanup game.
+            </p>
+          </article>
+
+          <aside class="guide-card p-7">
+            <p class="section-label mb-3">Current Stance</p>
+            <h2 class="font-display text-3xl text-parchment mb-4">Safe assumptions right now</h2>
+            <ul class="space-y-4 text-aged text-sm leading-7">
+              <li>Older trophy-bug panic is no longer the whole story.</li>
+              <li>Steam fix status is the easiest to verify quickly.</li>
+              <li>Console parity should be checked against rollout timing, not assumed.</li>
+              <li>The first major patch could still change several route-sensitive conclusions.</li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 py-14 md:py-16">
+      <div class="grid grid-cols-1 gap-8">
+        <article class="guide-card p-7">
+          <p class="section-label mb-3">Best Next Pages</p>
+          <h2 class="font-display text-3xl text-parchment mb-5">Where this tracker helps the rest of the site most</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+            <a href="/trophies/platinum-guide" class="guide-card p-6 block">
+              <p class="section-label mb-2">Route Pairing</p>
+              <h3 class="font-display text-2xl text-parchment">Platinum Guide</h3>
+              <p class="text-aged text-sm leading-7 mt-3">
+                Best companion for understanding which older trophy warnings still matter after the checked hotfix chain.
+              </p>
+            </a>
+            <a href="/walkthrough/" class="guide-card p-6 block">
+              <p class="section-label mb-2">Progress Pairing</p>
+              <h3 class="font-display text-2xl text-parchment">Walkthrough Hub</h3>
+              <p class="text-aged text-sm leading-7 mt-3">
+                Useful when a patch note changes how nervous you should be about a mission blocker or progression-sensitive room.
+              </p>
+            </a>
+            <a href="/tips/" class="guide-card p-6 block">
+              <p class="section-label mb-2">Habit Pairing</p>
+              <h3 class="font-display text-2xl text-parchment">Advanced Tips</h3>
+              <p class="text-aged text-sm leading-7 mt-3">
+                Good follow-up if the fix history makes you rethink how aggressively you need to save, route, or clean a room.
+              </p>
+            </a>
+            <a href="/weapons/" class="guide-card p-6 block">
+              <p class="section-label mb-2">Balance Pairing</p>
+              <h3 class="font-display text-2xl text-parchment">Weapons Hub</h3>
+              <p class="text-aged text-sm leading-7 mt-3">
+                Best page to revisit if a future major patch changes weapon feel, upgrade breakpoints, or route-safe recommendations.
+              </p>
+            </a>
+          </div>
+        </article>
+
+        <article class="guide-card p-7">
+          <p class="section-label mb-3">FAQ</p>
+          <h2 class="font-display text-3xl text-parchment mb-5">Quick patch answers</h2>
+          <div class="space-y-4">
+            <details class="border border-card-border rounded-sm px-5 py-4 bg-noir/40">
+              <summary class="font-display text-xl text-parchment">What is the latest public hotfix right now?</summary>
+              <p class="text-aged text-sm leading-7 mt-4">
+                In the sources checked for this page, the latest public hotfix is <strong class="text-parchment">v1.0.6</strong>, posted on <strong class="text-parchment">April 25, 2026</strong>.
+              </p>
+            </details>
+            <details class="border border-card-border rounded-sm px-5 py-4 bg-noir/40">
+              <summary class="font-display text-xl text-parchment">Did the developers patch clue-related trophy issues?</summary>
+              <p class="text-aged text-sm leading-7 mt-4">
+                Yes. Official v1.0.4 notes explicitly mention clue fixes for <strong class="text-parchment">Our Lesser Brothers</strong> and <strong class="text-parchment">Secrets of the Shrew Shortage</strong>.
+              </p>
+            </details>
+            <details class="border border-card-border rounded-sm px-5 py-4 bg-noir/40">
+              <summary class="font-display text-xl text-parchment">Are console versions always in lockstep with Steam?</summary>
+              <p class="text-aged text-sm leading-7 mt-4">
+                Not always in the checked public notes. Steam usually gives the cleanest first version anchor, while console rollout can follow on a separate schedule.
+              </p>
+            </details>
+            <details class="border border-card-border rounded-sm px-5 py-4 bg-noir/40">
+              <summary class="font-display text-xl text-parchment">Is there a bigger patch coming after these hotfixes?</summary>
+              <p class="text-aged text-sm leading-7 mt-4">
+                Official v1.0.6 notes say the team is now moving toward a <strong class="text-parchment">first major patch</strong> planned for the coming weeks.
+              </p>
+            </details>
+          </div>
+        </article>
+
+        <article class="guide-card p-7 prose-copy">
+          <p class="section-label mb-3">Version Note</p>
+          <h2 class="font-display text-3xl text-parchment mb-4">What this page is based on</h2>
+          <p>
+            This page was written on <strong>April 28, 2026</strong> using the official Steam store listing, official MOUSE hotfix posts, SteamDB patch records, and current patch-summary coverage published between <strong>April 16 and April 25, 2026</strong>.
+          </p>
+          <p>
+            The next places most likely to need updates are <strong>console parity after v1.0.6</strong>, any newly published <strong>Switch 2 version information</strong>, and the contents of the team&apos;s promised <strong>first major patch</strong>.
+          </p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-card-border bg-ink mt-4" role="contentinfo">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-10">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+        <div class="md:col-span-2">
+          <div class="flex items-center gap-2 mb-3">
+            <svg width="22" height="20" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M4 18 Q6 10 14 9 Q22 8 24 18 Z" fill="#d4a843" opacity="0.7"/>
+              <rect x="3" y="17" width="22" height="3" rx="1.5" fill="#c8b89a" opacity="0.7"/>
+              <path d="M10 9 Q12 4 14 3 Q16 4 18 9" fill="#d4a843" opacity="0.7"/>
+            </svg>
+            <span class="font-display text-sm font-bold text-gold">MousePIForHire.org</span>
+          </div>
+          <p class="text-muted text-xs leading-relaxed max-w-sm">
+            An independent fan guide for MOUSE: P.I. For Hire. Not affiliated with, endorsed by, or sponsored by Fumi Games or PlaySide Studios. All trademarks and game assets belong to their respective owners.
+          </p>
+        </div>
+
+        <div>
+          <p class="font-typewriter text-xs text-gold uppercase tracking-widest mb-3">Guides</p>
+          <ul class="space-y-2">
+            <li><a href="/guide/beginners-guide" class="text-muted text-xs hover:text-parchment transition-colors">Beginner&apos;s Guide</a></li>
+            <li><a href="/weapons/" class="text-muted text-xs hover:text-parchment transition-colors">Weapons &amp; Upgrades</a></li>
+            <li><a href="/trophies/platinum-guide" class="text-muted text-xs hover:text-parchment transition-colors">Platinum Roadmap</a></li>
+            <li><a href="/walkthrough/" class="text-muted text-xs hover:text-parchment transition-colors">Full Walkthrough</a></li>
+            <li><a href="/bosses/" class="text-muted text-xs hover:text-parchment transition-colors">Boss Guide</a></li>
+            <li><a href="/dlc/" class="text-muted text-xs hover:text-parchment transition-colors">Story DLC</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="font-typewriter text-xs text-gold uppercase tracking-widest mb-3">Collectibles</p>
+          <ul class="space-y-2 mb-5">
+            <li><a href="/collectibles/newspapers/" class="text-muted text-xs hover:text-parchment transition-colors">All Newspapers</a></li>
+            <li><a href="/collectibles/baseball-cards/" class="text-muted text-xs hover:text-parchment transition-colors">Baseball Cards</a></li>
+            <li><a href="/collectibles/comic-strips/" class="text-muted text-xs hover:text-parchment transition-colors">Comic Strips</a></li>
+            <li><a href="/upgrades/schematics-locations/" class="text-muted text-xs hover:text-parchment transition-colors">Schematics Locations</a></li>
+          </ul>
+          <p class="font-typewriter text-xs text-gold uppercase tracking-widest mb-3">Site</p>
+          <ul class="space-y-2">
+            <li><a href="/news/" class="text-muted text-xs hover:text-parchment transition-colors">News &amp; Patches</a></li>
+            <li><a href="/tips/" class="text-muted text-xs hover:text-parchment transition-colors">Advanced Tips</a></li>
+            <li><a href="/about" class="text-muted text-xs hover:text-parchment transition-colors">About</a></li>
+            <li><a href="/contact" class="text-muted text-xs hover:text-parchment transition-colors">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pt-6 border-t border-card-border flex flex-col sm:flex-row items-center justify-between gap-3">
+        <p class="text-muted text-xs">
+          &copy; 2026 MousePIForHire.org &mdash; Fan site. All game content &copy; Fumi Games &amp; PlaySide Studios.
+        </p>
+        <div class="flex gap-4">
+          <a href="/privacy" class="text-muted text-xs hover:text-parchment transition-colors">Privacy Policy</a>
+          <a href="/disclosure" class="text-muted text-xs hover:text-parchment transition-colors">Ad Disclosure</a>
+          <a href="/sitemap.xml" class="text-muted text-xs hover:text-parchment transition-colors">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!--
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+  -->
+</body>
+</html>
