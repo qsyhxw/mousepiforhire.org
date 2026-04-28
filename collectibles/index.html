@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MOUSE: P.I. For Hire Collectibles Guide &amp; Tracker</title>
+  <meta name="description" content="Verified MOUSE: P.I. For Hire collectibles guide covering newspapers, baseball cards, comic strips, schematics, shop cleanup, and missable risks." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://mousepiforhire.org/collectibles/" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="MOUSE: P.I. For Hire Collectibles Guide &amp; Tracker" />
+  <meta property="og:description" content="Cross-checked collectible categories, shop recovery rules, and first-run route risks for MOUSE: P.I. For Hire." />
+  <meta property="og:url" content="https://mousepiforhire.org/collectibles/" />
+  <meta property="og:site_name" content="MousePIForHire.org" />
+  <meta property="og:image" content="https://mousepiforhire.org/og-cover.jpg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="MOUSE: P.I. For Hire Collectibles Guide &amp; Tracker" />
+  <meta name="twitter:description" content="Verified newspapers, baseball cards, comic strips, figurines, and schematics guidance for MOUSE: P.I. For Hire." />
+  <meta name="twitter:image" content="https://mousepiforhire.org/og-cover.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Special+Elite&family=Lato:wght@400;700&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            noir: '#0b0b0b',
+            ink: '#141410',
+            parchment: '#f0e8d5',
+            aged: '#c8b89a',
+            muted: '#7a7060',
+            gold: '#d4a843',
+            'gold-light': '#e8c870',
+            danger: '#b03030',
+            'card-bg': '#1a1a16',
+            'card-border': '#2e2e26'
+          },
+          fontFamily: {
+            display: ['"Playfair Display"', 'Georgia', 'serif'],
+            typewriter: ['"Special Elite"', 'monospace'],
+            body: ['Lato', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      background-color: #0b0b0b;
+      color: #f0e8d5;
+      font-family: 'Lato', sans-serif;
+      overflow-x: hidden;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 9999;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+      background-repeat: repeat;
+      opacity: 0.35;
+      mix-blend-mode: overlay;
+    }
+    .section-label {
+      font-family: 'Special Elite', monospace;
+      font-size: 0.7rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: #d4a843;
+    }
+    .guide-card {
+      background: #1a1a16;
+      border: 1px solid #2e2e26;
+      border-radius: 4px;
+      transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+    }
+    .guide-card:hover {
+      border-color: #d4a843;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 32px rgba(212, 168, 67, 0.12);
+    }
+    .btn-primary {
+      background: #d4a843;
+      color: #0b0b0b;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      padding: 12px 28px;
+      border-radius: 2px;
+      display: inline-block;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.15s;
+    }
+    .btn-primary:hover { background: #e8c870; transform: translateY(-1px); }
+    .btn-ghost {
+      border: 1px solid #d4a843;
+      color: #d4a843;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      padding: 12px 28px;
+      border-radius: 2px;
+      display: inline-block;
+      text-decoration: none;
+      transition: background 0.2s, color 0.2s;
+    }
+    .btn-ghost:hover { background: rgba(212,168,67,0.1); }
+    .badge {
+      font-family: 'Special Elite', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      background: rgba(212,168,67,0.15);
+      border: 1px solid rgba(212,168,67,0.4);
+      color: #d4a843;
+      padding: 4px 12px;
+      border-radius: 2px;
+      display: inline-block;
+      text-transform: uppercase;
+    }
+    .signal-pill {
+      font-family: 'Special Elite', monospace;
+      font-size: 0.6rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 4px 8px;
+      border-radius: 999px;
+      border: 1px solid #2e2e26;
+      color: #c8b89a;
+      background: rgba(200,184,154,0.08);
+    }
+    .signal-pill.gold {
+      color: #d4a843;
+      border-color: rgba(212,168,67,0.4);
+      background: rgba(212,168,67,0.12);
+    }
+    .signal-pill.red {
+      color: #ffb3b3;
+      border-color: rgba(176,48,48,0.45);
+      background: rgba(176,48,48,0.12);
+    }
+    .prose-copy p { color: #c8b89a; line-height: 1.8; }
+    .prose-copy a { color: #e8c870; text-decoration: underline; text-underline-offset: 3px; }
+    .prose-copy strong { color: #f0e8d5; }
+    #mobile-menu { display: none; }
+    #mobile-menu.open { display: block; }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .fade-up { animation: fadeUp 0.7s ease both; }
+    .delay-1 { animation-delay: 0.1s; }
+    .delay-2 { animation-delay: 0.2s; }
+    .delay-3 { animation-delay: 0.35s; }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://mousepiforhire.org/#website",
+        "url": "https://mousepiforhire.org/",
+        "name": "MousePIForHire.org"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://mousepiforhire.org/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Collectibles",
+            "item": "https://mousepiforhire.org/collectibles/"
+          }
+        ]
+      },
+      {
+        "@type": "Article",
+        "@id": "https://mousepiforhire.org/collectibles/#article",
+        "headline": "MOUSE: P.I. For Hire Collectibles Guide & Tracker",
+        "description": "Cross-checked collectible categories, shop recovery rules, and first-run route risks for MOUSE: P.I. For Hire.",
+        "author": {
+          "@type": "Organization",
+          "name": "MousePIForHire.org"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "MousePIForHire.org",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://mousepiforhire.org/logo.png"
+          }
+        },
+        "datePublished": "2026-04-28",
+        "dateModified": "2026-04-28",
+        "mainEntityOfPage": "https://mousepiforhire.org/collectibles/"
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body class="bg-noir text-parchment font-body">
+  <header class="sticky top-0 z-50 bg-noir border-b border-card-border" role="banner">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 flex items-center justify-between h-14">
+      <a href="/" class="flex items-center gap-2 group" aria-label="MousePIForHire.org Home">
+        <svg width="28" height="24" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <ellipse cx="14" cy="20" rx="13" ry="3.5" fill="#d4a843" opacity="0.3"/>
+          <path d="M4 18 Q6 10 14 9 Q22 8 24 18 Z" fill="#d4a843"/>
+          <path d="M8 18 Q9 12 14 11 Q19 10 20 18" fill="#0b0b0b" opacity="0.5"/>
+          <rect x="3" y="17" width="22" height="3" rx="1.5" fill="#c8b89a"/>
+          <path d="M10 9 Q12 4 14 3 Q16 4 18 9" fill="#d4a843"/>
+          <circle cx="20" cy="14" r="1.5" fill="#b03030"/>
+        </svg>
+        <span class="font-display text-base font-bold text-gold tracking-tight group-hover:text-gold-light transition-colors">
+          MousePIForHire<span class="text-muted">.org</span>
+        </span>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-6" aria-label="Main navigation">
+        <a href="/guide/beginners-guide" class="font-typewriter text-xs text-aged hover:text-gold transition-colors tracking-wide uppercase">Guide</a>
+        <a href="/weapons/" class="font-typewriter text-xs text-aged hover:text-gold transition-colors tracking-wide uppercase">Weapons</a>
+        <a href="/trophies/" class="font-typewriter text-xs text-aged hover:text-gold transition-colors tracking-wide uppercase">Trophies</a>
+        <a href="/walkthrough/" class="font-typewriter text-xs text-aged hover:text-gold transition-colors tracking-wide uppercase">Walkthrough</a>
+        <a href="/collectibles/" class="font-typewriter text-xs text-gold hover:text-gold-light transition-colors tracking-wide uppercase">Collectibles</a>
+        <a href="/dlc/" class="font-typewriter text-xs text-aged hover:text-gold transition-colors tracking-wide uppercase">DLC</a>
+        <a href="/news/" class="font-typewriter text-xs text-danger hover:text-red-400 transition-colors tracking-wide uppercase">● News</a>
+      </nav>
+
+      <button
+        class="md:hidden text-aged hover:text-gold transition-colors"
+        aria-label="Toggle mobile menu"
+        onclick="document.getElementById('mobile-menu').classList.toggle('open')"
+      >
+        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <line x1="2" y1="6" x2="20" y2="6"/>
+          <line x1="2" y1="11" x2="20" y2="11"/>
+          <line x1="2" y1="16" x2="20" y2="16"/>
+        </svg>
+      </button>
+    </div>
+
+    <div id="mobile-menu" class="md:hidden bg-ink border-t border-card-border px-4 py-4 space-y-3">
+      <a href="/guide/beginners-guide" class="block font-typewriter text-xs text-aged hover:text-gold uppercase tracking-wide py-1">Guide</a>
+      <a href="/weapons/" class="block font-typewriter text-xs text-aged hover:text-gold uppercase tracking-wide py-1">Weapons</a>
+      <a href="/trophies/" class="block font-typewriter text-xs text-aged hover:text-gold uppercase tracking-wide py-1">Trophies</a>
+      <a href="/walkthrough/" class="block font-typewriter text-xs text-aged hover:text-gold uppercase tracking-wide py-1">Walkthrough</a>
+      <a href="/collectibles/" class="block font-typewriter text-xs text-gold uppercase tracking-wide py-1">Collectibles</a>
+      <a href="/dlc/" class="block font-typewriter text-xs text-aged hover:text-gold uppercase tracking-wide py-1">DLC</a>
+      <a href="/news/" class="block font-typewriter text-xs text-danger uppercase tracking-wide py-1">● Latest News</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="relative overflow-hidden border-b border-card-border">
+      <div class="absolute inset-0 pointer-events-none opacity-5" aria-hidden="true">
+        <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse">
+              <circle cx="2" cy="2" r="1.5" fill="#d4a843"/>
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#dots)"/>
+        </svg>
+      </div>
+
+      <div class="absolute -top-20 right-0 w-96 h-96 rounded-full blur-3xl opacity-20 pointer-events-none" style="background: radial-gradient(circle, rgba(212,168,67,0.18), transparent 70%);" aria-hidden="true"></div>
+
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 py-16 md:py-24 relative">
+        <div class="grid grid-cols-1 lg:grid-cols-[1.05fr_0.95fr] gap-10 items-center">
+          <div class="max-w-3xl">
+            <span class="badge fade-up">Launch-Window Research</span>
+            <p class="section-label mt-6 fade-up delay-1">MOUSE: P.I. For Hire Collectibles</p>
+            <h1 class="font-display text-4xl sm:text-5xl md:text-6xl leading-tight text-parchment mt-3 fade-up delay-1">
+              Track the collectible chains that matter before a clean run turns messy
+            </h1>
+            <p class="text-aged text-base sm:text-lg leading-8 mt-6 max-w-2xl fade-up delay-2">
+              This hub focuses on the collectible facts that survive cross-checking: which categories exist, which ones feed achievements, what the shop can help recover, and where first-run players still need route discipline.
+            </p>
+            <div class="flex flex-wrap gap-3 mt-8 fade-up delay-3">
+              <span class="signal-pill gold">Checked through Apr 28, 2026</span>
+              <span class="signal-pill">5 collectible categories</span>
+              <span class="signal-pill red">Missable-risk route</span>
+            </div>
+            <div class="flex flex-wrap gap-4 mt-8 fade-up delay-3">
+              <a href="#types" class="btn-primary">See Collectible Types</a>
+              <a href="/trophies/platinum-guide" class="btn-ghost">Open Platinum Guide</a>
+            </div>
+          </div>
+
+          <figure class="guide-card p-3 fade-up delay-2">
+            <img
+              src="/images/mouse-pi-for-hire/collectibles/mouse-pi-collectibles-hero-01.jpg"
+              alt="MOUSE: P.I. For Hire official key art used on the collectibles hub"
+              class="w-full h-[260px] sm:h-[320px] object-cover rounded-sm"
+              width="920"
+              height="430"
+            />
+            <figcaption class="text-muted text-xs leading-6 mt-3 px-1">
+              Official launch art sets the tone, but the page below focuses on the collectible systems that affect route planning.
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 py-8 md:py-10">
+      <figure class="guide-card overflow-hidden">
+        <img
+          src="/images/mouse-pi-for-hire/collectibles/mouse-pi-collectibles-banner-01.jpg"
+          alt="MOUSE: P.I. For Hire storefront artwork used as a collectibles section banner"
+          class="w-full h-[200px] sm:h-[260px] md:h-[320px] object-cover"
+          width="1920"
+          height="620"
+        />
+        <figcaption class="text-muted text-xs sm:text-sm leading-6 px-5 py-4">
+          Use this hub as the connective tissue between your trophy route, schematic planning, and collectible cleanup.
+        </figcaption>
+      </figure>
+    </section>
+
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 py-14 md:py-16">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <article class="guide-card p-6">
+          <p class="section-label mb-3">Big Picture</p>
+          <h2 class="font-display text-2xl text-parchment mb-3">The hub has five collectible lanes</h2>
+          <p class="text-aged text-sm leading-7">
+            Cross-checked launch guides agree on the main families you need to care about: <strong class="text-parchment">Newspapers</strong>, <strong class="text-parchment">Baseball Cards</strong>, <strong class="text-parchment">Comic Strips</strong>, <strong class="text-parchment">Secret Figurines</strong>, and <strong class="text-parchment">Schematics</strong>.
+          </p>
+        </article>
+        <article class="guide-card p-6">
+          <p class="section-label mb-3">Shop Safety Net</p>
+          <h2 class="font-display text-2xl text-parchment mb-3">Three categories can be bought back</h2>
+          <p class="text-aged text-sm leading-7">
+            An official developer reply says missed <strong class="text-parchment">Newspapers</strong>, <strong class="text-parchment">Comic Strips</strong>, and <strong class="text-parchment">Baseball Cards</strong> can later appear in the shop. That is helpful, but it is not a universal cleanup pass for every collectible type.
+          </p>
+        </article>
+        <article class="guide-card p-6">
+          <p class="section-label mb-3">Why This Page Exists</p>
+          <h2 class="font-display text-2xl text-parchment mb-3">Older totals still conflict online</h2>
+          <p class="text-aged text-sm leading-7">
+            Launch-week coverage does not agree on every grand total, especially around <strong class="text-parchment">Schematics</strong>. This page stays useful by separating strong consensus from older work-in-progress lists and by calling out disputed numbers honestly.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="types" class="border-y border-card-border bg-ink/60">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 py-14 md:py-16">
+        <div class="max-w-3xl mb-10">
+          <p class="section-label mb-3">Cross-Checked Types</p>
+          <h2 class="font-display text-3xl sm:text-4xl text-parchment">What each collectible category does for your run</h2>
+          <p class="text-aged mt-4 leading-8">
+            The cards below only use category names, totals, and achievement links that matched across at least two fresh sources. Where route advice is more interpretive, we keep the wording conservative.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+          <article class="guide-card p-6">
+            <p class="section-label mb-2">Mouseburg Herald</p>
+            <h3 class="font-display text-2xl text-parchment">Newspapers</h3>
+            <p class="text-aged text-sm leading-7 mt-3">
+              Current checklist-style guides agree on <strong class="text-parchment">38 Newspapers</strong>. They tie directly into the <strong class="text-parchment">Extra! Extra!</strong> achievement and are one of the categories the shop can help recover later.
+            </p>
+          </article>
+
+          <article class="guide-card p-6">
+            <p class="section-label mb-2">Bar Minigame</p>
+            <h3 class="font-display text-2xl text-parchment">Baseball Cards</h3>
+            <p class="text-aged text-sm leading-7 mt-3">
+              Cross-checked launch guides list <strong class="text-parchment">41 Baseball Cards</strong>. They feed the bar card minigame, are linked to <strong class="text-parchment">Card Shark</strong>, and sit close to extra win-based achievement pressure later in the run.
+            </p>
+          </article>
+
+          <article class="guide-card p-6">
+            <p class="section-label mb-2">Story Flavor</p>
+            <h3 class="font-display text-2xl text-parchment">Comic Strips</h3>
+            <p class="text-aged text-sm leading-7 mt-3">
+              Multiple fresh guides agree on <strong class="text-parchment">29 Comic Strips</strong>. These feed the <strong class="text-parchment">The Prequel</strong> achievement and are also part of the officially confirmed shop recovery group.
+            </p>
+          </article>
+
+          <article class="guide-card p-6">
+            <p class="section-label mb-2">High-Risk Pickup</p>
+            <h3 class="font-display text-2xl text-parchment">Secret Figurines</h3>
+            <p class="text-aged text-sm leading-7 mt-3">
+              Current location guides line up on <strong class="text-parchment">10 Secret Figurines</strong>. Unlike the paper-based collectibles, community route guides do not treat figurines as shop-cleanup items, so they deserve real mission discipline.
+            </p>
+          </article>
+
+          <article class="guide-card p-6 md:col-span-2 xl:col-span-2">
+            <p class="section-label mb-2">Upgrade Currency</p>
+            <h3 class="font-display text-2xl text-parchment">Schematics</h3>
+            <p class="text-aged text-sm leading-7 mt-3">
+              The most current route guides we checked agree on <strong class="text-parchment">83 Schematics</strong> in the launch window and on the trophy threshold that only <strong class="text-parchment">63</strong> are needed for <strong class="text-parchment">We&apos;ll B.A.N.G., ok!</strong>. Older launch-day lists published different totals, so treat any schematic grand total from April 16, 2026 especially carefully.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 py-14 md:py-16">
+      <div class="grid grid-cols-1 lg:grid-cols-[1.15fr_0.85fr] gap-8 items-start">
+        <div class="guide-card p-7 prose-copy">
+          <p class="section-label mb-3">Shop Recovery</p>
+          <h2 class="font-display text-3xl text-parchment mb-4">What the shop can fix and what it cannot safely promise</h2>
+          <p>
+            The safest officially confirmed rule is narrow but useful: missed <strong>Newspapers</strong>, <strong>Comic Strips</strong>, and <strong>Baseball Cards</strong> can later show up in the shop. That means these three categories are less punishing than they first look if you miss a pickup during a mission.
+          </p>
+          <p>
+            The shop rule does <strong>not</strong> mean every collectible can be ignored until cleanup. Current route guides still tell completionists to treat <strong>Secret Figurines</strong> and <strong>Schematics</strong> as real in-mission priorities, because they are not consistently documented as shop recoveries.
+          </p>
+          <p>
+            Baseball Cards need the most caution even inside the "recoverable" group. Launch-window collectible guides warn that some late-game or side-job related card progress may be riskier than ordinary shop purchases, so cards are best treated as "usually safer" rather than "fully solved by the vendor."
+          </p>
+        </div>
+
+        <aside class="guide-card p-7">
+          <p class="section-label mb-3">Safe Rule Set</p>
+          <h2 class="font-display text-3xl text-parchment mb-4">How to think about misses</h2>
+          <ul class="space-y-4 text-aged text-sm leading-7">
+            <li>Missed papers or comics are less scary than missed figurines.</li>
+            <li>Missed cards are often recoverable, but late cleanup is still a gamble.</li>
+            <li>Missed schematics hurt both upgrades and trophy pacing.</li>
+            <li>Official shop guidance is helpful, but it is not a blanket guarantee.</li>
+            <li>Manual saves still beat relying on a future vendor roll.</li>
+          </ul>
+        </aside>
+      </div>
+
+      <figure class="guide-card overflow-hidden mt-8">
+        <div class="grid grid-cols-1 md:grid-cols-[0.72fr_1.28fr] items-stretch">
+          <img
+            src="/images/mouse-pi-for-hire/collectibles/mouse-pi-collectibles-cover-01.jpg"
+            alt="MOUSE: P.I. For Hire official cover art beside collectibles route notes"
+            class="w-full h-full min-h-[280px] object-cover"
+            width="1200"
+            height="1800"
+          />
+          <figcaption class="px-6 py-6 md:px-8 md:py-8">
+            <p class="section-label mb-3">Visual Note</p>
+            <h3 class="font-display text-2xl sm:text-3xl text-parchment mb-4">A smaller collectible count can still hide a bigger route problem</h3>
+            <p class="text-aged text-sm sm:text-base leading-8">
+              <strong class="text-parchment">Secret Figurines</strong> and <strong class="text-parchment">Schematics</strong> matter here for the same reason some short side-job chains matter in the platinum route: they are easy to underestimate until a missed pickup turns into a replay-sized problem.
+            </p>
+          </figcaption>
+        </div>
+      </figure>
+    </section>
+
+    <section class="border-y border-card-border bg-ink/60">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 py-14 md:py-16">
+        <div class="max-w-3xl mb-10">
+          <p class="section-label mb-3">Route Planning</p>
+          <h2 class="font-display text-3xl sm:text-4xl text-parchment">The cleanest first-run collectible priorities</h2>
+          <p class="text-aged mt-4 leading-8">
+            This is the part that pairs best with the <a href="/trophies/platinum-guide" class="text-gold hover:text-gold-light transition-colors">Platinum Guide</a> and the <a href="/upgrades/schematics-locations/" class="text-gold hover:text-gold-light transition-colors">Schematics Locations</a> page: not every collectible has equal route pressure.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <article class="guide-card p-6">
+            <p class="section-label mb-2">Priority 1</p>
+            <h3 class="font-display text-2xl text-parchment">Respect schematics like progression, not flavor</h3>
+            <p class="text-aged text-sm leading-7 mt-3">
+              Because schematics feed <strong class="text-parchment">B.A.N.G.</strong> upgrades and have conflicting public totals, they are the collectible type least worth punting to vague future cleanup.
+            </p>
+          </article>
+
+          <article class="guide-card p-6">
+            <p class="section-label mb-2">Priority 2</p>
+            <h3 class="font-display text-2xl text-parchment">Treat figurines as true mission pickups</h3>
+            <p class="text-aged text-sm leading-7 mt-3">
+              Figurines are small in count but high in route risk. Current guides treat them more like bespoke secrets than vendor-friendly catch-up items.
+            </p>
+          </article>
+
+          <article class="guide-card p-6">
+            <p class="section-label mb-2">Priority 3</p>
+            <h3 class="font-display text-2xl text-parchment">Use the shop as backup, not as your plan</h3>
+            <p class="text-aged text-sm leading-7 mt-3">
+              Papers, comics, and many cards are more forgiving, but the best clean-run habit is still to grab what you see during the mission instead of betting on post-mission purchase luck.
+            </p>
+          </article>
+
+          <article class="guide-card p-6">
+            <p class="section-label mb-2">Priority 4</p>
+            <h3 class="font-display text-2xl text-parchment">Do not ignore the card minigame layer</h3>
+            <p class="text-aged text-sm leading-7 mt-3">
+              Baseball Cards are not just a checklist item. They also connect to the bar minigame, a $50 entry fee, win-based achievements, and an exclusive weapon unlock path, so they carry more long-tail value than comics or newspapers.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 py-14 md:py-16">
+      <div class="grid grid-cols-1 gap-8">
+        <article class="guide-card p-7 prose-copy">
+          <p class="section-label mb-3">Internal Links</p>
+          <h2 class="font-display text-3xl text-parchment mb-4">Best pages to pair with this hub</h2>
+          <p>
+            Use the <a href="/guide/beginners-guide">Beginner&apos;s Guide</a> if you want safer exploration habits before you start chasing secrets. Use the <a href="/upgrades/schematics-locations/">Schematics Locations</a> page if upgrade routing matters more to you than full collectible completion. Use the <a href="/trophies/platinum-guide">Platinum Guide</a> if your main concern is protecting the one-run 100% route from late surprises.
+          </p>
+        </article>
+
+        <article class="guide-card p-7">
+          <p class="section-label mb-3">FAQ</p>
+          <h2 class="font-display text-3xl text-parchment mb-5">Quick collectible answers</h2>
+          <div class="space-y-4">
+            <details class="border border-card-border rounded-sm px-5 py-4 bg-noir/40">
+              <summary class="font-display text-xl text-parchment">Can I buy back every missed collectible?</summary>
+              <p class="text-aged text-sm leading-7 mt-4">
+                No official source says that. The confirmed shop safety net only covers missed Newspapers, Comic Strips, and Baseball Cards.
+              </p>
+            </details>
+            <details class="border border-card-border rounded-sm px-5 py-4 bg-noir/40">
+              <summary class="font-display text-xl text-parchment">Which collectible type is most important for upgrades?</summary>
+              <p class="text-aged text-sm leading-7 mt-4">
+                Schematics. They are both upgrade currency and part of the achievement path tied to fully upgraded weapons.
+              </p>
+            </details>
+            <details class="border border-card-border rounded-sm px-5 py-4 bg-noir/40">
+              <summary class="font-display text-xl text-parchment">Are Baseball Cards just for completion percentage?</summary>
+              <p class="text-aged text-sm leading-7 mt-4">
+                No. Public launch guides and the achievement list both show that cards also feed the bar minigame and connect to extra rewards beyond the simple collection total.
+              </p>
+            </details>
+          </div>
+        </article>
+
+        <article class="guide-card p-7 prose-copy">
+          <p class="section-label mb-3">Version Note</p>
+          <h2 class="font-display text-3xl text-parchment mb-4">What this page is based on</h2>
+          <p>
+            This page was written on <strong>April 28, 2026</strong> using official Steam store, achievement, and developer-reply material, plus launch-window collectible and trophy guides published between <strong>April 16 and April 27, 2026</strong>. It is intentionally cautious around totals that still show disagreement across older sources.
+          </p>
+          <p>
+            If a future patch changes collectible availability, shop behavior, or achievement reliability, the parts most likely to need updates are <strong>schematic totals</strong>, <strong>late-game Baseball Card cleanup</strong>, and any route advice built around side jobs.
+          </p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-card-border bg-ink mt-4" role="contentinfo">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-10">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+        <div class="md:col-span-2">
+          <div class="flex items-center gap-2 mb-3">
+            <svg width="22" height="20" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M4 18 Q6 10 14 9 Q22 8 24 18 Z" fill="#d4a843" opacity="0.7"/>
+              <rect x="3" y="17" width="22" height="3" rx="1.5" fill="#c8b89a" opacity="0.7"/>
+              <path d="M10 9 Q12 4 14 3 Q16 4 18 9" fill="#d4a843" opacity="0.7"/>
+            </svg>
+            <span class="font-display text-sm font-bold text-gold">MousePIForHire.org</span>
+          </div>
+          <p class="text-muted text-xs leading-relaxed max-w-sm">
+            An independent fan guide for MOUSE: P.I. For Hire. Not affiliated with, endorsed by, or sponsored by Fumi Games or PlaySide Studios. All trademarks and game assets belong to their respective owners.
+          </p>
+        </div>
+
+        <div>
+          <p class="font-typewriter text-xs text-gold uppercase tracking-widest mb-3">Guides</p>
+          <ul class="space-y-2">
+            <li><a href="/guide/beginners-guide" class="text-muted text-xs hover:text-parchment transition-colors">Beginner&apos;s Guide</a></li>
+            <li><a href="/weapons/" class="text-muted text-xs hover:text-parchment transition-colors">Weapons &amp; Upgrades</a></li>
+            <li><a href="/trophies/platinum-guide" class="text-muted text-xs hover:text-parchment transition-colors">Platinum Roadmap</a></li>
+            <li><a href="/walkthrough/" class="text-muted text-xs hover:text-parchment transition-colors">Full Walkthrough</a></li>
+            <li><a href="/bosses/" class="text-muted text-xs hover:text-parchment transition-colors">Boss Guide</a></li>
+            <li><a href="/dlc/" class="text-muted text-xs hover:text-parchment transition-colors">Story DLC</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="font-typewriter text-xs text-gold uppercase tracking-widest mb-3">Collectibles</p>
+          <ul class="space-y-2 mb-5">
+            <li><a href="/collectibles/newspapers/" class="text-muted text-xs hover:text-parchment transition-colors">All Newspapers</a></li>
+            <li><a href="/collectibles/baseball-cards/" class="text-muted text-xs hover:text-parchment transition-colors">Baseball Cards</a></li>
+            <li><a href="/collectibles/comic-strips/" class="text-muted text-xs hover:text-parchment transition-colors">Comic Strips</a></li>
+            <li><a href="/upgrades/schematics-locations/" class="text-muted text-xs hover:text-parchment transition-colors">Schematics Locations</a></li>
+          </ul>
+          <p class="font-typewriter text-xs text-gold uppercase tracking-widest mb-3">Site</p>
+          <ul class="space-y-2">
+            <li><a href="/news/" class="text-muted text-xs hover:text-parchment transition-colors">News &amp; Patches</a></li>
+            <li><a href="/tips/" class="text-muted text-xs hover:text-parchment transition-colors">Advanced Tips</a></li>
+            <li><a href="/about" class="text-muted text-xs hover:text-parchment transition-colors">About</a></li>
+            <li><a href="/contact" class="text-muted text-xs hover:text-parchment transition-colors">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pt-6 border-t border-card-border flex flex-col sm:flex-row items-center justify-between gap-3">
+        <p class="text-muted text-xs">
+          &copy; 2026 MousePIForHire.org &mdash; Fan site. All game content &copy; Fumi Games &amp; PlaySide Studios.
+        </p>
+        <div class="flex gap-4">
+          <a href="/privacy" class="text-muted text-xs hover:text-parchment transition-colors">Privacy Policy</a>
+          <a href="/disclosure" class="text-muted text-xs hover:text-parchment transition-colors">Ad Disclosure</a>
+          <a href="/sitemap.xml" class="text-muted text-xs hover:text-parchment transition-colors">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!--
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+  -->
+</body>
+</html>
