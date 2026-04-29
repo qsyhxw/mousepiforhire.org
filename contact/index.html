@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact MousePIForHire.org | Corrections & Site Support</title>
+  <meta name="description" content="Contact MousePIForHire.org for corrections, broken links, page feedback, and guide updates for the MOUSE: P.I. For Hire fan site." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://mousepiforhire.org/contact/" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Contact MousePIForHire.org | Corrections & Site Support" />
+  <meta property="og:description" content="Reach MousePIForHire.org for guide corrections, update notes, and site-support questions." />
+  <meta property="og:url" content="https://mousepiforhire.org/contact/" />
+  <meta property="og:site_name" content="MousePIForHire.org" />
+  <meta property="og:image" content="https://mousepiforhire.org/og-cover.jpg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Contact MousePIForHire.org | Corrections & Site Support" />
+  <meta name="twitter:description" content="Email MousePIForHire.org for corrections, broken links, and site feedback." />
+  <meta name="twitter:image" content="https://mousepiforhire.org/og-cover.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Special+Elite&family=Lato:wght@400;700&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            noir: '#0b0b0b',
+            ink: '#141410',
+            parchment: '#f0e8d5',
+            aged: '#c8b89a',
+            muted: '#7a7060',
+            gold: '#d4a843',
+            'gold-light': '#e8c870',
+            danger: '#b03030',
+            'card-bg': '#1a1a16',
+            'card-border': '#2e2e26'
+          },
+          fontFamily: {
+            display: ['"Playfair Display"', 'Georgia', 'serif'],
+            typewriter: ['"Special Elite"', 'monospace'],
+            body: ['Lato', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      background-color: #0b0b0b;
+      color: #f0e8d5;
+      font-family: 'Lato', sans-serif;
+      overflow-x: hidden;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 9999;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+      background-repeat: repeat;
+      opacity: 0.35;
+      mix-blend-mode: overlay;
+    }
+    .section-label {
+      font-family: 'Special Elite', monospace;
+      font-size: 0.7rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: #d4a843;
+    }
+    .guide-card {
+      background: #1a1a16;
+      border: 1px solid #2e2e26;
+      border-radius: 4px;
+      transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+    }
+    .guide-card:hover {
+      border-color: #d4a843;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 32px rgba(212, 168, 67, 0.12);
+    }
+    .btn-primary {
+      background: #d4a843;
+      color: #0b0b0b;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      padding: 12px 28px;
+      border-radius: 2px;
+      display: inline-block;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.15s;
+    }
+    .btn-primary:hover { background: #e8c870; transform: translateY(-1px); }
+    .btn-ghost {
+      border: 1px solid #d4a843;
+      color: #d4a843;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      padding: 12px 28px;
+      border-radius: 2px;
+      display: inline-block;
+      text-decoration: none;
+      transition: background 0.2s, color 0.2s;
+    }
+    .btn-ghost:hover { background: rgba(212,168,67,0.1); }
+    .badge {
+      font-family: 'Special Elite', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      background: rgba(212,168,67,0.15);
+      border: 1px solid rgba(212,168,67,0.4);
+      color: #d4a843;
+      padding: 4px 12px;
+      border-radius: 2px;
+      display: inline-block;
+      text-transform: uppercase;
+    }
+    .signal-pill {
+      font-family: 'Special Elite', monospace;
+      font-size: 0.6rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 4px 8px;
+      border-radius: 999px;
+      border: 1px solid #2e2e26;
+      color: #c8b89a;
+      background: rgba(200,184,154,0.08);
+    }
+    .signal-pill.gold {
+      color: #d4a843;
+      border-color: rgba(212,168,67,0.4);
+      background: rgba(212,168,67,0.12);
+    }
+    .mini-pill {
+      font-family: 'Special Elite', monospace;
+      font-size: 0.58rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 4px 8px;
+      border-radius: 999px;
+      border: 1px solid #2e2e26;
+      color: #c8b89a;
+      background: rgba(200,184,154,0.08);
+      display: inline-block;
+    }
+    .prose-copy p { color: #c8b89a; line-height: 1.8; }
+    .prose-copy a { color: #e8c870; text-decoration: underline; text-underline-offset: 3px; }
+    .prose-copy strong { color: #f0e8d5; }
+    .mail-box {
+      background: linear-gradient(135deg, rgba(212,168,67,0.14), rgba(212,168,67,0.04));
+      border: 1px solid rgba(212,168,67,0.35);
+      border-radius: 4px;
+    }
+    #mobile-menu { display: none; }
+    #mobile-menu.open { display: block; }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .fade-up { animation: fadeUp 0.7s ease both; }
+    .delay-1 { animation-delay: 0.1s; }
+    .delay-2 { animation-delay: 0.2s; }
+    .delay-3 { animation-delay: 0.35s; }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://mousepiforhire.org/#website",
+        "url": "https://mousepiforhire.org/",
+        "name": "MousePIForHire.org"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://mousepiforhire.org/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Contact",
+            "item": "https://mousepiforhire.org/contact/"
+          }
+        ]
+      },
+      {
+        "@type": "ContactPage",
+        "@id": "https://mousepiforhire.org/contact/#contactpage",
+        "headline": "Contact MousePIForHire.org",
+        "description": "Contact and corrections page for MousePIForHire.org.",
+        "publisher": {
+          "@type": "Organization",
+          "name": "MousePIForHire.org",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://mousepiforhire.org/logo.png"
+          }
+        },
+        "datePublished": "2026-04-29",
+        "dateModified": "2026-04-29",
+        "mainEntityOfPage": "https://mousepiforhire.org/contact/"
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body class="bg-noir text-parchment font-body">
+  <header class="sticky top-0 z-50 bg-noir border-b border-card-border" role="banner">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 flex items-center justify-between h-14">
+      <a href="/" class="flex items-center gap-2 group" aria-label="MousePIForHire.org Home">
+        <svg width="28" height="24" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <ellipse cx="14" cy="20" rx="13" ry="3.5" fill="#d4a843" opacity="0.3"/>
+          <path d="M4 18 Q6 10 14 9 Q22 8 24 18 Z" fill="#d4a843"/>
+          <path d="M8 18 Q9 12 14 11 Q19 10 20 18" fill="#0b0b0b" opacity="0.5"/>
+          <rect x="3" y="17" width="22" height="3" rx="1.5" fill="#c8b89a"/>
+          <path d="M10 9 Q12 4 14 3 Q16 4 18 9" fill="#d4a843"/>
+          <circle cx="20" cy="14" r="1.5" fill="#b03030"/>
+        </svg>
+        <span class="font-display text-base font-bold text-gold tracking-tight group-hover:text-gold-light transition-colors">
+          MousePIForHire<span class="text-muted">.org</span>
+        </span>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-6" aria-label="Main navigation">
+        <a href="/guide/beginners-guide" class="font-typewriter text-xs text-aged hover:text-gold transition-colors tracking-wide uppercase">Guide</a>
+        <a href="/weapons/" class="font-typewriter text-xs text-aged hover:text-gold transition-colors tracking-wide uppercase">Weapons</a>
+        <a href="/trophies/" class="font-typewriter text-xs text-aged hover:text-gold transition-colors tracking-wide uppercase">Trophies</a>
+        <a href="/walkthrough/" class="font-typewriter text-xs text-aged hover:text-gold transition-colors tracking-wide uppercase">Walkthrough</a>
+        <a href="/collectibles/" class="font-typewriter text-xs text-aged hover:text-gold transition-colors tracking-wide uppercase">Collectibles</a>
+        <a href="/dlc/" class="font-typewriter text-xs text-aged hover:text-gold transition-colors tracking-wide uppercase">DLC</a>
+        <a href="/news/" class="font-typewriter text-xs text-danger hover:text-red-400 transition-colors tracking-wide uppercase">● News</a>
+      </nav>
+
+      <button
+        class="md:hidden text-aged hover:text-gold transition-colors"
+        aria-label="Toggle mobile menu"
+        onclick="document.getElementById('mobile-menu').classList.toggle('open')"
+      >
+        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <line x1="2" y1="6" x2="20" y2="6"/>
+          <line x1="2" y1="11" x2="20" y2="11"/>
+          <line x1="2" y1="16" x2="20" y2="16"/>
+        </svg>
+      </button>
+    </div>
+
+    <div id="mobile-menu" class="md:hidden bg-ink border-t border-card-border px-4 py-4 space-y-3">
+      <a href="/guide/beginners-guide" class="block font-typewriter text-xs text-aged hover:text-gold uppercase tracking-wide py-1">Guide</a>
+      <a href="/weapons/" class="block font-typewriter text-xs text-aged hover:text-gold uppercase tracking-wide py-1">Weapons</a>
+      <a href="/trophies/" class="block font-typewriter text-xs text-aged hover:text-gold uppercase tracking-wide py-1">Trophies</a>
+      <a href="/walkthrough/" class="block font-typewriter text-xs text-aged hover:text-gold uppercase tracking-wide py-1">Walkthrough</a>
+      <a href="/collectibles/" class="block font-typewriter text-xs text-aged hover:text-gold uppercase tracking-wide py-1">Collectibles</a>
+      <a href="/dlc/" class="block font-typewriter text-xs text-aged hover:text-gold uppercase tracking-wide py-1">DLC</a>
+      <a href="/news/" class="block font-typewriter text-xs text-danger uppercase tracking-wide py-1">● Latest News</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 pt-10 pb-12 md:pt-14 md:pb-16">
+      <div class="grid grid-cols-1 lg:grid-cols-[1.05fr_0.95fr] gap-8 items-center">
+        <div class="fade-up">
+          <div class="flex flex-wrap gap-3 mb-5">
+            <span class="badge">Contact & Corrections</span>
+            <span class="signal-pill gold">Reader Support</span>
+            <span class="signal-pill">Updated Apr 29, 2026</span>
+          </div>
+          <p class="section-label mb-3">Contact / Corrections / Site Support</p>
+          <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl leading-tight text-parchment">
+            Contact MousePIForHire.org
+          </h1>
+          <p class="text-aged text-base sm:text-lg leading-8 mt-6 max-w-2xl">
+            This page is the best place to report guide errors, broken links, outdated patch notes, missing images, or other site issues related to MousePIForHire.org. If something on the site feels off, this is where that signal should land.
+          </p>
+          <div class="flex flex-wrap gap-4 mt-8">
+            <a href="mailto:contact@mousepiforhire.org" class="btn-primary">Email the Site</a>
+            <a href="/news/" class="btn-ghost">Open Patch Tracker</a>
+          </div>
+        </div>
+
+        <figure class="guide-card overflow-hidden fade-up delay-1">
+          <img
+            src="/images/mouse-pi-for-hire/home/mouse-pi-home-tool-upgrades-01.jpg"
+            alt="MOUSE: P.I. For Hire board and interface artwork used for the contact page hero"
+            class="w-full h-full min-h-[320px] object-cover"
+            width="1920"
+            height="1080"
+          />
+        </figure>
+      </div>
+    </section>
+
+    <section class="border-y border-card-border bg-ink/60">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 py-14 md:py-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-5">
+          <article class="guide-card p-6">
+            <p class="section-label mb-2">Primary Contact</p>
+            <h2 class="font-display text-2xl text-parchment">Email</h2>
+            <p class="text-aged text-sm leading-7 mt-3">
+              The direct contact address for this site is <strong class="text-parchment">contact@mousepiforhire.org</strong>.
+            </p>
+          </article>
+          <article class="guide-card p-6">
+            <p class="section-label mb-2">Best Use Case</p>
+            <h2 class="font-display text-2xl text-parchment">Corrections</h2>
+            <p class="text-aged text-sm leading-7 mt-3">
+              The highest-value messages are usually factual corrections, outdated route warnings, missing page updates, and broken internal links.
+            </p>
+          </article>
+          <article class="guide-card p-6">
+            <p class="section-label mb-2">Good Context</p>
+            <h2 class="font-display text-2xl text-parchment">What To Include</h2>
+            <p class="text-aged text-sm leading-7 mt-3">
+              A page URL, the exact issue, and any useful version context usually make a correction much faster to verify and fix.
+            </p>
+          </article>
+          <article class="guide-card p-6">
+            <p class="section-label mb-2">Scope Note</p>
+            <h2 class="font-display text-2xl text-parchment">Independent Site</h2>
+            <p class="text-aged text-sm leading-7 mt-3">
+              This is a fan-made guide site for <strong class="text-parchment">MOUSE: P.I. For Hire</strong>, not an official Fumi Games or PlaySide support channel.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 py-14 md:py-16">
+      <div class="grid grid-cols-1 lg:grid-cols-[1.08fr_0.92fr] gap-8 items-start">
+        <article class="guide-card p-7 prose-copy">
+          <p class="section-label mb-3">How To Reach Us</p>
+          <h2 class="font-display text-3xl text-parchment mb-4">Use the contact address when a page needs help, not guesswork</h2>
+          <p>
+            MousePIForHire.org is built to support players working through a single-player first-person shooter that can be sensitive to patch changes, missable route logic, and version-specific guide advice. That means corrections matter. A small detail left stale on a collectibles page or a trophy warning page can be more harmful than a page simply being unfinished.
+          </p>
+          <p>
+            The most helpful messages are the ones that point to something concrete: an inaccurate statement, a page that still reflects an old patch state, a checklist entry that no longer reads clearly, a typo in a mission or item name, or a page whose internal links now go nowhere useful.
+          </p>
+          <p>
+            If you need to contact the site, use <a href="mailto:contact@mousepiforhire.org" class="text-gold hover:text-gold-light transition-colors">contact@mousepiforhire.org</a>. This is the primary inbox for site feedback and correction requests.
+          </p>
+        </article>
+
+        <aside class="guide-card p-7">
+          <p class="section-label mb-3">Fast Answer</p>
+          <h2 class="font-display text-3xl text-parchment mb-4">Best things to send</h2>
+          <ul class="space-y-3 text-aged text-sm leading-7">
+            <li>A broken URL or dead internal link</li>
+            <li>A factual issue that needs re-checking</li>
+            <li>A patch note or hotfix page that looks outdated</li>
+            <li>An image issue, missing asset, or wrong caption</li>
+            <li>A page that should probably be split or updated</li>
+          </ul>
+        </aside>
+      </div>
+
+      <div class="mail-box mt-8 p-7 md:p-8">
+        <p class="section-label mb-3">Primary Inbox</p>
+        <h3 class="font-display text-3xl text-parchment mb-4">contact@mousepiforhire.org</h3>
+        <p class="text-aged text-sm sm:text-base leading-8 max-w-3xl">
+          For corrections, site feedback, or update requests, email <a href="mailto:contact@mousepiforhire.org" class="text-gold hover:text-gold-light transition-colors">contact@mousepiforhire.org</a>. Including the page URL and a short explanation of the issue is the fastest way to make the message actionable.
+        </p>
+      </div>
+
+      <figure class="guide-card overflow-hidden mt-8">
+        <div class="grid grid-cols-1 md:grid-cols-[0.74fr_1.26fr] items-stretch">
+          <img
+            src="/images/mouse-pi-for-hire/trophies/mouse-pi-trophies-case-board-01.jpg"
+            alt="MOUSE: P.I. For Hire case board artwork used to support the contact and corrections page"
+            class="w-full h-full min-h-[280px] object-cover"
+            width="1200"
+            height="675"
+          />
+          <figcaption class="px-6 py-6 md:px-8 md:py-8">
+            <p class="section-label mb-3">Why Contact Matters</p>
+            <h3 class="font-display text-2xl sm:text-3xl text-parchment mb-4">A guide site ages better when readers can point at the exact thing that drifted</h3>
+            <p class="text-aged text-sm sm:text-base leading-8">
+              That is especially true for pages tied to trophies, collectibles, patch notes, and DLC timing, where a small mismatch can quietly mislead a whole route.
+            </p>
+          </figcaption>
+        </div>
+      </figure>
+    </section>
+
+    <section class="border-y border-card-border bg-ink/60">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 py-14 md:py-16">
+        <div class="grid grid-cols-1 lg:grid-cols-[1.15fr_0.85fr] gap-8 items-start">
+          <article class="guide-card p-7 prose-copy">
+            <p class="section-label mb-3">What Helps Most</p>
+            <h2 class="font-display text-3xl text-parchment mb-4">How to make a correction easier to verify</h2>
+            <p>
+              The most efficient correction emails usually include three things: the exact page URL, the sentence or section that looks wrong, and the reason it looks wrong. If the issue is version-sensitive, adding a date, platform, or patch context makes the follow-up much cleaner.
+            </p>
+            <p>
+              A useful correction does not need to be long. Even a short message that says "this page still reflects pre-hotfix behavior" or "this collectible caption no longer matches the checklist" can be enough to trigger a proper review.
+            </p>
+            <p>
+              For patch-sensitive pages, the <a href="/news/" class="text-gold hover:text-gold-light transition-colors">News &amp; Patch Notes</a> hub is often the best companion reference. For route-sensitive pages, the <a href="/trophies/" class="text-gold hover:text-gold-light transition-colors">Trophies Hub</a> and <a href="/collectibles/" class="text-gold hover:text-gold-light transition-colors">Collectibles Hub</a> are often the places where drift becomes visible first.
+            </p>
+          </article>
+
+          <aside class="guide-card p-7">
+            <p class="section-label mb-3">Useful Context</p>
+            <h2 class="font-display text-3xl text-parchment mb-4">Good things to include</h2>
+            <ul class="space-y-4 text-aged text-sm leading-7">
+              <li>The page URL</li>
+              <li>The section or sentence in question</li>
+              <li>The platform, if relevant</li>
+              <li>The patch or date context, if relevant</li>
+              <li>A short note on what changed or feels wrong</li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 py-14 md:py-16">
+      <div class="grid grid-cols-1 gap-8">
+        <article class="guide-card p-7">
+          <p class="section-label mb-3">Best Next Pages</p>
+          <h2 class="font-display text-3xl text-parchment mb-5">Where site issues usually show up first</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+            <a href="/news/" class="guide-card p-6 block">
+              <p class="section-label mb-2">Version Drift</p>
+              <h3 class="font-display text-2xl text-parchment">News & Patch Notes</h3>
+              <p class="text-aged text-sm leading-7 mt-3">
+                Best page to cross-check whether a hotfix, build change, or platform rollout note has made an older guide stale.
+              </p>
+            </a>
+            <a href="/trophies/" class="guide-card p-6 block">
+              <p class="section-label mb-2">Route Drift</p>
+              <h3 class="font-display text-2xl text-parchment">Trophies Hub</h3>
+              <p class="text-aged text-sm leading-7 mt-3">
+                Trophy pages are often where readers notice route-sensitive or trigger-sensitive errors first.
+              </p>
+            </a>
+            <a href="/collectibles/" class="guide-card p-6 block">
+              <p class="section-label mb-2">Checklist Drift</p>
+              <h3 class="font-display text-2xl text-parchment">Collectibles Hub</h3>
+              <p class="text-aged text-sm leading-7 mt-3">
+                A good place to spot checklist mismatch, image-caption issues, or route notes that need tightening.
+              </p>
+            </a>
+            <a href="/about/" class="guide-card p-6 block">
+              <p class="section-label mb-2">Site Policy</p>
+              <h3 class="font-display text-2xl text-parchment">About</h3>
+              <p class="text-aged text-sm leading-7 mt-3">
+                Useful if the real question is how the site is supposed to verify facts, explain uncertainty, and stay independent in tone.
+              </p>
+            </a>
+          </div>
+        </article>
+
+        <article class="guide-card p-7">
+          <p class="section-label mb-3">FAQ</p>
+          <h2 class="font-display text-3xl text-parchment mb-5">Quick contact answers</h2>
+          <div class="space-y-4">
+            <details class="border border-card-border rounded-sm px-5 py-4 bg-noir/40">
+              <summary class="font-display text-xl text-parchment">What email should I use to contact the site?</summary>
+              <p class="text-aged text-sm leading-7 mt-4">
+                Use <strong class="text-parchment">contact@mousepiforhire.org</strong> for corrections, site feedback, and update requests.
+              </p>
+            </details>
+            <details class="border border-card-border rounded-sm px-5 py-4 bg-noir/40">
+              <summary class="font-display text-xl text-parchment">What kinds of messages are most helpful?</summary>
+              <p class="text-aged text-sm leading-7 mt-4">
+                The most useful messages usually point to something concrete: a broken link, outdated patch wording, a factual mismatch, a checklist problem, or a page that needs revision.
+              </p>
+            </details>
+            <details class="border border-card-border rounded-sm px-5 py-4 bg-noir/40">
+              <summary class="font-display text-xl text-parchment">Is this the official support contact for the game?</summary>
+              <p class="text-aged text-sm leading-7 mt-4">
+                No. This page is for the independent MousePIForHire.org fan site, not for official developer or publisher support.
+              </p>
+            </details>
+            <details class="border border-card-border rounded-sm px-5 py-4 bg-noir/40">
+              <summary class="font-display text-xl text-parchment">What should I include in a correction email?</summary>
+              <p class="text-aged text-sm leading-7 mt-4">
+                The page URL, the exact issue, and any version or platform context are usually the most helpful starting points.
+              </p>
+            </details>
+          </div>
+        </article>
+
+        <article class="guide-card p-7 prose-copy">
+          <p class="section-label mb-3">Version Note</p>
+          <h2 class="font-display text-3xl text-parchment mb-4">What this page is based on</h2>
+          <p>
+            This page was written on <strong>April 29, 2026</strong> using the official Steam store page for MOUSE: P.I. For Hire, the official Nintendo store listing, and the site&apos;s own current disclosure standard for independent fan coverage.
+          </p>
+          <p>
+            The details most likely to need future updates are the site contact workflow itself, any additional support channels added later, and any new page types that deserve to be called out as common correction targets.
+          </p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-card-border bg-ink mt-4" role="contentinfo">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-10">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+        <div class="md:col-span-2">
+          <div class="flex items-center gap-2 mb-3">
+            <svg width="22" height="20" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M4 18 Q6 10 14 9 Q22 8 24 18 Z" fill="#d4a843" opacity="0.7"/>
+              <rect x="3" y="17" width="22" height="3" rx="1.5" fill="#c8b89a" opacity="0.7"/>
+              <path d="M10 9 Q12 4 14 3 Q16 4 18 9" fill="#d4a843" opacity="0.7"/>
+            </svg>
+            <span class="font-display text-sm font-bold text-gold">MousePIForHire.org</span>
+          </div>
+          <p class="text-muted text-xs leading-relaxed max-w-sm">
+            An independent fan guide for MOUSE: P.I. For Hire. Not affiliated with, endorsed by, or sponsored by Fumi Games or PlaySide Studios. All trademarks and game assets belong to their respective owners.
+          </p>
+        </div>
+
+        <div>
+          <p class="font-typewriter text-xs text-gold uppercase tracking-widest mb-3">Guides</p>
+          <ul class="space-y-2">
+            <li><a href="/guide/beginners-guide" class="text-muted text-xs hover:text-parchment transition-colors">Beginner&apos;s Guide</a></li>
+            <li><a href="/weapons/" class="text-muted text-xs hover:text-parchment transition-colors">Weapons &amp; Upgrades</a></li>
+            <li><a href="/trophies/platinum-guide" class="text-muted text-xs hover:text-parchment transition-colors">Platinum Roadmap</a></li>
+            <li><a href="/walkthrough/" class="text-muted text-xs hover:text-parchment transition-colors">Full Walkthrough</a></li>
+            <li><a href="/bosses/" class="text-muted text-xs hover:text-parchment transition-colors">Boss Guide</a></li>
+            <li><a href="/dlc/" class="text-muted text-xs hover:text-parchment transition-colors">Story DLC</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="font-typewriter text-xs text-gold uppercase tracking-widest mb-3">Collectibles</p>
+          <ul class="space-y-2 mb-5">
+            <li><a href="/collectibles/newspapers/" class="text-muted text-xs hover:text-parchment transition-colors">All Newspapers</a></li>
+            <li><a href="/collectibles/baseball-cards/" class="text-muted text-xs hover:text-parchment transition-colors">Baseball Cards</a></li>
+            <li><a href="/collectibles/comic-strips/" class="text-muted text-xs hover:text-parchment transition-colors">Comic Strips</a></li>
+            <li><a href="/upgrades/schematics-locations/" class="text-muted text-xs hover:text-parchment transition-colors">Schematics Locations</a></li>
+          </ul>
+          <p class="font-typewriter text-xs text-gold uppercase tracking-widest mb-3">Site</p>
+          <ul class="space-y-2">
+            <li><a href="/news/" class="text-muted text-xs hover:text-parchment transition-colors">News &amp; Patches</a></li>
+            <li><a href="/tips/" class="text-muted text-xs hover:text-parchment transition-colors">Advanced Tips</a></li>
+            <li><a href="/about" class="text-muted text-xs hover:text-parchment transition-colors">About</a></li>
+            <li><a href="/contact" class="text-muted text-xs hover:text-parchment transition-colors">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pt-6 border-t border-card-border flex flex-col sm:flex-row items-center justify-between gap-3">
+        <p class="text-muted text-xs">
+          &copy; 2026 MousePIForHire.org &mdash; Fan site. All game content &copy; Fumi Games &amp; PlaySide Studios.
+        </p>
+        <div class="flex gap-4">
+          <a href="/privacy" class="text-muted text-xs hover:text-parchment transition-colors">Privacy Policy</a>
+          <a href="/disclosure" class="text-muted text-xs hover:text-parchment transition-colors">Ad Disclosure</a>
+          <a href="/sitemap.xml" class="text-muted text-xs hover:text-parchment transition-colors">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!--
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+  -->
+</body>
+</html>
