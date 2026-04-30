@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">MousePIForHire.org favicon</title>
+  <desc id="desc">A noir square favicon with a gold detective fedora and a small red accent dot.</desc>
+  <rect width="64" height="64" rx="12" fill="#0b0b0b"/>
+  <ellipse cx="32" cy="46" rx="23" ry="5.5" fill="#d4a843" opacity="0.26"/>
+  <path d="M13 42c2.1-11.3 9.4-17.2 19-18 10.2-.8 18.1 4.7 20 18H13Z" fill="#d4a843"/>
+  <path d="M20 42c1.1-7 5.3-11.7 12-12.6 6.5-.9 11.9 2.8 13.1 12.6H20Z" fill="#111111" opacity="0.55"/>
+  <rect x="10" y="40" width="44" height="5" rx="2.5" fill="#c8b89a"/>
+  <path d="M25 25c1.9-7.1 5.1-11 7-12 2 1 5.1 4.9 7 12H25Z" fill="#d4a843"/>
+  <circle cx="46" cy="34" r="3.3" fill="#b03030"/>
+</svg>
